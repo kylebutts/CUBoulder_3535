@@ -1,0 +1,165 @@
+\documentclass[11pt]{article}
+\title{Midterm 2}
+\input{preamble.tex}
+
+\newtoggle{INCLUDEANSWERS}
+\toggletrue{INCLUDEANSWERS}
+\newcommand{\answer}[1]{\iftoggle{INCLUDEANSWERS}{{\color{violet!70!white}\textbf{Solution:} #1}}{} }
+
+\newtoggle{INCLUDEPOINTS}
+\togglefalse{INCLUDEPOINTS}
+\newcommand{\points}[1]{\iftoggle{INCLUDEPOINTS}{{\color{blue!70!white}(#1 pts.)}}{}}
+
+
+\begin{document}
+  
+\emph{Good luck y'all!}
+
+\vspace*{5mm}
+Multiple Choice
+
+\begin{enumerate}
+  \item \points{4} Which of the following is \textbf{not} a pigouvian tax?
+  \begin{enumerate}
+    \item Carbon Tax
+    \item Income tax
+    \item Entrance fee for public park
+    \item Tobacco Tax
+  \end{enumerate}
+
+  \answer{(b)}
+
+  \item \points{4} Household electricity demand is inelastic in the short run. This implies that:
+  
+  \begin{enumerate}
+    \item Customers do not adjust electricity use when prices are high
+    \item If the long-run price of electricity increased, customers wouldn't buy more energy efficient appliances
+    \item Customers would monitor electricity price and change their thermostat in response
+    \item Customers use more electricity in the off-peak hours when prices are expensive that day
+  \end{enumerate}
+    
+  \answer{(a)}
+
+  \item \points{4} In the 1970’s, the US imposed a price ceiling on natural gas. What effect did this have?
+
+  \begin{enumerate}
+    \item Shortage; suppliers were unwilling to meet demand at that price
+    \item Surplus; customers could not afford the new high prices
+    \item Essentially no effect; customers heated their homes with other fuels
+  \end{enumerate}
+
+  \answer{(a)}
+
+  \item \points{4} Which of the following is an example of the rebound effect?
+  \begin{enumerate}
+    \item   I had solar panels installed on my roof, so my electric car has lower emissions
+    \item The price of natural gas is high today, so I wear a jacket inside
+    \item The price of gasoline goes up, so I drive less
+    \item I replace my truck with a Prius, so I end up driving more often
+  \end{enumerate}
+
+  \answer{(d)}
+\end{enumerate}
+
+
+\vspace*{5mm}
+Free Response Questions
+
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item \points{20} Give one advantage and one disadvantage to the following sources of electricity production: (2 sentences per source)
+  \begin{enumerate}  
+    \item Solar
+    \item Natural Gas
+    \item Nuclear
+    \item Hydroelectric
+  \end{enumerate}
+
+  \answer{
+    \begin{enumerate}  
+      \item Solar
+      
+      \begin{itemize}
+        \item advantages: low-cost, clean and renewable
+        \item disadvantages: only during the day and duck-curve
+      \end{itemize}
+      
+      \item Natural Gas
+      
+      \begin{itemize}
+       \item advantages: dispatchable and less dirty than natural gas
+        \item disadvantages: CO2 and a bit more expensive
+      \end{itemize}
+      \item Nuclear
+      
+      \begin{itemize}
+        \item advantages: Good at covering baseload generation and no-emissions
+        \item disadvantages: Waste is hard to dispose of and a risky advantage b/c of public backlash
+      \end{itemize}
+
+      \item Hydroelectric
+      
+      \begin{itemize}
+        \item advantages: free, dispatchable and clean
+        \item disadvantages: limited geographic scope
+      \end{itemize}
+    \end{enumerate} 
+  }
+
+  \item \points{12} In class, we discussed the merit order curve and how it determines the market price for electricity.
+  \begin{enumerate}
+    \item Explain what the merit order curve is? (1 sentence)
+    \item Explain, using the concept of the merit order curve, why adding renewable resources to the grid will lower the electricity price
+  \end{enumerate}
+
+  \answer{
+    \begin{enumerate}
+      \item Merit order curve is a marginal-cost curve / supply curve for electricity generation. The cheapest resources are dispatched first and are to the left of the curve
+
+      \item Adding renewable shifts the merit-order curve out (increases supply) and lowers the cost of electricity for consumers. 
+    \end{enumerate}
+  }
+
+  \item \points{12} Both local air pollutants and global pollutants are large problems that create large social costs.
+  \begin{enumerate}
+    \item Explain why the United States was able to tackle the local air pollutant problem while it still struggles with dealing with climate change.
+    \item The US recently joined the Paris Climate Accord which has no non-binding agreement. What do they claim will cause countries to act?
+  \end{enumerate}
+  
+  \answer{
+    \begin{enumerate}
+      \item Local pollution does not have external benefits (no positive externalities), so there is no prisoner's dilemma. Whereas global pollution has a lot of externalities, so no one country has incentive to act
+
+      \item The Paris climate accord is based on the idea of ``name and shame'' and that countries will ``do the right thing'' because they are trying to uphold their public stature. For example, war and trade are also valuable and countries need to reserve their public stature to help with trade deals and anti-war negotiations
+    \end{enumerate}
+  }
+
+  \item \points{12} CAFE standards and a gasoline tax are both policies that affect the transportation industry.
+  \begin{enumerate}
+    \item Explain one way that both policies create the same effect. (1 sentence)
+    \item Explain one way in which the policies create very different effects. (2-3 sentences)
+  \end{enumerate}
+
+  \answer{
+    \begin{enumerate}
+      \item Both policies encourage investment in cleaner vehicles and both encourage driving less because of higher marginal costs
+
+      \item Gas tax directly encourages people to drive less. Meanwhile a CAFE standard creates more efficient vehicles which has a `rebound effect' which encourages more driving. (Note: Points here for knowing and explaining the rebound effect. Since more efficient cars require less gas per mile, people end up offsetting some of the lowered pollution by driving more)
+    \end{enumerate}
+  }
+
+  \item \points{12} The double dividend hypothesis is often brought up in discussions about environmentalism and public finance. Explain how a pollution tax can cause each of the two ``dividends''. (1-2 sentences)
+  
+  \answer{
+    Dividend 1 is lowering pollution and dividend 2 is lowering distortionary taxes, such as income and sales tax.
+  }
+  
+  \item \points{12} Suppose your apartment building switched from splitting electricity costs evenly across units to making each unit pay how much electricity they use. What would happen to the amount of electricity consumed? Explain why using economic concept(s).
+  
+  \answer{
+    After switching to a per-unit electricity bill, people would lower energy consumption because they have to pay for their marginal energy consumption.
+  }
+\end{enumerate}
+
+
+\end{document}

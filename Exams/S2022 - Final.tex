@@ -1,0 +1,143 @@
+\documentclass[11pt]{article}
+\title{Final Exam}
+\input{preamble.tex}
+
+\newtoggle{INCLUDEANSWERS}
+\toggletrue{INCLUDEANSWERS}
+\newcommand{\answer}[1]{\iftoggle{INCLUDEANSWERS}{{\color{violet!70!white}\textbf{Solution:} #1}}{} }
+
+\newtoggle{INCLUDEPOINTS}
+\toggletrue{INCLUDEPOINTS}
+\newcommand{\points}[1]{\iftoggle{INCLUDEPOINTS}{{\color{blue!70!white}(#1 pts.)}}{}}
+
+
+\begin{document}
+  
+\emph{Good luck y'all!}
+\vspace*{5mm}
+Multiple Choice
+
+\begin{enumerate}
+  \item \points{5} In the forestry models, which of the following will delay the optimal harvest date?
+  \begin{enumerate}
+    \item Adding the option to replant trees for future harvests
+    \item Assuming that marginal cost of harvest declines over time with technology
+    \item Assuming that the price of lumber declines over time as substitutes become more popular
+    \item Choosing a higher discount rate
+  \end{enumerate}
+
+  \answer{(b)}
+
+  \item \points{5} In competitive electricity markets, power is supplied to meet demand according to the economic dispatch curve, which means:
+  \begin{enumerate}
+    \item The sources with the lowest LCOE will be used first
+    \item The sources are dispatched in descending order of size
+    \item The sources with the lowest marginal cost are dispatched first
+    \item The sources are determined by the demand curve of electricity customers
+  \end{enumerate}
+
+  \answer{(c)}
+
+  \item \points{5} Which of the following is a correct application of the Second Equimarginal Principle?
+  \begin{enumerate}
+    \item Tax burden from pollution should be equal across firms and their customers
+    \item The benefits of lowering pollution should be larger than the costs of compliance
+    \item Reduce pollution from the lowest-value sources first
+    \item All polluting firms must comply by reducing pollution by the same amount
+  \end{enumerate}
+
+  \answer{(c)}
+\end{enumerate}
+
+
+\vspace*{5mm}
+Free Response Questions
+
+\begin{enumerate}
+  \setcounter{enumi}{3}
+  \item \points{16} Describe the fundamental trade-off in the following models (1 sentence per question):
+  \begin{enumerate}
+    \item Forestry model
+    \item Fisheries model
+    \item Mineral Extraction
+    \item Cap-and-Trade
+  \end{enumerate}
+
+  \answer{
+    \begin{enumerate}
+      \item Letting the tree grow (increase in benefits) vs. having to wait for profits / discounting (decrease in benefits)
+      \item Marginal benefits of fishing more vs. marginal cost of fishing more
+      \item Extraction today vs. extraction tomorrow. Balance marginal net benefits between periods
+      \item Balance marginal abatement costs between the two firms
+    \end{enumerate}
+  }
+
+  \item \points{7} Increasingly sophisticated communications technology is allowing more people to work at home. What effect do you think this might have on land-use patterns, specifically the density of residential development?
+  
+  \answer{The bid-rent function will become flatter as being closer to the city center is relatively less valuable. That means more workers move into the suburbs.}
+
+  \item \points{7} Some new technologies, such as LED light bulbs, have the characteristic that they cost more to purchase than more conventional incandescent alternatives, but they save energy over the long-run. Describe how a person would use the concept of present value of net benefits to determine whether to buy them. (1-2 sentences)
+  
+  \answer{A person would Determine the present value of costs today for each lightbulb, the cost of the light bulb and the present value of future costs of electricity. Whichever one is cheaper in terms of present value will be the one purchased. I want the answer to discuss that a balance between high costs today and future benefits (i.e. they understand inter-temporal tradeoffs)}
+  
+  \item \points{10} One recurring theme of this class was the occasional conflict between improving the environment and improving the outcomes of the least wealthy people. In other words, sometimes policies that improve the environment are economically regressive. List and briefly explain two​ different scenarios from class where this conflict exists. (1-2 sentences each)
+  
+  \answer{Pretty open question, some examples: solar panel subsidies, electric vehicle subsidies, any sort of corrective tax where different people pay different amounts (e.g. gas tax)}
+  
+  \item \points{15} Levelized cost of energy (LCOE) is a formula that economists use to compare different energy sources. One important parameter in that formula is the discount rate.
+
+  \begin{enumerate}
+    \item Explain why LCOE is a useful concept for explaining which energy providers get added to a grid (1-2 sentences)
+    \item Explain why LCOE is not a useful concept for explaining which energy providers get dispatched on the grid (1 sentence)
+    \item If we use a high discount rate instead of a low one, LCOE changes for all sources. However, it does not change by an equal amount for all sources. Consider a coal plant and a wind farm. Explain which one is made to look relatively better with a high discount rate. (2 sentences)
+  \end{enumerate}
+
+  \answer{
+    \begin{enumerate}
+      \item When adding new sources of electricity to the grid, they chose the generator with the lowest average cost of producing electricity. Therefore this explains why solar and wind are being added in such large quantities
+      \item The dispatch curve is the marginal cost of providing electricity and electricity is dispatched in order of lowest marginal cost. The LCOE tells us the average cost which is different (e.g. high fixed cost vs. low marginal cost)
+      \item Coal plant will be appear better with a higher discount rate because the future marginal costs of operating the plan will seem relatively smaller with a higher discount rate. Wind's future marginal cost is near zero, so the LCOE does not depend largely on the discount rate.
+    \end{enumerate}
+  }
+
+  \item \points{10} Valuation Methods:
+  \begin{enumerate}
+    \item Give examples of two biases that can be present in stated-preference methods.
+    \item In class, we saw how tourism was estimated to be a major source of value for coral reef ecosystems. Why would use use revealed-preference methods over stated preference methods to measure the benefits of tourism?
+  \end{enumerate}
+
+  \answer{
+    \begin{enumerate}
+      \item Strategic bias (lie to try and influence the policy decision), Information bias (don't know enough to put a price on something), Starting point bias (get told an initial number which frames their answer), hypothetical bias (people answer without considering what they actually would pay), status quo bias (need to be payed more to lose something that they already have)
+      \item The hypothetical bias means people won't reveal what they actually would pay to preserve the coral reef. Revealed-preference is better in this case since you observe how much people actually paid to see the coral reef.
+    \end{enumerate}
+  }
+
+  \item \points{20} Two firms produce steel ($A$ and $B$). Initially there are no regulations on the firms and each firm produces 100 units of pollution (200 units total). Regulators determine that an efficient level of use would be half the current level (use = 100 units; abatement = 100 units). Suppose the two sites were built in different time periods and have different abatement costs.
+  
+  Firm $A$: $TAC_A = 0.1Q_A^2$ and $MAC_A = 0.2 Q_A$.
+
+  Firm $B$: $TAC_B = 0.2Q_B^2$ and $MAC_A = 0.6 Q_B$.
+  
+  \begin{enumerate}
+    \item Suppose a uniform standard is set stating that each site must reduce emissions by 50 units (abatement = 50 units). Find the total combined costs of abatement at the two sites under this use standard.
+    \item Now suppose that the firms are in a cap-and-trade system. Find the quantity abated by each firm in equilibrium. What is the permit price? What is the total combined costs of abatement?
+    \item Explain why the cap and trade system is a more efficient policy (1-2 sentences).
+  \end{enumerate}
+
+  \answer{
+    \begin{enumerate}
+      \item $TAC_A = 0.1 * 50^2 = 250$ and $TAC_B = 0.3 * 50^2 = 750$. The total cost is therefore $250 + 750 = 1000$.
+      
+      \item Using the constraint $Q_A + Q_B = 1000$ and the optimality condition $MAC_A = 0.2 Q_A = 0.6 Q_B = MAC_B$ yields $3Q_B + Q_B = 100$ $\implies Q_B^* = 25$ and $Q_A^* = 100 - 25 = 75$.
+      
+      The permit price is given as $MAC_A^* = 0.2 * Q_A^* = \$ 15$.
+
+      The total abatement cost is given by $TAC_A + = 0.1 * 75^2 = 562.5$ plus $TAC_B = 0.3 * 25^2 = 187.5$ which equals $TAC = 750$.
+
+      \item Cap and trade is more efficient because the firm with lower marginal abatement cost curve abates more than the high cost firm
+    \end{enumerate}
+  }
+\end{enumerate}
+
+\end{document}

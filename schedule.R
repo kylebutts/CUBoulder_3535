@@ -51,13 +51,11 @@ link_assignments <- function(col) {
 cal <- read_csv(here("schedule.csv")) %>%
 	pivot_wider(., names_from = "name", values_from = "value") %>%
 	mutate(
-		Monday = link_classes(Monday),
-		Wednesday = link_classes(Wednesday),
-		Friday = link_classes(Friday),
+		Tuesday = link_classes(Tuesday),
+		Thursday = link_classes(Thursday),
 		Assignments = link_assignments(Assignments),
-		Monday = map(Monday, gt::html),
-		Wednesday = map(Wednesday, gt::html),
-		Friday = map(Friday, gt::html),
+		Tuesday = map(Tuesday, gt::html),
+		Thursday = map(Thursday, gt::html),
 		Assignments = map(Assignments, gt::html),
 		Dates = map(Dates, gt::html)
 	)
@@ -70,17 +68,17 @@ cal <- read_csv(here("schedule.csv")) %>%
 		) %>%
 		tab_spanner(
 			label = "Classes",
-			columns = c("Monday", "Wednesday", "Friday")
+			columns = c("Tuesday", "Thursday")
 		) %>%
 		cols_width(
 			Dates ~ px(180),
 			Week ~ px(60),
-			c("Monday", "Wednesday", "Friday") ~ px(150),
+			c("Tuesday", "Thursday") ~ px(150),
 			Assignments ~ px(240)
 		) %>%
 		cols_align(
 			align = "left",
-			columns = c("Week", "Dates", "Monday", "Wednesday", "Friday", "Assignments")
+			columns = c("Week", "Dates", "Tuesday", "Thursday", "Assignments")
 		) %>%
 		tab_header(title = kfbmisc::make_gt_title("Course Calendar"))
 )
@@ -88,14 +86,14 @@ cal <- read_csv(here("schedule.csv")) %>%
 cal_tbl %>% gt::as_raw_html() %>% clipr::write_clip()
 
 
-# Write to README.md
-readme <- xfun::read_utf8(here::here("README.md"))
+# # Write to README.md
+# readme <- xfun::read_utf8(here::here("README.md"))
 
-tab_start <- which(stringr::str_detect(readme, "## Calendar")) + 1
-tab_end <- which(stringr::str_detect(readme, "## Course Outline")) - 1
+# tab_start <- which(stringr::str_detect(readme, "## Calendar")) + 1
+# tab_end <- which(stringr::str_detect(readme, "## Course Outline")) - 1
 
-# Hacky way to change table text
-readme <- readme[-c(tab_start:tab_end)]
-readme <- c(readme[1:(tab_start-1)], "", cal_tbl %>% gt::as_raw_html(), "", readme[tab_start:length(readme)])
+# # Hacky way to change table text
+# readme <- readme[-c(tab_start:tab_end)]
+# readme <- c(readme[1:(tab_start-1)], "", cal_tbl %>% gt::as_raw_html(), "", readme[tab_start:length(readme)])
 
-xfun::write_utf8(readme, here::here("README.md"))
+# xfun::write_utf8(readme, here::here("README.md"))

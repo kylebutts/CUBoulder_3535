@@ -1,0 +1,173 @@
+\documentclass[11pt]{article}
+\title{Midterm 1}
+\input{preamble.tex}
+
+\newtoggle{INCLUDEANSWERS}
+\toggletrue{INCLUDEANSWERS}
+% \togglefalse{INCLUDEANSWERS}
+
+\newcommand{\answer}[1]{\iftoggle{INCLUDEANSWERS}{{\color{violet!70!white}\textbf{Solution:} #1}}{}}
+
+\newtoggle{INCLUDEPOINTS}
+\toggletrue{INCLUDEPOINTS}
+\newcommand{\points}[1]{\iftoggle{INCLUDEPOINTS}{{\color{blue!70!white}(#1 pts.)}}{}}
+
+
+\begin{document}
+\emph{Good luck to you!}
+
+\vspace*{5mm}
+Multiple Choice
+
+\begin{enumerate}
+  \item \points{4} Suppose the government is considering an investment to reduce the risk of wildfire damage. One year from today, the government will have to pay \$1 million, but ten years from now, it will save \$12 million. If they use an annual discount rate of 5\%, what is the present value of net benefits on this investment?
+  \begin{enumerate}
+    \item \$2.13 million
+    \item \$11 million
+    \item \$4.39 million
+    \item \$6.41 million
+    \item \$7.37 million
+  \end{enumerate}
+
+  \answer{$-1M + 1/(1.05)^{10} * 12M = 6.41M$}
+
+  \item \points{4} Hydraulic fracturing (fracking) is a technology that improved our ability to extract natural gas from the ground. Which of the following is true of natural gas resources after the discovery of fracking?
+  
+  \begin{enumerate}
+    \item Current reserves stay the same, while the natural resource endowment increases
+    \item Current reserves and the natural resource endowment increase
+    \item Current reserves and the natural resource endowment stay the same
+    \item Current reserves increase, while the natural resource endowment stays the same
+  \end{enumerate}
+    
+  \answer{Endowment stays the same, while current reserve increase because previously unprofitable reserves can now be extracted profitably.}
+
+  \item \points{4} Which of the following is not an example of the Prisoner's Dilemma?
+
+  \begin{enumerate}
+    \item Shepherds allowing their sheep to over-graze a patch of common land
+    \item Roommates skipping their week doing the dishes
+    \item Lobster fishermen refusing to release under-developed lobsters
+    \item Countries increasing the strictness of environmental standards
+  \end{enumerate}
+
+  \answer{(c)}
+
+  \item \points{4} If a government wants to reduce pollution, when would it be better to use a tradable permit system instead of a corrective tax?
+  \begin{enumerate}
+    \item When they have good information on the optimal amount of pollution
+    \item When polluting firms have substantial political influence
+    \item When they have good information on the per-unit damages caused by the externality
+  \end{enumerate}
+
+  \answer{(a)}
+\end{enumerate}
+
+
+\vspace*{5mm}
+Free Response Questions
+
+\begin{enumerate}
+  \setcounter{enumi}{4}
+  \item Use 1 or 2 sentences for each question
+
+  \begin{enumerate}
+    \item \points{4} Consider the natural reserve of recycled aluminum. For the following scenarios, will current reserves of recycled increase or decrease (just write increase/decrease)
+    \begin{itemize}
+      \item The price of raw aluminum increases
+      \item A large new aluminum deposit is found
+      \item Recycling plants innovate an improved sorting machine making aluminum easier to find.
+    \end{itemize}
+
+    \answer{
+      \begin{itemize}
+        \item Increase
+        \item Decrease
+        \item Increase
+      \end{itemize}
+    }
+
+    \item \points{4} Give an example of a supply-side and a demand-side externality. 
+      
+    \answer{A demand-side negative externality is playing music from big speakers since it affects neighbors; a supply-side externality is local smog from industrial plants producing goods.}
+
+    \item \points{4} Why do countries have a hard time naturally agreeing on more strict environmental regulations? What is an example of how they overcome the cooperation problem?
+    
+    \answer{Each individual country has incentive to pollute slightly more and generate more income for their populice. However, this creates a prisoner's dillema which ensures that environment regulation is not the equilibrium outcome. To avoid this dillema, they use long-term negotiation strategies such as `holding their word' which benefits them in future negotiations by building trust.}
+      
+    \item \points{6} Suppose there are multiple polluting firms with different marginal abatement cost curves. Describe what an "efficient policy" that lowers pollution is.
+    
+    \answer{Pollution should be abated from the lowest-cost sources so that the policy goal is reached while costing society as little as possible.}
+      
+    \item \points{6} What is the trade-off that a gold-mining firm faces when deciding how many ounces to mine this period vs. future periods?
+    
+    \answer{If I extract more gold today it will lower prices today and prevent me from extracting more gold tomorrow}
+  \end{enumerate}
+
+
+  \item Suppose there are two polluting firms, $X$ and $Y$. Assume that permits and abatement exist in continuous quantities (i.e. they don’t have to be whole numbers).
+
+  Firm $X$: Total abatement cost: $TAC_x = 4a_x^2 + 2a_x$ and Marginal abatement cost: $MAC_x = 8a_x + 2$
+
+  Firm $Y$: Total abatement cost: $TAC_y = 2a_y^2 + 5a_y$ and Marginal abatement cost: $MAC_y = 4a_y + 5$
+  
+  
+  Both firms initially produce 100 tons of pollution (200 total), and the government wants to reduce that to 150 tons of pollution total (total abatement = 50).
+
+  \begin{enumerate}
+    \item \points{10} What is the equilibrium allocation of abatement?
+    \item \points{5} What is the total cost associated with a tradable permit system that meets this goal?
+    \item \points{5} What is the market price for a permit? How many permits does each firm own after trading in equilibrium?
+    \item \points{10} If the government instead were to impose a pollution tax, how big would it need to be to meet the same pollution target? (assuming the government has perfect information)
+  \end{enumerate}
+
+  \answer{
+    \begin{enumerate}
+      \item $a_x + a_y = 50$ and $8a_x + 2 = 4a_y + 5$. Putting them together yields: 
+      $$
+        8a_x + 2 = 200 - 4a_x + 5 \implies a_x^* = 203/12
+      $$
+      and $a_y^* = 397/12$.
+
+      \item $TAC = TAC_x + TAC_y = 4 (203/12)^2 + 2 (203/12) + 2 (397/12)^2 + 5 (397/12) \approx \$3533$
+      
+      \item The market price is $MAC_x^* = 8 * (203/12) + 2 = \$ 137.33$. Firm $X$ needs to buy $100 - 203/12$ permits and firm $Y$ needs to buy $100 - 397/12$ permits.
+      
+      \item The tax should be equal to the permit price $\$ 137.33$ to achieve the abatement goal of 50. 
+    \end{enumerate}
+  }
+
+  \item Consider a two-period model for the extraction of iron. Use the information below to answer the questions. If needed, you may round your answers to the tenths place (i.e. 10.6). Circle or box your final answers.
+
+  Demand in both periods: $P = 200 - 2Q$
+  
+  Marginal cost in period 1: $MC = 40$
+  
+  Marginal cost in period 2: $MC = 20$
+  
+  Resource endowment: $Q = Q_1 + Q_2 = 100$
+  
+  Discount rate: $r = 10\%$
+  
+  \begin{enumerate}
+    \item \points{15} Solve for the optimal allocation across both periods ($Q_1$ and $Q_2$).
+    \item \points{5} What is the marginal user cost in this setting ($MUC$)?
+    \item \points{10} Explain what the number you found for $MUC$ represents. [Note: I’m looking for a description, not a formula] (1-2 sentences)  
+  \end{enumerate}
+
+  \answer{
+    \begin{enumerate}
+      \item $MUC_1 = 200 - 2Q_1 - 40 = 160 - 2Q_1$ and $MUC_2 = \frac{200 - 2Q_2 - 20}{1.1} = 200/1.1 - 2/1.1 Q_2$
+      
+      Then, putting $160 - 2Q_1 = 200/1.1 - 2/1.1 Q_2$ and $Q_1 + Q_2 = 100$ yields  
+      $$
+        Q_1^* = 880/21 \text{ and } Q_2^* = 1220/21.
+      $$
+
+      \item $MUC_1^* = 200 - 2Q_1^* = 2440/21 = MUC_2^*$. 
+      
+      \item If the miner could have one more unit of iron, it would be worth $2440/21$ or about \$116 dollars. That is the most the miner would pay to access one additional unit of the resource.
+    \end{enumerate}
+  }
+\end{enumerate}
+\end{document}
