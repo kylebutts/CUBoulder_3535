@@ -1,34 +1,34 @@
 Week,Dates,name,value
 1,1/17 - 1/19,Tuesday,Syllabus + Intro
 1,1/17 - 1/19,Thursday,Topic 1 - Economic Fundamentals
-2,1/24 - 1/26,Tuesday,Lecture
-2,1/24 - 1/26,Thursday,Lecture
-3,1/31 - 2/2,Tuesday,Lecture
-3,1/31 - 2/2,Thursday,Lecture
-4,2/7 - 2/9,Tuesday,Lecture
-4,2/7 - 2/9,Thursday,Lecture
-5,2/14 - 2/16,Tuesday,Lecture
-5,2/14 - 2/16,Thursday,Midterm 1
-6,2/21 - 2/23,Tuesday,Topic 2 - Energy Resources
-6,2/21 - 2/23,Thursday,Lecture
-7,2/28 - 3/2,Tuesday,Lecture
-7,2/28 - 3/2,Thursday,Lecture
-8,3/7 - 3/9,Tuesday,Lecture
-8,3/7 - 3/9,Thursday,Lecture
-9,3/14 - 3/16,Tuesday,Topic 3 - Pollution and Climate Change
-9,3/14 - 3/16,Thursday,Lecture
-10,3/21 - 3/23,Tuesday,Lecture
-10,3/21 - 3/23,Thursday,Lecture
+2,1/24 - 1/26,Tuesday,Lecture 2
+2,1/24 - 1/26,Thursday,Lecture 3
+3,1/31 - 2/2,Tuesday,Lecture 4
+3,1/31 - 2/2,Thursday,Lecture 5
+4,2/7 - 2/9,Tuesday,Lecture 6 
+4,2/7 - 2/9,Thursday,Lecture 7
+5,2/14 - 2/16,Tuesday,Midterm
+5,2/14 - 2/16,Thursday,Topic 2 - Energy Resources
+6,2/21 - 2/23,Tuesday,Lecture 9
+6,2/21 - 2/23,Thursday,Lecture 10
+7,2/28 - 3/2,Tuesday,Lecture 11
+7,2/28 - 3/2,Thursday,Lecture 12
+8,3/7 - 3/9,Tuesday,Lecture 13
+8,3/7 - 3/9,Thursday,Topic 3 - Pollution and Climate Change
+9,3/14 - 3/16,Tuesday,Lecture 15
+9,3/14 - 3/16,Thursday,Lecture 16
+10,3/21 - 3/23,Tuesday,Lecture 17
+10,3/21 - 3/23,Thursday,Midterm
 11,3/28 - 3/30,Tuesday,No Class <br/> <i>Spring Break</i>
 11,3/28 - 3/30,Thursday,No Class <br/> <i>Spring Break</i>
-12,4/4 - 4/6,Tuesday,Lecture
-12,4/4 - 4/6,Thursday,Midterm 2
-13,4/11 - 4/13,Tuesday,Topic 4 - Valuation and Non-Energy Resources
-13,4/11 - 4/13,Thursday,Lecture
-14,4/18 - 4/20,Tuesday,Lecture
-14,4/18 - 4/20,Thursday,Lecture
-15,4/25 - 4/27,Tuesday,Lecture
-15,4/25 - 4/27,Thursday,Lecture
-6,2/21 - 2/23,Assignments,Math Assignment
+12,4/4 - 4/6,Tuesday,Topic 4 - Valuation and Non-Energy Resources
+12,4/4 - 4/6,Thursday,Lecture 19
+13,4/11 - 4/13,Tuesday,Lecture 20
+13,4/11 - 4/13,Thursday,Lecture 21
+14,4/18 - 4/20,Tuesday,Lecture 22
+14,4/18 - 4/20,Thursday,Lecture 23
+15,4/25 - 4/27,Tuesday,Lecture 24
+15,4/25 - 4/27,Thursday,Review
+5,2/14 - 2/16,Assignments,Math Assignment
 13,4/11 - 4/13,Assignments,Writing Assignment
 Final,05/06 <br/><i>1:30-4pm</i>,Assignments,Final Exam

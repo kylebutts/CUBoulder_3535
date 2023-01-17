@@ -34,10 +34,10 @@ link_classes <- function(col) {
 	# Add githack link
 	lecture_nums <- as.numeric(str_match(col, "Lecture ([:digit:]{1,2})")[,2])
 	col <- dplyr::case_when(
-	  lecture_nums <= 12 ~ str_replace(col, "Lecture ([:digit:]{1,2})", "<a href = 'https://raw.githack.com/kylebutts/ECON3535_S2022/master/Slides/Topic_1.html' style = 'color: #107895;'>Lecture \\1</a>"),
-	  lecture_nums <= 21 ~ str_replace(col, "Lecture ([:digit:]{1,2})", "<a href = 'https://raw.githack.com/kylebutts/ECON3535_S2022/master/Slides/Topic_2.html' style = 'color: #107895;'>Lecture \\1</a>"),
-	  lecture_nums <= 26 ~ str_replace(col, "Lecture ([:digit:]{1,2})", "<a href = 'https://raw.githack.com/kylebutts/ECON3535_S2022/master/Slides/Topic_3.html' style = 'color: #107895;'>Lecture \\1</a>"),
-	  lecture_nums >  26 ~ str_replace(col, "Lecture ([:digit:]{1,2})", "<a href = 'https://raw.githack.com/kylebutts/ECON3535_S2022/master/Slides/Topic_4.html' style = 'color: #107895;'>Lecture \\1</a>"),
+	  lecture_nums <= 7 ~ str_replace(col, "Lecture ([:digit:]{1,2})", "<a href = 'https://raw.githack.com/kylebutts/ECON3535_S2022/master/Slides/Topic_1.html' style = 'color: #107895;'>Lecture \\1</a>"),
+	  lecture_nums <= 13 ~ str_replace(col, "Lecture ([:digit:]{1,2})", "<a href = 'https://raw.githack.com/kylebutts/ECON3535_S2022/master/Slides/Topic_2.html' style = 'color: #107895;'>Lecture \\1</a>"),
+	  lecture_nums <= 17 ~ str_replace(col, "Lecture ([:digit:]{1,2})", "<a href = 'https://raw.githack.com/kylebutts/ECON3535_S2022/master/Slides/Topic_3.html' style = 'color: #107895;'>Lecture \\1</a>"),
+	  lecture_nums >  17 ~ str_replace(col, "Lecture ([:digit:]{1,2})", "<a href = 'https://raw.githack.com/kylebutts/ECON3535_S2022/master/Slides/Topic_4.html' style = 'color: #107895;'>Lecture \\1</a>"),
 	  TRUE ~ col
 	)
 
@@ -76,13 +76,11 @@ link_assignments <- function(col) {
 cal <- read_csv(here("schedule.csv")) %>%
 	pivot_wider(., names_from = "name", values_from = "value") %>%
 	mutate(
-		Monday = link_classes(Monday),
-		Wednesday = link_classes(Wednesday),
-		Friday = link_classes(Friday),
+		Tuesday = link_classes(Tuesday),
+		Thursday = link_classes(Thursday),
 		Assignments = link_assignments(Assignments),
-		Monday = map(Monday, gt::html),
-		Wednesday = map(Wednesday, gt::html),
-		Friday = map(Friday, gt::html),
+		Tuesday = map(Tuesday, gt::html),
+		Thursday = map(Thursday, gt::html),
 		Assignments = map(Assignments, gt::html),
 		Dates = map(Dates, gt::html)
 	)
@@ -94,13 +92,9 @@ cal <- read_csv(here("schedule.csv")) %>%
 		  table.font.size = px(9),
 			data_row.padding = px(6)
 		) %>%
-		tab_spanner(
-			label = "Classes",
-			columns = c("Monday", "Wednesday", "Friday")
-		) %>%
 		cols_align(
 			align = "left",
-			columns = c("Week", "Dates", "Monday", "Wednesday", "Friday", "Assignments")
+			columns = c("Week", "Dates", "Tuesday", "Thursday", "Assignments")
 		)
 )
 
@@ -114,10 +108,11 @@ cal <- read_csv(here("schedule.csv")) %>%
 
 ### LECTURE 1
 
-
 - Intro to Class
 
 - Prisoner's Dilemma Review
+
+- Economic tools for analyzing natural resource problems
 
 *Readings for this lecture*
 
@@ -126,10 +121,11 @@ cal <- read_csv(here("schedule.csv")) %>%
 
 ### LECTURE 2
 
-
-- Economic tools for analyzing natural resource problems
-
 - Discounting and Present Value
+
+- Resource taxonomy
+
+- Recyclable resources
 
 *Readings for this lecture*
 
@@ -141,69 +137,45 @@ cal <- read_csv(here("schedule.csv")) %>%
 
 - "Choosing the Discount Rate", page 60
 
+- "Resource Taxonomy", page 124
+
 
 ### LECTURE 3
 
-
-- Resource taxonomy
-
-- Recyclable resources
-
 - Two-period model with constant MC and fixed supply
 
-*Readings for this lecture*
+- Mineral two-period model
 
-- "Resource Taxonomy", page 124
+*Readings for this lecture*
 
 - "A Two-Period Model", page 108
 
 - [Michael Greenstone's Managing Climate Risk](https://kylebutts.com/ECON3535_S2021/Articles/What%20Financial%20Markets%20Can%20Teach%20Us%20About%20Managing%20Climate%20Risks.pdf) ([online version](https://www.nytimes.com/2017/04/04/upshot/what-financial-markets-can-teach-us-about-managing-climate-risks.html)).
 
+---
 
 ### LECTURE 4
 
-
-- Mineral two-period model
-
 - Marginal user cost
 
-*Readings for this lecture*
-
-- "A Two-Period Model", page 108
-
-
----
-
-### LECTURE 5
-
-
-- Two-period model wrap up
-
 - Markets
-
-*Readings for this lecture*
-
-- "Efficient Intertemporal Allocations", page 127
-
-
-### LECTURE 6
-  
 
 - Efficiency
 
 - Welfare theorem
 
-- Property rights
 
 *Readings for this lecture*
 
-- "Externalities as a Source of Market Failure", page 25
+- "A Two-Period Model", page 108
 
-- Example 2.2 Shrimp Farming Externalities in Thailand, page 27
+- "Efficient Intertemporal Allocations", page 127
 
 
-### LECTURE 7
 
+### LECTURE 5
+
+- Property rights
 
 - Coase theorem
 
@@ -218,23 +190,11 @@ cal <- read_csv(here("schedule.csv")) %>%
 - "Coase Theorem", page 36
 
 
-
-### LECTURE 8
-
+### LECTURE 6
 
 - Policy tools
 
 - Local pollutants
-
-*Readings for this lecture*
-
-- [Ronald Coase and the Misuse of Economics](https://kylebutts.com/ECON3535_S2021/Articles/Ronald%20Coase%20and%20the%20Misuse%20of%20Economics.pdf) ([online version](https://www.newyorker.com/news/john-cassidy/ronald-coase-and-the-misuse-of-economics)).
-
-- "The Command-and-Control Policy Framework", page 358
-
----
-
-### LECTURE 9
 
 - Policy comparisons
 
@@ -242,34 +202,31 @@ cal <- read_csv(here("schedule.csv")) %>%
 
 *Readings for this lecture*
 
+- [Ronald Coase and the Misuse of Economics](https://kylebutts.com/ECON3535_S2021/Articles/Ronald%20Coase%20and%20the%20Misuse%20of%20Economics.pdf) ([online version](https://www.newyorker.com/news/john-cassidy/ronald-coase-and-the-misuse-of-economics)).
+
+- "The Command-and-Control Policy Framework", page 358
+
 - "Command and control vs market-based policies", page 358
 
+---
 
-### LECTURE 10
-
-- Policies Continued
+### LECTURE 7
 
 - Numerical Exercise
-
-
-### LECTURE 11
 
 - Taxes and Deadweight Loss
 
 - Corrective Taxes and Subsidies
+
+- Growth and Development
+
+- Trade 
 
 *Videos*
 
 - [Taxes and Deadweight Loss](https://www.youtube.com/watch?v=NuLlNAdrom4)
 
 - [Pigouvian Taxes](https://www.youtube.com/watch?v=UYShebe44Xs)
-
-
-### LECTURE 12
-
-- Growth and Development
-
-- Trade 
 
 *Readings for this lecture*
 
@@ -280,19 +237,16 @@ cal <- read_csv(here("schedule.csv")) %>%
 - [Carbon Taxes Won't Do Enough to Slow Global Warming](https://kylebutts.com/ECON3535_S2021/Articles/Carbon%20Taxes%20Wont%20Do%20Enough%20to%20Slow%20Global%20Warming.pdf) ([online version](https://www.bloombergquint.com/business/2019/09/25/carbon-taxes-won-t-do-enough-to-slow-global-warming)).
 
 
-## Math Assignment due 2/11 at 11:59pm 
+## Math Assignment due 2/14 at 11:59pm 
 
 
 ---
 ## Unit 2: Energy Resources
 <div style="height: 0.25rem;"></div>
 
-### LECTURE 13
+### LECTURE 8
 
 - Energy Overview
-
-
-### LECTURE 14
 
 - Electricity Industry
 
@@ -303,18 +257,13 @@ cal <- read_csv(here("schedule.csv")) %>%
 - "Electricity" and Examples 7.5 and 7.6, pages 158
 
 
-### LECTURE 15
+### LECTURE 9
   
 - Coal
   
 - Carbon capture and storage
   
 - Nuclear
-
-*Readings for this lecture*
-
-
-### LECTURE 16  
 
 - Natural Gas
 
@@ -323,11 +272,13 @@ cal <- read_csv(here("schedule.csv")) %>%
 - [Renewable energy - the global transition, explained in 12 charts](https://kylebutts.com/ECON3535_S2021/Articles/Renewable%20energy%20-%20the%20global%20transition,%20explained%20in%2012%20charts.pdf) ([online version](https://www.vox.com/energy-and-environment/2019/6/18/18681591/renewable-energy-china-solar-pv-jobs))
 
 
-### LECTURE 17
+### LECTURE 10
 
 - Renewables overview
 
 - Wind
+
+- Solar
   
 *Readings for this lecture*
 
@@ -335,24 +286,20 @@ cal <- read_csv(here("schedule.csv")) %>%
 ([online version](https://www.greentechmedia.com/articles/read/iea-report-renewables-third-global-generation)).
 
 - [Renewables Are Expanding at an Astounding Pace. But It’s Still Not Enough to Meet Climate Goals](https://kylebutts.com/ECON3535_S2021/Articles/Renewables%20Are%20Expanding%20at%20an%20Astounding%20Pace.%20But%20Its%20Still%20Not%20Enough%20to%20Meet%20Climate%20Goals%20|%20Greentech%20Media.pdf)
-([online version](https://www.greentechmedia.com/articles/read/renewable-energy-growth-is-still-not-enough-to-meet-climate-goals)).
-
-
----
-### LECTURE 18
-
-- Solar
-
-*Readings for this lecture*
+([online version](https://www.greentechmedia.com/articles/read/renewable-energy-growth-is-still-not-enough-to-meet-climate-goals))
 
 - Interview with NREL Researcher: [Solar power’s greatest challenge was discovered 10 years ago. It looks like a duck. ](https://kylebutts.com/ECON3535_S2021/Articles/Solar%20powers%20greatest%20challenge%20was%20discovered%2010%20years%20ago.%20It%20looks%20like%20a%20duck%20-%20Vox.pdf) ([online version](https://www.vox.com/energy-and-environment/2018/3/20/17128478/solar-duck-curve-nrel-researcher)).
 
 
-### LECTURE 19
+---
+
+### LECTURE 11
 
 - Energy storage
 
 - Demand response
+
+- Hydroelectric
 
 *Readings for this lecture*
 
@@ -360,21 +307,16 @@ cal <- read_csv(here("schedule.csv")) %>%
 
 - [Demand Response](https://energy.gov/oe/activities/technology-development/grid-modernization-and-smart-grid/demand-response)
 
-
-### LECTURE 20
-
-- Hydroelectric
-
-- Biofuels
-
 *Videos*
 
 - [The Future of Energy Storage Beyond Lithium Ion](https://www.youtube.com/watch?v=EoTVtB-cSps)
 
 
-### LECTURE 21
+### LECTURE 12
 
 - Transportation
+
+- Biofuels
 
 *Readings for this lecture*
 
@@ -385,7 +327,7 @@ cal <- read_csv(here("schedule.csv")) %>%
 ## Unit 3: Pollution, Climate Change, and Policy
 <div style="height: 0.25rem;"></div>
 
-### LECTURE 22 
+### LECTURE 13
 
 - Climate change
 
@@ -398,7 +340,7 @@ cal <- read_csv(here("schedule.csv")) %>%
 - [The Uninhabitable Earth](https://kylebutts.com/ECON3535_S2021/Articles/The%20Uninhabitable%20Earth.pdf) ([online version](https://nymag.com/intelligencer/2017/07/climate-change-earth-too-hot-for-humans.html)).
 
 
-### LECTURE 23
+### LECTURE 14
 
 - Policies for local air pollution
 
@@ -406,14 +348,12 @@ cal <- read_csv(here("schedule.csv")) %>%
 
 - Programs in France, Sweden, Japan
 
+- International air pollution policies
+
 *Readings for this lecture*
 
 - [NYTimes' The Daily: Joe Biden's Climate Plan](https://www.nytimes.com/2021/02/02/podcasts/the-daily/biden-climate-agenda.html)
 
-
-### LECTURE 24
-
-- International air pollution policies
 
 *Videos*
 
@@ -422,7 +362,7 @@ cal <- read_csv(here("schedule.csv")) %>%
 - Example: Cancer Alley [Why This Town is Dying From Cancer](https://www.youtube.com/watch?v=ZB8CbDG7gpk)
 
 
-### LECTURE 25
+### LECTURE 15
 
 - Paris Agreement
 
@@ -438,7 +378,7 @@ cal <- read_csv(here("schedule.csv")) %>%
 
 
 ---
-### LECTURE 26
+### LECTURE 16
 
 - Environmental taxes
 
@@ -457,7 +397,7 @@ cal <- read_csv(here("schedule.csv")) %>%
 <div style="height: 0.25rem;"></div>
 
 
-### LECTURE 27
+### LECTURE 18
 
 - Valuation overview
 
@@ -470,18 +410,11 @@ cal <- read_csv(here("schedule.csv")) %>%
 - Chapter 3
 
 
-### LECTURE 28
+### LECTURE 19
 
 - Different types of value
 
 - Stated preference methods and biases
-
-*Readings for this lecture*
-
-- Chapter 4
-
-
-### LECTURE 29
 
 - Revealed preference methods
 
@@ -489,17 +422,9 @@ cal <- read_csv(here("schedule.csv")) %>%
 
 - Chapter 4
 
-
-### LECTURE 30
+### LECTURE 20
 
 - Ecosystem services
-
-*Readings for this lecture*
-
-- Chapter 4
-
-
-### LECTURE 31
 
 - Bioeconomic systems
 
@@ -515,7 +440,7 @@ cal <- read_csv(here("schedule.csv")) %>%
 
 ---
 
-### LECTURE 32
+### LECTURE 21
 
 - Dynamic fisheries
 
@@ -526,7 +451,7 @@ cal <- read_csv(here("schedule.csv")) %>%
 - First half of chapter 12 (Until you get to the dynamic fisheries model)
 
 
-### LECTURE 33
+### LECTURE 22
 
 - Forestry
 
@@ -537,31 +462,27 @@ cal <- read_csv(here("schedule.csv")) %>%
 ## Writing Assignment due 4/15 at 11:59pm 
 <div style="height: 0.25rem;"></div>
 
-### LECTURE 34
+### LECTURE 23
 
 - Land use
 
-- Food insecurity
 
 *Readings for this lecture*
 
 - Chapter 10
 
 
-### LECTURE 35
+### LECTURE 24
+
+- Food insecurity
 
 - Water
-
-*Readings for this lecture*
-
-- Chapter 9
-
-
-### LECTURE 36
 
 - Waste and Recycling
 
 *Readings for this lecture*
+
+- Chapter 9
 
 - [Is Recycling Worth It?](https://kylebutts.com/ECON3535_S2021/Articles/Is%20Recycling%20Worth%20It%20-%20Scientific%20American.pdf) ([online version](https://www.scientificamerican.com/article/is-recycling-worth-it/)).
 

@@ -9,10 +9,10 @@ link_classes <- function(col) {
 	# Add githack link
 	lecture_nums <- as.numeric(str_match(col, "Lecture ([:digit:]{1,2})")[,2])
 	col <- dplyr::case_when(
-	  lecture_nums <= 12 ~ str_replace(col, "Lecture ([:digit:]{1,2})", "<a href = 'https://raw.githack.com/kylebutts/ECON3535_S2022/master/Slides/Topic_1.html' style = 'color: #107895;'>Lecture \\1</a>"),
-	  lecture_nums <= 21 ~ str_replace(col, "Lecture ([:digit:]{1,2})", "<a href = 'https://raw.githack.com/kylebutts/ECON3535_S2022/master/Slides/Topic_2.html' style = 'color: #107895;'>Lecture \\1</a>"),
-	  lecture_nums <= 26 ~ str_replace(col, "Lecture ([:digit:]{1,2})", "<a href = 'https://raw.githack.com/kylebutts/ECON3535_S2022/master/Slides/Topic_3.html' style = 'color: #107895;'>Lecture \\1</a>"),
-	  lecture_nums >  26 ~ str_replace(col, "Lecture ([:digit:]{1,2})", "<a href = 'https://raw.githack.com/kylebutts/ECON3535_S2022/master/Slides/Topic_4.html' style = 'color: #107895;'>Lecture \\1</a>"),
+	  lecture_nums <= 7 ~ str_replace(col, "Lecture ([:digit:]{1,2})", "<a href = 'https://raw.githack.com/kylebutts/ECON3535_S2022/master/Slides/Topic_1.html' style = 'color: #107895;'>Lecture \\1</a>"),
+	  lecture_nums <= 13 ~ str_replace(col, "Lecture ([:digit:]{1,2})", "<a href = 'https://raw.githack.com/kylebutts/ECON3535_S2022/master/Slides/Topic_2.html' style = 'color: #107895;'>Lecture \\1</a>"),
+	  lecture_nums <= 17 ~ str_replace(col, "Lecture ([:digit:]{1,2})", "<a href = 'https://raw.githack.com/kylebutts/ECON3535_S2022/master/Slides/Topic_3.html' style = 'color: #107895;'>Lecture \\1</a>"),
+	  lecture_nums >  17 ~ str_replace(col, "Lecture ([:digit:]{1,2})", "<a href = 'https://raw.githack.com/kylebutts/ECON3535_S2022/master/Slides/Topic_4.html' style = 'color: #107895;'>Lecture \\1</a>"),
 	  TRUE ~ col
 	)
 
@@ -87,13 +87,13 @@ cal_tbl %>% gt::as_raw_html() %>% clipr::write_clip()
 
 
 # # Write to README.md
-# readme <- xfun::read_utf8(here::here("README.md"))
+readme <- xfun::read_utf8(here::here("README.md"))
 
-# tab_start <- which(stringr::str_detect(readme, "## Calendar")) + 1
-# tab_end <- which(stringr::str_detect(readme, "## Course Outline")) - 1
+tab_start <- which(stringr::str_detect(readme, "## Calendar")) + 1
+tab_end <- which(stringr::str_detect(readme, "## Course Outline")) - 1
 
-# # Hacky way to change table text
-# readme <- readme[-c(tab_start:tab_end)]
-# readme <- c(readme[1:(tab_start-1)], "", cal_tbl %>% gt::as_raw_html(), "", readme[tab_start:length(readme)])
+# Hacky way to change table text
+readme <- readme[-c(tab_start:tab_end)]
+readme <- c(readme[1:(tab_start-1)], "", cal_tbl %>% gt::as_raw_html(), "", readme[tab_start:length(readme)])
 
-# xfun::write_utf8(readme, here::here("README.md"))
+xfun::write_utf8(readme, here::here("README.md"))
