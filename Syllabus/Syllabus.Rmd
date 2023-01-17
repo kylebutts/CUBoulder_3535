@@ -40,8 +40,8 @@ table <- tribble(
   ~Icon, ~Name, ~Time, ~Location,
   as.character(icons::fontawesome("chalkboard-teacher")), "Instructor", "Kyle Butts", "<a href = 'emailto:kyle.butts@colorado.edu'>kyle.butts@colorado.edu</a>",
   as.character(icons::fontawesome("school")), "Lecture", "MWF 12:20-1:10pm", "Humanities 135",
-  as.character(icons::fontawesome("laptop-house")), "Office Hours", "M 1:30-2:30pm, W 10-12pm", "<a href = 'https://cuboulder.zoom.us/s/3975335005'>Zoom</a>",
-  as.character(icons::fontawesome("chalkboard-teacher")), "TA", "Xiaomeng.Zhao@colorado.edu", "<a href = 'emailto:Xiaomeng.Zhao@colorado.edu'>xiaomeng.Zhao@colorado.edu</a>",
+  as.character(icons::fontawesome("laptop-house")), "Office Hours", "TBD (via survey)", "<a href = 'https://cuboulder.zoom.us/s/3975335005'>Zoom</a>",
+  as.character(icons::fontawesome("chalkboard-teacher")), "TA", "TBD", "<a href = 'emailto:TBD@colorado.edu'>TBD</a>",
   as.character(icons::fontawesome("book")), "Textbook", "Natural Resource Economics 11e. <br/> Tietenberg, Thomas and Lewis, Lynne.", "",
 )
 
@@ -107,12 +107,12 @@ We will have two midterms, but I will only count the higher grade of the two. Th
 ```{r letter-grades, echo = F}
 grades <- tribble(
   ~Grade, ~Percentage, ~Blank, ~Grade2, ~Percentage2,
-			"A ", "\\(93 \\leq x\\)",      "", "C", "\\(73 \\leq x < 77\\)",
-			"A-", "\\(90 \\leq x < 93\\)", "", "C-", "\\(70 \\leq x < 73\\)",
-			"B+", "\\(87 \\leq x < 90\\)", "", "D+", "\\(67 \\leq x < 70\\)",
-			"B ", "\\(83 \\leq x < 87\\)", "", "D ", "\\(63 \\leq x < 67\\)",
-			"B-", "\\(80 \\leq x < 83\\)", "", "D-", "\\(60 \\leq x < 63\\)",
-			"C+", "\\(77 \\leq x < 80\\)", "", "F ", "\\(x < 60\\)",        
+			"A ", "$93 \\leq x$",      "", "C", "$73 \\leq x < 77$",
+			"A-", "$90 \\leq x < 93$", "", "C-", "$70 \\leq x < 73$",
+			"B+", "$87 \\leq x < 90$", "", "D+", "$67 \\leq x < 70$",
+			"B ", "$83 \\leq x < 87$", "", "D ", "$63 \\leq x < 67$",
+			"B-", "$80 \\leq x < 83$", "", "D-", "$60 \\leq x < 63$",
+			"C+", "$77 \\leq x < 80$", "", "F ", "$x < 60$",        
 )
 
 gt(grades) %>%
@@ -191,10 +191,10 @@ link_classes <- function(col) {
 	# Add githack link
 	lecture_nums <- as.numeric(str_match(col, "Lecture ([:digit:]{1,2})")[,2])
 	col <- dplyr::case_when(
-	  lecture_nums <= 12 ~ str_replace(col, "Lecture ([:digit:]{1,2})", "<a href = 'https://raw.githack.com/kylebutts/ECON3535_S2022/master/Slides/Topic_1.html' style = 'color: #107895;'>Lecture \\1</a>"),
-	  lecture_nums <= 21 ~ str_replace(col, "Lecture ([:digit:]{1,2})", "<a href = 'https://raw.githack.com/kylebutts/ECON3535_S2022/master/Slides/Topic_2.html' style = 'color: #107895;'>Lecture \\1</a>"),
-	  lecture_nums <= 26 ~ str_replace(col, "Lecture ([:digit:]{1,2})", "<a href = 'https://raw.githack.com/kylebutts/ECON3535_S2022/master/Slides/Topic_3.html' style = 'color: #107895;'>Lecture \\1</a>"),
-	  lecture_nums >  26 ~ str_replace(col, "Lecture ([:digit:]{1,2})", "<a href = 'https://raw.githack.com/kylebutts/ECON3535_F2022/master/Slides/Topic_4.html' style = 'color: #107895;'>Lecture \\1</a>"),
+	  lecture_nums <= 7 ~ str_replace(col, "Lecture ([:digit:]{1,2})", "<a href = 'https://raw.githack.com/kylebutts/ECON3535_S2022/master/Slides/Topic_1.html' style = 'color: #107895;'>Lecture \\1</a>"),
+	  lecture_nums <= 13 ~ str_replace(col, "Lecture ([:digit:]{1,2})", "<a href = 'https://raw.githack.com/kylebutts/ECON3535_S2022/master/Slides/Topic_2.html' style = 'color: #107895;'>Lecture \\1</a>"),
+	  lecture_nums <= 17 ~ str_replace(col, "Lecture ([:digit:]{1,2})", "<a href = 'https://raw.githack.com/kylebutts/ECON3535_S2022/master/Slides/Topic_3.html' style = 'color: #107895;'>Lecture \\1</a>"),
+	  lecture_nums >  17 ~ str_replace(col, "Lecture ([:digit:]{1,2})", "<a href = 'https://raw.githack.com/kylebutts/ECON3535_S2022/master/Slides/Topic_4.html' style = 'color: #107895;'>Lecture \\1</a>"),
 	  TRUE ~ col
 	)
 
@@ -206,11 +206,11 @@ link_classes <- function(col) {
 	# color No Class, Midterm, and Topic
 	col <- str_replace(
 		col, "No Class",
-		"<span style = 'color: #F26D21;'>No Class</span>"
+		"<span style = 'color: #F26D21; '>No Class</span>"
 	)
 	col <- str_replace(
 		col, "Midterm",
-		"<span style = 'color: #9A2515;'>Midterm</span>"
+		"<span style = 'color: #9A2515; font-style: italic;'>Midterm</span>"
 	)
 	col <- str_replace(
 	  col, "Topic ([1-4]) - (.*?)<br/>",
@@ -224,7 +224,7 @@ link_assignments <- function(col) {
 
 	col <- str_replace(
 		col, "Final Exam",
-		"<span style = 'color: #9A2515;'>Final Exam</span>"
+		"<span style = 'color: #9A2515; font-style: italic;'>Final Exam</span>"
 	)
 
 	col
@@ -233,13 +233,11 @@ link_assignments <- function(col) {
 cal <- read_csv(here("schedule.csv")) %>%
 	pivot_wider(., names_from = "name", values_from = "value") %>%
 	mutate(
-		Monday = link_classes(Monday),
-		Wednesday = link_classes(Wednesday),
-		Friday = link_classes(Friday),
+		Tuesday = link_classes(Tuesday),
+		Thursday = link_classes(Thursday),
 		Assignments = link_assignments(Assignments),
-		Monday = map(Monday, gt::html),
-		Wednesday = map(Wednesday, gt::html),
-		Friday = map(Friday, gt::html),
+		Tuesday = map(Tuesday, gt::html),
+		Thursday = map(Thursday, gt::html),
 		Assignments = map(Assignments, gt::html),
 		Dates = map(Dates, gt::html)
 	)
@@ -248,18 +246,13 @@ cal <- read_csv(here("schedule.csv")) %>%
 	gt() %>%
 		# kfbmisc::gt_theme_kyle() %>%
 		tab_options(
-		  table.font.size = px(10),
+		  table.font.size = px(9),
 			data_row.padding = px(6)
-		) %>%
-		tab_spanner(
-			label = "Classes",
-			columns = c("Monday", "Wednesday", "Friday")
 		) %>%
 		cols_align(
 			align = "left",
-			columns = c("Week", "Dates", "Monday", "Wednesday", "Friday", "Assignments")
-		) %>%
-		tab_header(title = "Course Calendar")
+			columns = c("Week", "Dates", "Tuesday", "Thursday", "Assignments")
+		)
 )
 
 ```
