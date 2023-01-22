@@ -260,7 +260,7 @@ optimal outcome
 
 
 ---
-#### Solutions
+### Solutions
 
 - Folk Theorem: when you repeat the game many times, there's more opportunity to work together
 
@@ -1110,7 +1110,7 @@ Let’s graph it!
 ---
 
 ---
-#### Scanario 1: High Transaction Costs
+### Scanario 1: High Transaction Costs
 
 Whoever has the property rights will enforce them and refuse to negotiate
   - Farmer has the rights $\implies$ zero cows
@@ -1124,7 +1124,7 @@ See the graph to understand why 10 is preferred to 0 or 20
 
 
 ---
-#### Scenario 2: No Transaction Costs
+### Scenario 2: No Transaction Costs
 
 Coase bargaining can be effective:
 
@@ -1459,7 +1459,7 @@ Cap and Trade and Corrective Taxes both lead to the efficient outcome
 
 
 ---
-#### Example
+### Example
 
 Suppose there are two firms and the government wants to reduce emissions by 15 units (from $40 \to 25$)
 
@@ -1494,7 +1494,7 @@ knitr::include_graphics("graphics/credit_trading_ex1.png")
 
 
 ---
-#### Efficiency in the above example
+### Efficiency in the above example
 
 Efficiency is achieved where the MAC curves cross
 
@@ -1509,29 +1509,32 @@ A command and control quota will only be efficient if it happens to be exactly (
 
 
 ---
-#### Efficiency of Cap and Trade Policy
+### Efficiency of Cap and Trade Policy
 
 Suppose the initial allocation of permits cover all but 9 units of Firm 1’s pollution, and all but 6 units of Firm 2’s pollution
 
   - Firm 2 is willing to pay up to the MAC of the 6th unit for another permit
 
   - Firm 1 is willing to sell a permit for as little as the MAC of its 10th unit
+  
+This trade occurs because $MAC_2(6) > MAC_1(10)$. 
 
-<br>
+--
 
-Permit price will be very close to the MAC intersection (gets closer as number of firms increases because of declining market power)
+<br />
+Therefore we are at an equilibrium (where neither side wants to buy/sell permit) where $MAC_1 = MAC_2$!
 
 
 ---
-#### Efficiency of Corrective Tax
+### Efficiency of Corrective Tax
 
-Optimal corrective tax will be where the two MAC curves intersect
+Optimal corrective tax will be the MAC where the two MAC curves intersect
 
-  - Solution was: F1 abates 10, F2 abates 5
+  - Solution was: Firm 1 abates 10, Firm 2 abates 5
 
 <br> 
 
-Logic behind F1’s decision to abate 10 units
+Logic behind Firm 1’s decision to abate 10 units
 
   - 1st unit’s MAC < tax $\implies$ abate this unit
 
@@ -1545,11 +1548,11 @@ Logic behind F1’s decision to abate 10 units
 
 
 ---
-#### Equivalence of the Two Policies
+### Equivalence of the Two Policies
 
-Under the assumption of perfect information…
+Under the assumption that the government has *perfect information*…
 
-The optimal tax leading to X units of abatement is the equal to the trading price of permits that allow all but X units of pollution
+The optimal tax leading to X units of abatement is the equal to the trading price of permits when X permits are given out
 
   - Cap and trade sets the quantity, taxes set the price
 
@@ -1561,7 +1564,7 @@ Under both systems, we expect the efficient outcome to occur
   
   
 ---
-#### Differences 
+### Differences between Cap and Trade and Carbon Tax
 
 **Government revenue**
 
@@ -1582,8 +1585,14 @@ Suppose that both firms start out polluting 20 units:
   - Firm who sells permits can actually make money from the policy
 
   - Government can auction permits instead of giving them out for free; can generate some revenue but hard to compare directly with the tax revenue
+  
+  
+---
+*Videos for Next Class*
 
+- [How do carbon markets work?](https://www.youtube.com/watch?v=m5ych9oDtk0)
 
+- [John Green Explains Cap and Trade](https://www.youtube.com/watch?v=oqJO8HwxTkg)
 
 ---
 class: clear, middle
@@ -1639,9 +1648,7 @@ $$\pi_x = 100 - 1/2 a_x^2$$
 
 $$\pi_y = 100 - a_y^2$$
 
-where $a_x$ and $a_y$ are the amount of emissions abated (lbs. $SO_2$).
-
-Therefore the marginal cost of abatement are:
+where $a_x$ and $a_y$ are the amount of emissions abated (lbs. $SO_2$). Therefore the marginal cost of abatement are:
 
 $$MAC_x = a_x \text{ and } MAC_y = 2a_y$$
 
@@ -1652,27 +1659,62 @@ Emission Goal:
 
 
 ---
-#### Questions
+### Questions
 
-For 1. a uniform standard, and 2. a tradable permit system, find:
+For 1. a uniform standard 2. a tradable permit system, find:
 
   - Abatement of each firm
 
-  - Total costs and profit for each firm
+  - Total abatement costs for each firm
 
-  - Industry profit and total emissions
+  - Total profit
 
 <br> 
 
 How does the efficiency of the two policies compare?
 
-  - Efficient policy will maximize profit while meeting the emissions target
+  - Efficient policy will minimize total abatement costs while meeting the emissions target
 
 ---
+### Uniform Standard
 
+--
+- $a_x^* = a_y^* = 6$
+
+- This means the $TAC_x = \frac{1}{2} a_x^2 = 18$ and $TAC_y = a_y^2 = 36$. Summing together gives $TAC = 54$. 
+
+- Total profit is given by summing individual profits 
+
+$$
+  \Pi = 100 - \frac{1}{2} a_x^2 + 100 - a_y^2 = 146
+$$
 
 ---
-#### Command and Control in Practice
+### Cap and Trade
+
+--
+- To solve for optimal abatement, we will use $MAC_x = MAC_y \implies a_x = 2 a_y$ and the abatement goal $a_x + a_y = 12$. Rewriting $a_x = 12 - a_y$ yields:
+
+$$
+  (12 - a_y) = 2 a_y \implies a_y^* = 4 \text{ and } a_x^* = 8
+$$
+
+- This means the $TAC_x = 1/2 a_x^2 = 32$ and $TAC_y = a_y^2 = 16$. Summing together gives $TAC = 48$. 
+
+- Total profit is given by summing individual profits 
+
+$$
+  \Pi = 100 - 1/2 a_x^2 + 100 - a_y^2 = 152
+$$
+--
+- Note that costs are lower and profits are higher under cap and trade relative to uniform standard
+
+  - This is because the lower abatement cost firm abates more!
+  
+  - This came at the cost of firm $y$ who has to now abate 8 units instead of 6.
+
+---
+### Command and Control in Practice
 
 Economists often argue against command and control policies, especially when affected firms have heterogeneous cost structures
 
@@ -1682,7 +1724,7 @@ Economists often argue against command and control policies, especially when aff
 
 
 ---
-#### Benefits of Command and Control
+### Benefits of Command and Control
 
 Emergency backstop
 
@@ -1751,27 +1793,22 @@ A tax/subsidy on one side of the market shifts the corresponding curve to the le
   - Key is to think about effect on incentives
 
 
+--
 <br>
 
 Taxes reduce the quantity of the good bought/sold in the market
 
-  - The tax “corrects” incentives that led to too much of the good
+  - The tax "corrects" incentives that led to too much of the good
 
 Subsidies increase the quantity of the good bought/sold in the market
 
 
 ---
-#### Example
+### Example
 
 Tax on supply $\implies$ firms marginal cost increases (supply curve move up)
 
 Tax on demand $\implies$ consumers willing to pay (after the tax) decreases (demand curve shifts down)
-
-
-
-
-
-
 
 
 ---
@@ -1863,28 +1900,28 @@ class: clear, middle
 
 ---
 # Midterm
-48% multiple choice (12 questions)
-Based on everything
 
-52% math/short answer
-Based on the models covered in the math assignment
-Be neat, show your work, partial credit is available
+About half and half multiple choice and math/short answer
 
-50 minutes long
+- Multiple choice based on everything
+- Math/Short Answer based on the models covered in the math assignment
+  - Be neat, show your work, partial credit is available
 
-You may bring a “cheat sheet” on a single note card 
+The exam is 50 minutes long.
+
+You may bring a "cheat sheet" on a single note card 
 
 ---
 ### Midterm test advice
 
-I care about concepts more than situation-specific details
+*I care about concepts more than situation-specific details*
 
-Good question: Is the two-period mineral extraction model an example of the prisoner’s dilemma? Why or why not?
-Bad question: Which six pollutants are covered under the NAAQS?
+ - Good question: Describe in which situations a prisoner's dilemma is able to be "overcame", that is when can people move from Nash Equilibrium to a better outcome?
+ - Bad question: Which six pollutants are covered under the NAAQS?
 
-Cheat sheet
-In my experience, 90% of the value of a cheat sheet comes from making it
-Personally, I would put theorems and math examples on it, along with concepts I might accidentally mix up with others 
+*Cheat sheet*
+- In my experience, 90% of the value of a cheat sheet comes from making it
+- Personally, I would put theorems and math examples on it, along with concepts I might accidentally mix up with others 
 
 
 
@@ -1961,7 +1998,7 @@ However, countries with abundant resource endowments seem to do worse
 
 
 ---
-#### Resources and government
+### Resources and government
 Natural resources are an easy source of revenue
   - Little pressure on governments to be accountable
   - Well-connected individuals preserve the status quo
@@ -1972,7 +2009,7 @@ Natural resources are an easy source of revenue
 > - Larry Diamond
 
 ---
-#### Evidence
+### Evidence
 > “Economies with a high ratio of natural resource exports to GDP… tended to have low growth rates during the subsequent period”
 > 
 > - Warner and Sachs (1995)
@@ -1984,7 +2021,7 @@ Natural resources are an easy source of revenue
 
 
 ---
-#### Institutional quality
+### Institutional quality
 
 Mehlum et al. (2006) describe “institutional quality” as an average of five indices 
 
