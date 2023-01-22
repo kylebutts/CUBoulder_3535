@@ -9,9 +9,9 @@ output:
     css: ['default']
     self_contained: true
 nature:
-      highlightStyle: github
-      highlightLines: true
-      countIncrementalSlides: false
+  highlightStyle: github
+  highlightLines: true
+  countIncrementalSlides: false
 ---
 class: clear, middle
 
@@ -235,10 +235,6 @@ In the early 1800s, ranchers were allowed to openly graze on commonly owned past
 
 Ashton (1997) credits enclosing these pastures to private allotments to helping start the industrial revolution by increasing agriculture productivity to the point where farm workers could move to industry jobs.
 
----
-#### *Breakout Rooms:* 
-
-Using game theory, why would enclosement increase productivity?
 
 ---
 ##Tragedy of the Commons
@@ -266,7 +262,7 @@ optimal outcome
 ---
 #### Solutions
 
-- Folk Theorem: expanded understanding of rationality in repeated games
+- Folk Theorem: when you repeat the game many times, there's more opportunity to work together
 
 - Elinor Ostrom: mechanisms for commons enforcement
 
@@ -318,46 +314,49 @@ class: clear, middle
   - Laws and penalties
 
 ---
-### Differences Between Traditional Economics and Natural Resources
+## Intertemporal decision making
 
-*Traditional Economics*
+When you or the government is deciding whether or not to make investments, they must compare the cost they will pay today to the benefits they make in the future.
 
-- Static outcomes
+How do we compare a dollar today to a dollar tomorrow?
 
-- “Static Efficiency” page 20
+---
+## Future Value 
 
-- $MC = MB$ is usually optimal
+If I had $1000 today, what would the value of that money be next year. 
 
-- Rational self interest leads to optimality
+- I could invest and make 7% per year
 
-*Natural Resource economics*
+$$
+\$ 1000 \times 1.07 \Rightarrow \$ 1070
+$$
 
-- Dynamic outcomes; we use discounting and present value
+The future value of $1000 today is $1070 next year. 
 
-- $MC$ and $MB$ aren’t fair comparisons, some costs are left out
+<br/>
 
-- Especially external and future costs
+What about this. If I had $1070 next year, what would that be worth to me this year?
 
-- Rational self interest often leads to tragedy of the commons
+$$
+\$ 1070 / 1.07 \Rightarrow \$ 1000
+$$
 
-
-
+$1070 next year is only worth $1000 this year.
 
 ---
 ## Discounting
 
-**Discount Rate** captures the *time value of money*.
+**Discount Rate** captures the *time value of money*. A dollar today is worth more than a dollar tomorrow.
 
-- Opportunity cost associated with time (can make investments that yield returns instead).
-- Discounting rate also has a subjective component as well.
+Why?
 
-<br>Why is a dollar today worth more than a dollar tomorrow?
+1. If I could have the dollar today, I could invest that money and have more than a dollar tomorrow.
+  - The government currently uses 7% which means the average capital investment makes 7% year over year.
+2. People like stuff today more than tomorrow. This is a subjective component. 
+  - The government estimates this is about 3%. That is, consumers like $1 of consumption today the same as $1.03 next year.
 
-- riskless cost of capital
 
-- risk premium
-
-- pure rate of time preference
+[Council of Economic Advisors Brief on Discounting](https://obamawhitehouse.archives.gov/sites/default/files/page/files/201701_cea_discounting_issue_brief.pdf)
 
 
 ---
@@ -365,19 +364,23 @@ class: clear, middle
 
 People actually think this way, if not precisely
 
-- Banks use discounting to decide interest rates
+- Banks use discounting to decide interest rates they charge
+
+  - They only give out money to places that will make them returns
 
 - Government agencies use it to decide on spending
 
+  - If future benefits are valued more than the policy cost today, then the government implements the policy
+
 - People use it when making large purchases
 
-Economists don’t really have a choice to use discounting - it is present in real life
-
-- Useful concept for being explicit about *intertemporal tradeoffs* (intertemporal: across time periods)
-
+  - We tend to be impatient :-)
 
 ---
 ## Present Value
+
+.alice[**Present value**] allows us to compare benefits/costs over time (i.e. *intertemporal tradeoffs*)
+
 
 In words:
 
@@ -396,7 +399,6 @@ $$
 - $B_t$: amount of benefit or cost in period $t$
 
 - $r$: discount rate. Many different options for $r$ and require a choice (e.g. $r = 0.03$). 
-
 
 
 ---
@@ -426,9 +428,13 @@ $$
 ---
 ### Which Discount Rate to Use?
 
-*Private decisions:* market interest rates = revealed time preference
+*Private decisions:* 
 
-*Policy decisions:* much debate! (Example 3.4)
+Market interest rates = Revealed time preference
+
+*Policy decisions:*
+
+Much debate! (Example 3.4 in our textbook)
 
 - Stern Review used 0.1-1.4% (panic, prescriptive)
 
@@ -436,22 +442,9 @@ $$
 
 - US government uses 2.5%-3.5% (in between)
 
+
 <br>
 Lower discount rates $\implies$ more value placed on future
-
-
----
-### Lower Discount = Better for Environment?
-
-Example where it does not: [Natural Habitat Restoration](https://darrp.noaa.gov/economics/habitat-equivalency-analysis)
-
-Polluters are often required to pay fees for damages done to natural habitats
-
-- They have to compensate the cost they caused by destroying the habitat. How much? 
-
-- They get judged based on the net present benefits of all fixes they pay for.
-
-Does lower interest rate yield more or less investments?
 
 
 ---
@@ -475,15 +468,25 @@ $$2,000,000,000,000/(1.07)^{100} = 2.3 \text{ billion}$$
 Of course, climate change will create costs for each year, so we will add up all the present value of costs per year:
 
 $$C_1/(1 + r)^1 + C_2/(1+r)^2 + \dots + C_{100}/(1+r)^{100} + \dots$$
-This value is the willingness to pay for climate change today.
+If we invest today to prevent the damages, this number is the present value of benefits.
 
-<br>
-<hr>
-Two important considerations:
+
+<br/>
+We compare that to the investment costs to prevent the damages:
+
+$$I_1/(1 + r)^1 + I_2/(1+r)^2 + \dots + I_{100}/(1+r)^{100} + \dots$$
+where $I$ is the investment cost of stopping the damages.
+
+
+
+
+---
+
+**Two important considerations:**
 
 1. What is the appropriate value of $r$?
 
-2. Since 2010, the investment cost of stopping climate change has dropped precipitously
+2. Since 2010, the investment cost of stopping climate change has dropped precipitously so the present value of benefits (avoiding climate damages) is getting larger relative to the present value of investment costs to avoid climate damages
 
 
 ---
@@ -518,9 +521,6 @@ Components of an Economic Model:
   - [Michael Greenstone's Managing Climate Risk](../Articles/What Financial Markets Can Teach Us About Managing Climate Risks.pdf) ([online version](https://www.nytimes.com/2017/04/04/upshot/what-financial-markets-can-teach-us-about-managing-climate-risks.html)).
 
 
-
-
-
 ---
 class: clear, middle
 # Lecture 3
@@ -551,25 +551,6 @@ $$
 
 
 ---
-## Discounting Summary
-
-We value things in the present more than in the future
-
-- How much more is debatable
-
-Value increases over time
-
-- Investments, technology, total wealth in society
-
-But so do costs that society incurs
-
->"An ounce of prevention is worth a pound of cure"
-
-- Capital is scarce, and opportunities to solve problem cheaply tend to go away as the problem gets worse over time
-
-
-
----
 ## Depletable Resources
 
 **Current Reserves** (economic)
@@ -589,10 +570,11 @@ But so do costs that society incurs
 .center[
 ### Example: Gold Mine
 
+<br/>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/txMhW-K4xnc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ]
 
-<br>
+<i>https://www.youtube.com/embed/txMhW-K4xnc</i>
 
 - Should this mine be in the Current Reserves or the Potential Reserves?
 
@@ -608,7 +590,7 @@ Manufacturers either buy recycled materials from processing plants, or else sour
 A subset of potential reserves
 - Recyclability of a material is also function of market prices
 
-If all costs are accounted for, this determines “recyclability”
+If all costs are accounted for, this determines "recyclability"
 - e.g., Metals and paper are often more recyclable than glass
 
 
@@ -617,7 +599,7 @@ If all costs are accounted for, this determines “recyclability”
 
 Motivation:
 
-- Want to decide how much of the mineral is efficient to leave behind
+- As a country, want to decide how much of the mineral is efficient to leave behind
 
 Assumptions:
 
@@ -625,7 +607,7 @@ Assumptions:
 
 Economic agents:
 
-- Suppliers and demanders in both periods
+- Suppliers and buyers in both periods
 
 Equilibrium:
 
@@ -635,84 +617,119 @@ Equilibrium:
 
 
 ---
-#### Mineral Example
+### Mineral Example
 
-Two-Period Model: now and future
+Consider a country trying to decide how much gold to extract from their mines today versus tomorrow. 
 
-Inverse Demand Curve - $P = 8 - 0.4Q$
+- **Two-Period Model**: now and future
 
-Marginal Cost -  $MC = 2$
+- **Inverse Demand Curve**: $MB = P = 8 - 0.4Q$
 
-Supply is connected to the resource endowment, which is the amount that is theoretically available.
+  - This tells us the marginal benefit we get from extracting more gold
 
-- Supply matters! Is $S = 20$? $S = 30$?
+- **Marginal Cost**: $MC = 2$
 
+  - This tells us how much it costs to extract a unit of gold
+
+- **Supply** is connected to the resource endowment, which is the amount that is theoretically available.
+
+  - Supply matters! Is $S = 20$? $S = 30$?
+  
+- **Discount rate**: The country is not very patient, so $r = 10\%$
 
 
 ---
 class: center, middle
 
-```{r two_period_ex1_1, echo=FALSE, fig.cap="Unlimited Supply Example", fig.align="center"}
+```{r, echo=FALSE, fig.cap="Unlimited Supply Example (\\(S = 30\\))"}
 knitr::include_graphics("graphics/two_period_ex1_1.png")
 ```
 
 
+---
+## Unlimited Supply Example
+
+When supply is sufficiently large (no scarcity), we keep mining in each period so long as the marginal benefit of mining outweighs the cost of extraction. 
+
+$$
+  MB = MC \implies MB = 8 - 0.4 Q = 2 = MC
+$$
+
+Solving for $Q$ yields
+
+$$
+  6 = 0.4Q \implies Q^* = 15
+$$
+
+The country wants to extract 15 units of gold each period (today and the future).
+
+--
+
+<br />
+A different way of writing this is marginal *net* benefits: 
+$$
+MNB = MB - MC = 8 - 0.4Q - 2 = 6 - 0.4Q.
+$$
+
+The country should stop when $MNB = 0$.
+
 
 ---
-## Reading for Next Time
+## Scarce Supply $S = 20$
 
-  - "A Two-Period Model", page 103-107
+When there is not enough resources (which is the real world!), there is a fundamental tradeoff:
 
----
-class: clear, middle
-# Lecture 4
+.center[.coral[**When I extract resources today, I can not extract them tomorrow**]]
 
-- Mineral two-period model
+What tool did we learn that helps us compare benefits today vs. benefits tomorrow?
 
-- Marginal user cost
+--
+Present Value!
 
+We therefore need to compare MNB in period $1$
 
+$$
+MNB_1 = 6 - 0.4 Q_1
+$$
 
----
-#### Mineral Example
+to the *present value* of MNB in period $2$
 
-Two-Period Model: now and future
+$$
+  PV(MNB_2) = \frac{6 - 0.4 Q_2}{1.1} \approx 5.45 - 0.36 Q_2
+$$
 
-Inverse Demand Curve - $P = 8 - 0.4Q$
-
-Marginal Cost -  $MC = 2$
-
-Supply is connected to the resource endowment, which is the amount that is theoretically available.
-
-- Supply matters! Is $S = 20$? $S = 30$?
 
 
 ---
 class: center, middle
 
-```{r, echo=FALSE, fig.cap="Unlimited Supply Example"}
-knitr::include_graphics("graphics/two_period_ex1_1.png")
-```
-
-
-
-
----
-class: center, middle
-
-```{r two_period_ex1_2, echo=FALSE, fig.cap="Scarce Supply Example", fig.align="center"}
+```{r two_period_ex1_2, echo=FALSE, fig.cap="Scarce Supply Example  (\\(S = 20\\))", fig.align="center"}
 knitr::include_graphics("graphics/two_period_ex1_2.png")
 ```
 
 
 ---
-### Solving the model
- 
-- Our goal is to maximize $PV$ subject to the constraint that $Q_1 + Q_2 = Endowment$
 
-<br>
+In the figure, we have three important features:
 
-When resources are scarce, greater current use diminishes future opportunities. 
+1. The x-axis has $Q_1$ and $Q_2$ and draws them such that $Q_1 + Q_2 = 20$.
+
+  - Whatever they don't extract in period 1, they will extract in period 2 (since optimally they would want to extract 30 units!)
+  
+2. As we extract more in either period, the marginal net benefit is declining
+  
+  - It becomes more and more attractive to mine in the other period
+  
+3. The equilibrium is when $MNB_1 = PV(MNB_2)$ under the constraint $Q_1 + Q_2 = 20$.
+
+  - This is two equations with two unknowns ($Q_1 + Q_2 = 20$). Let's put on our algebra hats and solve!
+  
+---
+## Solving the Model
+
+$$
+6 - 0.4 Q_1 = \frac{6 - 0.4 Q_2}{1.1} \text{ and } Q_1 + Q_2 = 20
+$$
 
 
 ---
@@ -722,64 +739,22 @@ When resources are scarce, greater current use diminishes future opportunities.
 
 The present value of these forgone opportunities at the margin.
 
-<br> 
 - Without scarcity, producers will continue to produce until the marginal unit has net benefit of $0$. 
 
-- With scarcity, producers will produce until they run out of resources. There could be value to having another unit, this is the *Marginal User Cost*.
+- With scarcity, producers will produce until they run out of resources. There could be value to having another unit. 
+  - In particular, if you could extract one more unit in period 1 it would be worth $MNB_1 (Q_1^*)$ dollars to you, where $Q_1^*$ is however many units you are currently mining.
 
 
----
-### Using MUC to solve model
+--
+This is the .coral[Marginal User Cost]. $MUC = MNB_{1}(Q_1^{*}) = PV(MNB_{2}(Q_2^{*}))$,
+where $Q_1^*$ and $Q_2^*$ are the optimal quantities.
 
-When $MUC_1 = MUC_2$, we say the solution is *dynamically efficient*. 
-
-- Total $PV(NB)$ is maximized
-
-<br>
-
-We then have to check if $Q_1 + Q_2 = Endowment$
-
-
-
----
-## Reading for Next Time
-
-- "Efficient Intertemporal Allocations", page 123-130
-
-
-
----
-class: clear, middle
-# Lecture 5
-
-- Two-period model wrap up
-
-- Markets
-
-
-
----
-class: center, middle
-
-```{r, echo=FALSE, fig.cap="Scarce Supply Example"}
-knitr::include_graphics("graphics/two_period_ex1_2.png")
-```
-
-
----
-### Questions
-
-- Why do we put the period 2 quantities going in the opposite direction?
-
-- Why are the intercepts (6 vs. 5.45) different? 
-
-- What would happen to the intercepts if the discount rate increased? 
-
-- What does equilibrium on the vertical axis represent?
 
 
 ---
 ### Complicating the Model
+
+Discuss in groups the following scenarios:
 
 *Different demand curves across time*
 
@@ -806,11 +781,30 @@ knitr::include_graphics("graphics/two_period_ex1_2.png")
 
 Since firms are rationally self-interested, markets work as long as:
 
-1. they discount the future the same as society does
+1. they discount the future the same as society does 
 
 2. property rights are secure (no tragedy of the commons issues)
 
 3. all costs are considered (private costs and costs to society)
+
+---
+class: center, middle
+
+```{r, echo=FALSE, fig.cap="Scarce Supply Example"}
+knitr::include_graphics("graphics/two_period_ex1_2.png")
+```
+
+
+---
+### Review Questions
+
+- Why do we put the period 2 quantities going in the opposite direction?
+
+- Why are the intercepts (6 vs. 5.45) different? 
+
+- What would happen to the intercepts if the discount rate decreased? 
+
+- What does the value on the $y$-axis represent at the equilibrium?
 
 
 ---
@@ -821,10 +815,9 @@ Since firms are rationally self-interested, markets work as long as:
 - Example 2.2 Shrimp Farming Externalities in Thailand, page 27
 
 
-
 ---
 class: clear, middle
-# Lecture 6
+# Lecture 5
 
 - Efficiency
 
@@ -896,6 +889,8 @@ Economists often describe efficiency in terms of what the **social planner** wou
   
   - This outcome contrasts with the outcome resulting from the collective action of many self-interested individuals
 
+
+--
 <br>
 
 *Example* 
@@ -914,7 +909,8 @@ Provides the conditions needed to be satisfied for the market to reach the same 
 <br>
 
 A market allocation will maximize total economic value without need for intervention ***IF*** the following conditions are met:
-  1. Property rights are well-defined
+
+  1. Property rights are well-defined (no externalities)
 
   2. Buyers and sellers behave competitively by maximizing benefits and minimizing costs
 
@@ -941,11 +937,12 @@ A set of legal entitlement over assets are well defined if they are:
 
 **Externality**: a cost or benefit imposed on outsiders who had no choice
 
-  - Can be modeled as supply or demand (or some of both)
+  - Can be modeled as supply or demand externalities (or some of both)
   
   - Named after Arthur C. Pigou (1920)
 
 *Examples* 
+
 - Oil production
 
   - Negative supply externality: oil spills
@@ -958,7 +955,7 @@ A set of legal entitlement over assets are well defined if they are:
   
   
 ---
-#### Demand and Supply
+### Demand and Supply
 
 - Private demand/supply curves consider only value to the decision makers
 
@@ -966,7 +963,7 @@ A set of legal entitlement over assets are well defined if they are:
 
   - Also called Social MB/Social MC curves
 
-  - “Society” includes decision-makers
+  - "Society" includes buyers/sellers and the rest of the population too
 
 - Difference between demand curve and social MB curve is the per-unit amount of the externality
 
@@ -975,11 +972,7 @@ A set of legal entitlement over assets are well defined if they are:
 ---
 ## Market Inefficiency
 
-When an externality is present, the First Fundamental Welfare Theorem is violated
-
-<Br>
-
-Property rights are not well-defined
+When an externality is present, the First Fundamental Welfare Theorem is violated because property rights are not well-defined
 
 - Negative externality: you don’t have the right to protection from pollution
 
@@ -992,8 +985,6 @@ Property rights are not well-defined
 
 Pigou proposed a corrective tax to deal with negative externalities
 
-<br>
-
 *Example*: If consumption of a gallon of gasoline causes an additional $1 of pollution, put a $1 per gallon tax on it
 
   - Demand curve becomes identical to social MB curve
@@ -1002,11 +993,9 @@ Pigou proposed a corrective tax to deal with negative externalities
 
   - Benefit: total welfare is maximized
 
-  - Drawback: some individuals may still lose
+  - Drawback: some individuals (who pay the tax) may still lose
 
     - In theory, can compensate those affected by the externality
-    
-    
 
 ---
 ## Reading for Next Time
@@ -1020,7 +1009,7 @@ Pigou proposed a corrective tax to deal with negative externalities
 
 ---
 class: clear, middle
-# Lecture 7
+# Lecture 6
 
 - Coase theorem
 
@@ -1043,12 +1032,14 @@ class: clear, middle
   
   
 ---
-.center[
-  ### Coase Theorem
+## Coase Theorem
 
+<br/>
+.center[
   <iframe width="560" height="315" src="https://www.youtube.com/embed/00HPak2RLlQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ]
 
+https://www.youtube.com/embed/00HPak2RLlQ
 
 ---
 ## Coase Theorem
@@ -1073,8 +1064,10 @@ More likely to hold true for bilateral externalities than any other kind
 
   - Two-party negotiations are easier than 10 party negotiations
 
-  - Major point of Coase’s paper was that transaction costs are usually too high
+  - Major point of Coase’s paper was that transaction costs are *usually too high*
 
+
+--
 If every human was guaranteed the right to low concentrations of GHGs…
 
   - Fossil fuel companies would have to go door to door negotiating
@@ -1093,11 +1086,11 @@ Suppose a rancher and a farmer operate on adjacent land. The rancher’s livesto
 
 *Coase bargaining*
 
-  - Assign property rights, let the two sides negotiate
+  - Assign property rights, let the two sides negotiate (rancher pays the farmer)
   
   
 ---
-#### Example 
+### Example 
 
 Rancher benefits from additional cows
 
@@ -1120,9 +1113,9 @@ Let’s graph it!
 #### Scanario 1: High Transaction Costs
 
 Whoever has the property rights will enforce them and refuse to negotiate
-  - Farmer has the rights- zero cows
+  - Farmer has the rights $\implies$ zero cows
 
-  - Rancher has the rights- add cows until $MB = 0$
+  - Rancher has the rights $\implies$ add cows until $MB = 0$
 
     $$10 – 0.5Q = 0 \implies Q = 20 \text{ cows}$$
 
@@ -1146,9 +1139,7 @@ Farmer has the rights - negotiate a payment from the rancher for the right to gr
 - 10th cow- rancher is willing to pay up to $5, farmer is willing to give up the right for $5 or more
 
 
-<br> 
-
-*Welfare is maximized when Coase Bargaining occurs*
+**Welfare is maximized when Coase Bargaining occurs**
 
 
 
@@ -1158,17 +1149,6 @@ Farmer has the rights - negotiate a payment from the rancher for the right to gr
 - [Ronald Coase and the Misuse of Economics](../Articles/Ronald Coase and the Misuse of Economics.pdf) ([online version](https://www.newyorker.com/news/john-cassidy/ronald-coase-and-the-misuse-of-economics)).
 
 - "The Command-and-Control Policy Framework", page 397-404
-
-
----
-class: clear, middle
-# Lecture 8
-
-- Policy tools
-
-- Local pollutants
-
-
 
 
 ---
@@ -1191,17 +1171,20 @@ class: clear, middle
 ### Efficiency of Policy
 
 Assuming we have a clear goal in mind, e.g. emissions
-  - *efficiency* is hitting that goal as cheaply as possible
+  - *Efficiency* is hitting that goal as cheaply as possible
+
+<br>
 
 **Marginal abatement cost**
 
   - The cost associated with eliminating the next amount of pollution
 
-  - Different sources have different MAC curves
+  - Different sources (e.g. firms) have different MAC curves
+    
+    - E.g. older plants have older technology, so cheap upgrades can go a long way. 
+    - E.g. it's easier to switch to solar power in sunny California than in rainy Washington
 
-<br>
-
-Efficiency means that abatement comes from sources where it is easiest/cheapest to abate
+Efficiency means that abatement comes from sources where it is cheapest to abate
 
 
 ---
@@ -1217,9 +1200,38 @@ MAC is usually increasing in the level of abatement
 
 MAC generally comes from one of two abatement methods (whichever is cheaper)
 
-  - Opportunity cost of lowering output
+  - Opportunity cost of lowering output/sales
 
   - Direct cost of making the production process cleaner
+
+
+---
+class: center, middle
+
+```{r macc_aggriculture_1, echo=FALSE, fig.cap="Marginal Abatement Cost Curve Example", fig.align="center"}
+knitr::include_graphics("graphics/macc_aggriculture_1.png")
+```
+
+[USDA Estimates](https://www.usda.gov/sites/default/files/documents/White_Paper_WEB_Final_v3.pdf)
+  
+  
+
+---
+class: center, middle
+
+```{r macc_aggriculture_2, echo=FALSE, out.width = "90%", fig.cap="Firm Heterogeneity in Costs", fig.align="center"}
+knitr::include_graphics("graphics/macc_aggriculture_2.png")
+```
+
+
+---
+class: center, middle
+
+```{r mckinsey_macc, echo=FALSE, out.width = "80%", fig.cap="GHG Marginal Abatement Cost Estimates", fig.align="center"}
+knitr::include_graphics("graphics/mckinsey-abatement.png")
+```
+[McKinsey Estimates](https://www.cbd.int/financial/doc/Pathwaystoalowcarboneconomy.pdf)
+
 
 
 
@@ -1350,7 +1362,7 @@ States can choose which policy tools to use
 
 
 ---
-#### Command and Control Policies
+### Command and Control Policies
 
 Emissions standards
   - Assign each polluting firm a level of pollution they are allowed to reach
@@ -1365,7 +1377,7 @@ Issues
 
 
 ---
-#### Command and Control Policies
+### Command and Control Policies
 
 Production/technology standards
 
@@ -1381,7 +1393,7 @@ Issues
 
 
 ---
-#### Corrective (Pigouvian) Taxes
+### Corrective (Pigouvian) Taxes
 
 Set a per-unit tax on firm-level emissions
 
@@ -1397,7 +1409,7 @@ Issues
   
   
 ---
-#### Cap and Trade
+### Cap and Trade
 
 Set a maximum level of pollution allowed within a region
 
@@ -1419,9 +1431,6 @@ Issues
 ## Reading for Next Time
 
   - "Command and control vs market-based policies", page 397-411
-
-
-
 
 
 ---
