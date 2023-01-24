@@ -39,7 +39,7 @@ The aim of this course is to teach you to be able to think about **incentives** 
 table <- tribble(
   ~Icon, ~Name, ~Time, ~Location,
   as.character(icons::fontawesome("chalkboard-teacher")), "Instructor", "Kyle Butts", "<a href = 'emailto:kyle.butts@colorado.edu'>kyle.butts@colorado.edu</a>",
-  as.character(icons::fontawesome("school")), "Lecture", "MWF 12:20-1:10pm", "Humanities 135",
+  as.character(icons::fontawesome("school")), "Lecture", "T/Th 12:30-1:45pm", "Humanities 135",
   as.character(icons::fontawesome("laptop-house")), "Office Hours", "T 3-4pm and W 12:30-2pm", "<a href = 'https://cuboulder.zoom.us/s/3975335005'>Zoom</a>",
   as.character(icons::fontawesome("chalkboard-teacher")), "TA", "Chad Brown", "<a href = 'emailto:chad.brown@colorado.edu@colorado.edu'>chad.brown@colorado.edu</a>",
   as.character(icons::fontawesome("book")), "Textbook", "Natural Resource Economics 11e. <br/> Tietenberg, Thomas and Lewis, Lynne.", "",
