@@ -40,6 +40,49 @@
     \item Now assume $r = 0$. What is the optimal allocation now? Why did optimal allocation change in the direction that it did?
   \end{enumerate}
 
+  \answer{
+    \begin{enumerate}
+      \item The resource constraint is that the amount I extract in period 1 plus the amount I extract in period 2 must add up to the supply of 10. 
+      $$Q_1 + Q_2 = 10$$
+  
+      \item The marginal net benefits curve is given by 
+      $$
+        MNB_1 = \underbrace{20 - 2Q_1}_{MB = P} - \underbrace{3}_{MC} = 17 - 2Q_1.
+      $$
+
+      \item The marginal net benefits curve is given by 
+      $$
+        MNB_2 = \underbrace{20 - 2Q_2}_{MB = P} - \underbrace{3}_{MC} = 17 - 2Q_2.
+      $$
+      In present value, we have
+      $$
+        PVMNB_2 = \frac{17 - 2Q_2}{1.1} = 15.4545 - 1.8181 Q_2.
+      $$
+  
+      \item Suppose that marginal unit's profits in period 1 and period 2 were not equal. Then, I know we are not maximizing total profits since I could extract one unit less from the period with the smaller marginal unit's profits and one more from the period with the higher marginal unit's profits and increase profits while still satisfying the resource constraint. 
+      
+      \item The resource constraint $Q_1 + Q_2 = 10$ and $MNB_1 = PVMNB_2$
+      
+      \item Plugging $(10 - Q_1) = Q_2$ into the optimality condition yields:
+      $$
+        17 - 2Q_1 = \frac{17 - 2 (10 - Q_1)}{1.1} \implies 18.7 - 2.2 Q_1 = 17 - 20 + 2 Q_1
+      $$
+
+      Solving for $Q_1$ yields $Q_1^* \approx 5.1667$. Plugging back into the resource constraint yeidls $Q_2^* = 4.8333$.
+      
+      \item At $Q_1 = 3$ and $Q_2 = 4.5$, the $MNB_1 = 11$ and the $PVMNB_2 = 7.27$. In this case, I am not extracting optimally because $MNB_1 > PVMNB_2$ and I can increase profits by extracing more in the first period. 
+  
+      \item $MNB_1(Q_1^*) = 17 - 2 * 5.1667 = 6.666$ which is the marginal user cost. This is the additional profit that could be made if the resource constraint was increased by 1 unit to 11 units.
+  
+      \item Plugging $(10 - Q_1) = Q_2$ into the (new) optimality condition yields:
+      $$
+        17 - 2Q_1 = \frac{17 - 2 (10 - Q_1)}{1} \implies 17 - 2 Q_1 = 17 - 20 + 2 Q_1
+      $$
+
+      Solving for $Q_1$ yields $Q_1^* = 5$. Plugging back into the resource constraint yeidls $Q_2^* = 5$. The reason $Q_1^*$ decreased and $Q_2^*$ increased is because the marginal net benefits increased in the second period when $r = 0$. Therefore, on the margin, resources in period 2 are relatively more attractive to extract.
+    \end{enumerate}
+  }
+
   \item Consider extraction of a non-renewable natural resource. The inverse demand function for the depletable resource is $P = 12 - Q$ in both periods $1$ and $2$ and the marginal cost of supplying it is $\$3$. The discount rate is $10\%$. There are $7.5$ units total.
 
   \begin{enumerate}
@@ -52,13 +95,68 @@
     \item Now assume $r = 0$. What is the optimal allocation now? Why did it change in the direction that it did?
   \end{enumerate}
 
-  \item Consider extraction of a non-renewable natural resource. The inverse demand function for the depletable resource is $P = 12 - Q$ in both periods $1$ and $2$ and the marginal cost of supplying it is $2 + Q/2$. The discount rate is $6\%$. There are $15\$$ units total.
+  \answer{
+    \begin{enumerate}
+      \item Our resource constraint can be written as $Q_2 = 7.5 - Q_1$. The $MNB_1 = 12 - Q_1 - 3 = 9 - Q_1$ and $PVMNB_2 = \frac{12 - Q_2 - 3}{1.1} = \frac{9 - Q_2}{1.1}$. 
+      
+      Plugging our resource constraint into the optimality condition $MNB_1 = PVMNB_2$ yields
+      $$
+        9 - Q_1 = \frac{9 - (7.5 - Q_1)}{1.1} \implies Q_1^* = 4
+      $$
+
+      Plugging $Q_1^*$ back into the resouce constraint yields $Q_2^* = 7.5 - 4 = 3.5$. 
+  
+      \item $MNB_1(3) = 9 - 3 = 6$ and $PVMNB_2(4.5) = \frac{9 - 4.5}{1.1} = 4.1$. In this case, the value of extracting one more resource in period 1 is greater than the value lost from extracting one fewer unit in period 2. Therefore, total net benefits are not maximized since resource extraction should be moved towards period 1. 
+  
+      \item In $MUC = MNB_1(Q_1^*) = 9 - 4 = 5$. The marginal user cost implies that adding one additional unit to our resources is worth about \$5 in net benefits. 
+  
+      \item Following the above work, we have
+      $$
+        9 - Q_1 = \frac{9 - (7.5 - Q_1)}{1} \implies Q_1^* = 3.75
+      $$
+
+      Plugging $Q_1^*$ back into the resouce constraint yields $Q_2^* = 7.5 - 3.75 = 3.75$. Again, since the discount rate decreased, future net benefits are relatively more valuable than when $r = 10\%$. Therefore to maximize benefits, extraction should be moved towards period $2$. 
+    \end{enumerate}
+  }
+
+  \item Consider extraction of a non-renewable natural resource. The inverse demand function for the depletable resource is $P = 12 - Q$ in both periods $1$ and $2$ and the marginal cost of supplying it is $2 + Q/2$. The discount rate is $6\%$. There are $15$ units total.
 
   \begin{enumerate}
     \item Find the equilibrium allocation in each period for resource extraction
 
     \item What is the marginal user cost? Interpret this number.
   \end{enumerate}
+
+  \answer{
+    In this example, we have to check if there is unlimited supply or not. 
+
+    In this case, let's calculate $MNB_1$ and $MNB_2$. 
+    $$
+      MNB_1 = MNB_2 =  12 - Q_1 - (2 + Q_1/2) = 10 - 1.5Q_1
+    $$
+    If there is unlimited supply, then $Q_1^*$ and $Q_2^*$ are found from setting $MNB_1(Q_1) = 0$ and $MNB_2(Q_2) = 0$ respectively. In this case, this yields $Q_1^* = Q_2^* = 6.66$ units. Since $Q_1^* + Q_2^* = 13.33$, there is sufficient supply, so we don't have to solve using the optimality condition. If you did the work and got a negative marginal user cost, that should be your sign that you're in an unlimited supply example (since the marginal net benefit is negative for $Q_1^*$ and $Q_2^*$). 
+
+    For additional practice, let's do this problem with $S = 10$ units. 
+
+    \begin{enumerate}
+      \item First, our resource constraint is given by $Q_1 + Q_2 = 10$. Next, let's calculate $MNB_1$ and $PVMNB_2$. 
+      
+      $$
+        MNB_1 = 12 - Q_1 - (2 + Q_1/2) = 10 - 1.5Q_1
+      $$
+      $$
+        PVMNB_2 = \frac{12 - Q_2 - (2 + Q_2/2)}{1.06} = \frac{10 - 1.5Q_2}{1.06}
+      $$
+
+      Plugging $Q_2 = 15 - Q_1$ into our optimality condition yields:
+      $$
+        10 - 1.5Q_1 = \frac{10 - 1.5 (10 - Q_1)}{1.06} \implies Q_1^* \approx 5.04
+      $$
+      Then, plugging $Q_1^*$ into the resource constraint yields $Q_2^* = 4.96$.
+  
+      \item In this example, $MUC = MNB_1(Q_1^*) = 12 - 1.5 * 5.04 = 4.44$. The value of adding an 11th unit to our supply is worth $\$4.44$ in net benefits. 
+    \end{enumerate}
+  }
 \end{enumerate}
 
 \end{document}
