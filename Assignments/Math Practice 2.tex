@@ -3,8 +3,8 @@
 \input{preamble.tex}
 
 \newtoggle{INCLUDEANSWERS}
-\toggletrue{INCLUDEANSWERS}
-% \togglefalse{INCLUDEANSWERS}
+% \toggletrue{INCLUDEANSWERS}
+\togglefalse{INCLUDEANSWERS}
 
 \newcommand{\answer}[1]{\iftoggle{INCLUDEANSWERS}{{\color{violet!70!white}\textbf{Solution:} #1}}{}}
 
@@ -19,7 +19,7 @@
 \subsection*{Tradable Permits}
 
 \begin{enumerate}
-  \item Two firms can control emissions at the following marginal costs: $MC_1 = 80a_x$ and $MC_2 = 40 a_y$ where $a_x$ and $a_y$ are, respectively, the amount of emissions reduced by the first and second firms. Assume that with no control at all, each firm would be emitting $50$ units of emissions or a total of $100$ units for both firms.
+  \item Two firms can control emissions at the following marginal costs: $MC_x = 80a_x$ and $MC_y = 40 a_y$ where $a_x$ and $a_y$ are, respectively, the amount of emissions reduced by firm $x$ and firm $y$. Assume that with no control at all, each firm would be emitting $50$ units of emissions or a total of $100$ units for both firms.
 
   \begin{enumerate}
     \item Which firm is better at abating pollution?
@@ -47,7 +47,38 @@
     \item Why is cap-and-trade more cost-effective than a uniform standard where each firm reduces pollution by the same amount?
   \end{enumerate}
 
-  \item Two firms can control emissions at the following marginal costs: $MC_1 = 200 a_x$ and $MC_2 = 100 a_y$ where $a_x$ and $a_y$ are, respectively, the amount of emissions reduced by the first and second firms. Assume that with no control at all, each firm would be emitting $20$ units of emissions or a total of $40$ units for both firms.
+  \answer{
+    \begin{enumerate}
+      \item Firm $y$ has a lower cost of abatement, so it is the `better' firm at abating. 
+            
+      \item Going from 100 units to 60 units of pollution implies an abatement goal of 40 units. In mathematical notation, we have
+      $$
+        a_x + a_y = 40.
+      $$
+      
+      \item Each firm needs to abate half, so $a_x = a_y = 20$. For the 20th unit, we have $MAC_x = 80 * 20 = 1600$ and $MAC_y = 40 * 20 = 800$. In words, the 20th unit cost firm $x$ \$1600 to abate and firm $y$ \$800 to abate.
+    
+      \item Consider a cap-and-trade system that aims for a total $60$ units of emissions. 
+      \begin{enumerate}
+        \item The marginal abatement costs must be equal to each other in order to ensure that the total cost of abatement is as cheap as possible. Consider the case where $(a_x, a_y)$ is such that $MAC_x(a_x) > MAC_y(a_y)$ and $a_x + a_y = 40$. We can lower cost by having firm $y$ abate one more unit, spending $MAC_y(a_y)$ dollars and having firm $x$ abate one fewer unit, saving $MAC_x(a_x)$. The abatement goal will still be hit, but costs will be cheaper since savings $MAC_x(a_x)$ are bigger than additional costs $MAC_y(a_y)$. The same will hold with $MAC_y(a_y)> MAC_x(a_x)$. Therefore, we need equality to hold in order for the abatement goal to be achieved at as low of a cost as possible. 
+        
+        \item Our optimality condition is $80 a_x = 40 a_y$ which implies $2 a_x = a_y$. Plugging into our constraint yields $a_x + 2 a_x = 40 \implies a_x^* = 40/3 \approx 13.33$. This implies $a_y^* = 40 - 40/3 = 80/3 \approx 26.67$.
+    
+        \item The permit price is equal to $MAC_x(a_x^*) = MAC_y(a_y^*) = 80 * 40/3 = 3200/30 \approx \$ 106.67$. 
+      \end{enumerate}
+    
+      \item Assume that the control authority wanted to reach its objective by using an emissions charge system instead.
+      \begin{enumerate}
+        \item The tax amount should be equal to the permit price solved for above, so $T = \$106.67$. 
+        
+        \item After the policy, the firms will polute 60 units, so the revenue equals $106.67 * 60 \approx \$ 6400$. 
+      \end{enumerate}
+    
+      \item In the uniform standard, the firm with higher abatement costs is abating more than is optimal. The cap-and-trade system balances this trade-off by setting $MAC_x = MAC_y$ as required for efficiency as argued above.
+    \end{enumerate}
+  }
+
+  \item Two firms can control emissions at the following marginal costs: $MC_x = 200 a_x$ and $MC_y = 100 a_y$ where $a_x$ and $a_y$ are, respectively, the amount of emissions reduced by firm $x$ and firm $y$. Assume that with no control at all, each firm would be emitting $20$ units of emissions or a total of $40$ units for both firms.
 
   \begin{enumerate}
     \item Consider a cap-and-trade system that aims for a total reduction of $21$ units of emissions is necessary. 
@@ -66,23 +97,61 @@
     \item Why is cap-and-trade more cost-effective than a uniform standard where each firm reduces pollution by $10.5$ units?
   \end{enumerate}
 
-  \item Two firms can control emissions at the following marginal costs: $ MC_1 = 5 + 10 a_x $ and $MC_2 = 11 a_y$ where $a_x$ and $a_y$ are, respectively, the amount of emissions reduced by the first and second firms. Assume that with no control at all, each firm would be emitting $20$ units of emissions or a total of $10$ units for both firms.
+  \answer{
+    \begin{enumerate}
+      \item Our constaint is $a_x + a_y = 21$ and our optimality condition is $200 a_x = 100 a_y \implies 2 a_x = a_y$. 
+      \begin{enumerate}
+        \item Plugging the optimality condition into the constraint yields $a_x + 2 a_x = 21 \implies a_x^* = 7$. Plugging $a_x^*$ back into the budget constraint yields $a_y^* = 14$. 
+        
+        \item Permits would sell for $MC_x(a_x^*) = MC_y(a_y^*) = \$700$. 
+      \end{enumerate}
+  
+      \item Assume that the control authority wanted to reach its objective by using an emissions charge system instead.
+      \begin{enumerate}
+        \item The tax price should equal $\$700$ to reach the same outcome. 
+        \item The firms would pollute 19 units generating total government revenue of $19 * 700 = \$ 13,300$. 
+      \end{enumerate}
+  
+      \item When $a_x = a_y = 10.5$, we have $MAC_x(10.5) = 1050 < MAC_y(10.5) = 2100$. In this case, total costs are not minimized since firm $y$ has a higher marginal abatement cost than firm $x$.
+    \end{enumerate}
+  }
+
+  \item Two firms can control emissions at the following marginal costs: $ MC_x = 5 + 10 a_x $ and $MC_y = 11 a_y$ where $a_x$ and $a_y$ are, respectively, the amount of emissions reduced by firm $x$ and firm $y$. Assume that with no control at all, each firm would be emitting $10$ units of emissions or a total of $20$ units for both firms.
 
   \begin{enumerate}
-    \item Consider a cap-and-trade system that aims for a total reduction of $21$ units of emis-
-    sions is necessary. 
+    \item Consider a cap-and-trade system that aims for a total reduction of $10$ units of emissions. 
     \begin{enumerate}
       \item What is the equilibrium allocation of permits to each firm?
       \item At what price would these permits sell for at an auction
     \end{enumerate}
 
-    \item Assume that the control authority wanted to reach its objective by using an emissions
-    charge system instead.
+    \item Assume that the control authority wanted to reach its objective by using an emissions charge system instead.
     \begin{enumerate}
       \item What tax amount should them impose to reach this equilibrium?
       \item How much revenue would the government collect?
     \end{enumerate}
   \end{enumerate}
+
+  \answer{
+    \begin{enumerate}
+      \item Our constaint is $a_x + a_y = 10$ and our optimality condition is $5 + 10 a_x = 11 a_y$. 
+      \begin{enumerate}
+        \item Rewriting the constraint as $a_x = 10 - a_y$ and plugging it into the optimality condition yields
+        $$
+          5 + 10 * (10 - a_y) = 11a_y \implies 105 = 21a_y \implies a_y^* = 5.
+        $$
+        Plugging $a_y^*$ into the budget constraint yields $a_x^* = 5$. 
+        
+        \item Permits would sell for $MC_x(a_x^*) = MC_y(a_y^*) = \$55$. 
+      \end{enumerate}
+  
+      \item Assume that the control authority wanted to reach its objective by using an emissions charge system instead.
+      \begin{enumerate}
+        \item The tax price should equal $\$55$ to reach the same outcome. 
+        \item The firms would pollute 10 units generating total government revenue of $10 * 55 = \$ 550$. 
+      \end{enumerate}
+    \end{enumerate}
+  }
 \end{enumerate}
 
 \end{document}
