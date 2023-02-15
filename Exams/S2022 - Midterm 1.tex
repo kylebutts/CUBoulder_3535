@@ -29,7 +29,7 @@ Multiple Choice
     \item \$7.37 million
   \end{enumerate}
 
-  \answer{$-1M + 1/(1.05)^{10} * 12M = 6.41M$}
+  \answer{$-1M/(1.05)^1 + 1/(1.05)^{10} * 12M = 6.41M$}
 
   \item \points{4} Hydraulic fracturing (fracking) is a technology that improved our ability to extract natural gas from the ground. Which of the following is true of natural gas resources after the discovery of fracking?
   
@@ -51,7 +51,7 @@ Multiple Choice
     \item Countries increasing the strictness of environmental standards
   \end{enumerate}
 
-  \answer{(c)}
+  \answer{(d)}
 
   \item \points{4} If a government wants to reduce pollution, when would it be better to use a tradable permit system instead of a corrective tax?
   \begin{enumerate}
@@ -157,16 +157,24 @@ Free Response Questions
 
   \answer{
     \begin{enumerate}
-      \item $MUC_1 = 200 - 2Q_1 - 40 = 160 - 2Q_1$ and $MUC_2 = \frac{200 - 2Q_2 - 20}{1.1} = 200/1.1 - 2/1.1 Q_2$
+      \item $MNB_1 = 200 - 2Q_1 - 40 = 160 - 2Q_1$ and $PV(MNB_2) = \frac{200 - 2Q_2 - 20}{1.1} = 180/1.1 - 2/1.1 Q_2$
       
-      Then, putting $160 - 2Q_1 = 200/1.1 - 2/1.1 Q_2$ and $Q_1 + Q_2 = 100$ yields  
+      Then, putting $160 - 2Q_1 = \frac{180 - 2 Q_2}{1.1}$ and $Q_1 + Q_2 = 100$ yields  
       $$
-        Q_1^* = 880/21 \text{ and } Q_2^* = 1220/21.
+        160 - 2(100 - Q_2) = \frac{180 - 2 Q_2}{1.1}.
+      $$
+      Simplifying, we have
+      $$
+        -40 + 2Q_2 = \frac{180 - 2Q_2}{1.1} \implies = -44 + 2.2Q_2 = 180 - 2Q_2.
+      $$
+      Solving this yields, 
+      $$
+        Q_2^* = 53.33 \text{ and } Q_1^* = 46.67.
       $$
 
-      \item $MUC_1^* = 200 - 2Q_1^* = 2440/21 = MUC_2^*$. 
+      \item $MUC = MNB_1(Q_1^*) = 160 - 2Q_1^* = 160 - 2 * 46.67 = 66.66 = PV(MNB_2(Q_2^*))$. 
       
-      \item If the miner could have one more unit of iron, it would be worth $2440/21$ or about \$116 dollars. That is the most the miner would pay to access one additional unit of the resource.
+      \item If the miner could have one more unit of iron, it would be worth \$66.66 dollars. That is the most the miner would pay to access one additional unit of the resource.
     \end{enumerate}
   }
 \end{enumerate}
