@@ -154,7 +154,7 @@ Lower is better, but things start getting bad around 2
 
 Although there is no "cliff", things get worse an often at an exponential fashion:
 
-- [The Uninhabitable Earth](../Articles/The Uninhabitable Earth.pdf) ([online version](https://nymag.com/intelligencer/2017/07/climate-change-earth-too-hot-for-humans.html)).
+- [The Uninhabitable Earth](https://github.com/kylebutts/ECON3535_S2023/blob/main/Articles/The Uninhabitable Earth.pdf) ([online version](https://nymag.com/intelligencer/2017/07/climate-change-earth-too-hot-for-humans.html)).
 
 - [Why Half a Degree Matters (1.5 to 2)](https://www.nytimes.com/interactive/2018/10/07/climate/ipcc-report-half-degree.html)
 
@@ -191,7 +191,7 @@ class: center, middle
 ---
 ## Reading for next time
 
-[The Uninhabitable Earth](../Articles/The Uninhabitable Earth.pdf) ([online version](https://nymag.com/intelligencer/2017/07/climate-change-earth-too-hot-for-humans.html)).
+[The Uninhabitable Earth](https://github.com/kylebutts/ECON3535_S2023/blob/main/Articles/The Uninhabitable Earth.pdf) ([online version](https://nymag.com/intelligencer/2017/07/climate-change-earth-too-hot-for-humans.html)).
 
 [Why Half a Degree Matters (1.5 to 2)](https://www.nytimes.com/interactive/2018/10/07/climate/ipcc-report-half-degree.html)
 
@@ -527,11 +527,11 @@ Russia’s economic recession led to accidental compliance and lots of extra per
 ---
 ## Reading for Next Time
 
-  - [Most countries aren't hitting 2030 climate goals, and everyone will pay the price](../Articles/Most countries arent hitting 2030 climate goals, and everyone will pay the price.pdf) ([online version](https://www.nationalgeographic.com/science/2019/11/nations-miss-paris-targets-climate-driven-weather-events-cost-billions/)).
+  - [Most countries aren't hitting 2030 climate goals, and everyone will pay the price](https://github.com/kylebutts/ECON3535_S2023/blob/main/Articles/Most countries arent hitting 2030 climate goals, and everyone will pay the price.pdf) ([online version](https://www.nationalgeographic.com/science/2019/11/nations-miss-paris-targets-climate-driven-weather-events-cost-billions/)).
 
-  - [China’s Pledge to Be Carbon Neutral by 2060 - What It Means](../Articles/Chinas Pledge to Be Carbon Neutral by 2060- What It Means - The New York Times.pdf) ([online version](https://www.nytimes.com/2020/09/23/world/asia/china-climate-change.html)).
+  - [China’s Pledge to Be Carbon Neutral by 2060 - What It Means](https://github.com/kylebutts/ECON3535_S2023/blob/main/Articles/Chinas Pledge to Be Carbon Neutral by 2060- What It Means - The New York Times.pdf) ([online version](https://www.nytimes.com/2020/09/23/world/asia/china-climate-change.html)).
 
-  - [John Kerry, Biden’s Climate Czar, Talks About Saving the Planet](../Articles/John Kerry, Bidens Climate Czar, Talks About Saving the Planet — ProPublica.pdf) ([online version](https://www.propublica.org/article/john-kerry-biden-climate-czar)).
+  - [John Kerry, Biden’s Climate Czar, Talks About Saving the Planet](https://github.com/kylebutts/ECON3535_S2023/blob/main/Articles/John Kerry, Bidens Climate Czar, Talks About Saving the Planet — ProPublica.pdf) ([online version](https://www.propublica.org/article/john-kerry-biden-climate-czar)).
 
 
 
@@ -794,7 +794,7 @@ What will Biden do?
 ---
 ## Reading for Next Time
 
-  - [Tracking Climate Action Under the Biden Administration: Where Has Progress Been Made?](../Articles/What is the Biden Administration Doing to Fight Climate Change? | World Resources Institute.pdf) ([online version](https://www.wri.org/insights/biden-administration-tracking-climate-action-progress)).
+  - [Tracking Climate Action Under the Biden Administration: Where Has Progress Been Made?](https://github.com/kylebutts/ECON3535_S2023/blob/main/Articles/What is the Biden Administration Doing to Fight Climate Change? | World Resources Institute.pdf) ([online version](https://www.wri.org/insights/biden-administration-tracking-climate-action-progress)).
 
 
 

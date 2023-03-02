@@ -754,9 +754,9 @@ White House policy in 2015
 
 - Video: [The economic, social and icon value of the Great Barrier Reef](https://www.youtube.com/watch?v=b3iJ2X9Vjnw)
 
-- [What Is The Real Value Of The Great Barrier Reef?](../Articles/What Is The Real Value Of The Great Barrier Reef | HuffPost) ([online version](https://www.huffpost.com/entry/what-is-the-real-value-of-the-great-barrier-reef_b_595cbea4e4b0326c0a8d13c7))
+- [What Is The Real Value Of The Great Barrier Reef?](https://github.com/kylebutts/ECON3535_S2023/blob/main/Articles/What Is The Real Value Of The Great Barrier Reef | HuffPost) ([online version](https://www.huffpost.com/entry/what-is-the-real-value-of-the-great-barrier-reef_b_595cbea4e4b0326c0a8d13c7))
 
-- [What bees can teach us about the real value of protecting nature](../Articles/What bees can teach us about the real value of protecting nature - Vox.pdf) ([online version](https://www.vox.com/2015/7/6/8900605/bees-pollination-ecosystem-services)).
+- [What bees can teach us about the real value of protecting nature](https://github.com/kylebutts/ECON3535_S2023/blob/main/Articles/What bees can teach us about the real value of protecting nature - Vox.pdf) ([online version](https://www.vox.com/2015/7/6/8900605/bees-pollination-ecosystem-services)).
 
 
 
@@ -1641,7 +1641,7 @@ Recent droughts put stress on the region
 ---
 ## Reading for Next Time
 
-- [Is Recycling Worth It?](../Articles/Is Recycling Worth It - Scientific American.pdf) ([online version](https://www.scientificamerican.com/article/is-recycling-worth-it/)).
+- [Is Recycling Worth It?](https://github.com/kylebutts/ECON3535_S2023/blob/main/Articles/Is Recycling Worth It - Scientific American.pdf) ([online version](https://www.scientificamerican.com/article/is-recycling-worth-it/)).
 
 
 ---
