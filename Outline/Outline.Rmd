@@ -258,14 +258,10 @@ cal <- read_csv(here("schedule.csv")) %>%
 
 
 ### LECTURE 9
-  
-- Coal
-  
-- Carbon capture and storage
-  
-- Nuclear
 
-- Natural Gas
+- Merit Order
+
+- Monopoly and Regulation
 
 *Readings for this lecture*
 
@@ -274,12 +270,26 @@ cal <- read_csv(here("schedule.csv")) %>%
 
 ### LECTURE 10
 
+- Coal
+  
+- Carbon capture and storage
+
+- Nuclear
+
+- Natural Gas
+
+
+---
+
+### LECTURE 11
+
 - Renewables overview
 
 - Wind
 
 - Solar
-  
+
+
 *Readings for this lecture*
 
 - [Renewables to Account for a Third of Global Power Generation in 2022](https://github.com/kylebutts/ECON3535_S2023/blob/main/Articles/Renewables%20to%20Account%20for%20a%20Third%20of%20Global%20Power%20Generation%20in%202022%20|%20Greentech%20Media.pdf)
@@ -290,10 +300,7 @@ cal <- read_csv(here("schedule.csv")) %>%
 
 - Interview with NREL Researcher: [Solar power’s greatest challenge was discovered 10 years ago. It looks like a duck. ](https://github.com/kylebutts/ECON3535_S2023/blob/main/Articles/Solar%20powers%20greatest%20challenge%20was%20discovered%2010%20years%20ago.%20It%20looks%20like%20a%20duck%20-%20Vox.pdf) ([online version](https://www.vox.com/energy-and-environment/2018/3/20/17128478/solar-duck-curve-nrel-researcher)).
 
-
----
-
-### LECTURE 11
+### LECTURE 12
 
 - Energy storage
 
@@ -312,11 +319,11 @@ cal <- read_csv(here("schedule.csv")) %>%
 - [The Future of Energy Storage Beyond Lithium Ion](https://www.youtube.com/watch?v=EoTVtB-cSps)
 
 
-### LECTURE 12
-
-- Transportation
+### LECUTRE 13
 
 - Biofuels
+
+- Transportation
 
 *Readings for this lecture*
 
@@ -327,7 +334,7 @@ cal <- read_csv(here("schedule.csv")) %>%
 ## Unit 3: Pollution, Climate Change, and Policy
 <div style="height: 0.25rem;"></div>
 
-### LECTURE 13
+### LECTURE 14
 
 - Climate change
 
@@ -340,7 +347,7 @@ cal <- read_csv(here("schedule.csv")) %>%
 - [The Uninhabitable Earth](https://github.com/kylebutts/ECON3535_S2023/blob/main/Articles/The%20Uninhabitable%20Earth.pdf) ([online version](https://nymag.com/intelligencer/2017/07/climate-change-earth-too-hot-for-humans.html)).
 
 
-### LECTURE 14
+### LECTURE 15
 
 - Policies for local air pollution
 
@@ -362,7 +369,7 @@ cal <- read_csv(here("schedule.csv")) %>%
 - Example: Cancer Alley [Why This Town is Dying From Cancer](https://www.youtube.com/watch?v=ZB8CbDG7gpk)
 
 
-### LECTURE 15
+### LECTURE 16
 
 - Paris Agreement
 
@@ -378,7 +385,7 @@ cal <- read_csv(here("schedule.csv")) %>%
 
 
 ---
-### LECTURE 16
+### LECTURE 17
 
 - Environmental taxes
 
@@ -397,7 +404,7 @@ cal <- read_csv(here("schedule.csv")) %>%
 <div style="height: 0.25rem;"></div>
 
 
-### LECTURE 18
+### LECTURE 19
 
 - Valuation overview
 
@@ -410,7 +417,7 @@ cal <- read_csv(here("schedule.csv")) %>%
 - Chapter 3
 
 
-### LECTURE 19
+### LECTURE 20
 
 - Different types of value
 
@@ -422,7 +429,7 @@ cal <- read_csv(here("schedule.csv")) %>%
 
 - Chapter 4
 
-### LECTURE 20
+### LECTURE 21
 
 - Ecosystem services
 
@@ -440,7 +447,7 @@ cal <- read_csv(here("schedule.csv")) %>%
 
 ---
 
-### LECTURE 21
+### LECTURE 22
 
 - Dynamic fisheries
 
@@ -451,7 +458,7 @@ cal <- read_csv(here("schedule.csv")) %>%
 - First half of chapter 12 (Until you get to the dynamic fisheries model)
 
 
-### LECTURE 22
+### LECTURE 23
 
 - Forestry
 
@@ -462,7 +469,7 @@ cal <- read_csv(here("schedule.csv")) %>%
 ## Writing Assignment due 4/15 at 11:59pm 
 <div style="height: 0.25rem;"></div>
 
-### LECTURE 23
+### LECTURE 24
 
 - Land use
 
@@ -472,7 +479,7 @@ cal <- read_csv(here("schedule.csv")) %>%
 - Chapter 10
 
 
-### LECTURE 24
+### LECTURE 25
 
 - Food insecurity
 
