@@ -3,8 +3,8 @@
 \input{preamble.tex}
 
 \newtoggle{INCLUDEANSWERS}
-% \toggletrue{INCLUDEANSWERS}
-\togglefalse{INCLUDEANSWERS}
+\toggletrue{INCLUDEANSWERS}
+% \togglefalse{INCLUDEANSWERS}
 
 \newcommand{\answer}[1]{\iftoggle{INCLUDEANSWERS}{{\color{violet!70!white}\textbf{Solution:} #1}}{}}
 
