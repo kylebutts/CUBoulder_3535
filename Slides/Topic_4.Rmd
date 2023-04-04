@@ -36,38 +36,42 @@ class: clear, middle
 
 ---
 ## Valuation overview
+
 Natural resources are special because they are valuable, but they originate without ownership
 
-Most goods are allocated by markets
-  - Willingness to pay and willingness to accept manifest through prices
+  - Most goods are allocated by markets. Willingness to pay and willingness to accept manifest through prices
 
+<br />
 Government, as the representative of collective interest, sets the rules by which natural resources are allocated for use or preservation
 
-When goods are valuable but not privately owned, we need a non-market definition of value
+  - When goods are valuable but not privately owned, we need a non-market definition of value
 
 ---
-### Valuation- why?
+## Valuation - why?
 
 Most of the effort we put into valuation is intended to inform policy decisions
-  - Otherwise it’s just "this will create jobs" vs "this will destroy the environment"
+
+  - Otherwise it’s just subjective; e.g. "this will create jobs" vs "this will destroy the environment"
 
 Goal of environmental economics is to introduce some cold objectivity into otherwise emotional policy debates
 
-All valuation methods are inherently limited by uncertainty
+  - All valuation methods are inherently limited by uncertainty
 
-Hopefully nobody tries to pass off a valuation result as definitive fact
+  - Hopefully nobody tries to pass off a valuation result as definitive fact
+  
   - For important decisions, we should use many different approaches
 
-
-
 ---
-### Policy analysis
-Positive vs normative analysis
-  - *Positive*: measures objective effects of a policy action
-  
-  - *Normative*: evaluates policy along inherently subjective criteria
+## Positive vs normative analysis
 
+*Positive*: measures objective effects of a policy action
+  
+*Normative*: evaluates policy along inherently subjective criteria
+
+
+<br/>
 Normative analysis is essential for decision making
+
 Broadly speaking, there are two different scenarios where we do normative policy analysis
 
 1. Decide if a pre-defined project is "worth it"
@@ -77,47 +81,61 @@ Broadly speaking, there are two different scenarios where we do normative policy
 
 
 ---
-### Cost-benefit analysis
+## Cost-benefit analysis
+
 CBA is a common approach for situations where the policy action is well-defined; do the benefits outweigh the costs?
-  - If TB > TC, we do the project 
+
+  - If PV(TB) > PV(TC), we do the project 
+  
+  - Present Value from Topic 1
 
 Even though this may seem objective, it still uses subjective assumptions
 
- - Do we value benefits equally for all people? (Old vs young, rich vs poor, EJ issues, etc.)
+  - Benefits/Costs to any person are worth the same
+
+  - Do we value benefits equally for all people? (Old vs young, rich vs poor, EJ issues, etc.)
+
+--
 
 Costs are usually easier to measure than benefits 
+
+  - Often times we spend money to preserve something. Costs easy to measure; value of preserving hard to measure
+  
   - More on this later
 
 
 
 ---
+## Example Cost-Benefit Analysis
+
+Example of calculating the net benefits of the Clean Air Act:
 
 ```{r book-table-3-3, echo=FALSE, out.width="50%", fig.align='center'}
 knitr::include_graphics("graphics/book-table-3-3.png")
 ```
 
 
-
 ---
-### Pareto optimality
+## Pareto optimality
+
 An allocation is "Pareto optimal" if you can’t help anyone without hurting someone else
 
-  - I get a dollar, you get a dollar, we throw a third dollar away- not Pareto optimal
+  - I get a dollar, you get a dollar, we throw a third dollar away - not Pareto optimal
 
-  - I get a dollar, you get two dollars- Pareto optimal
+  - I get a dollar, you get two dollars - Pareto optimal
 
-This concept is helpful for getting to efficiency because it removes unjustifiable allocations
+This concept is helpful because it removes unjustifiable allocations
 
 Corollary: Any Pareto optimal allocation is theoretically justifiable according to some set of subjective values (or a social welfare function)
 
 
 
 ---
-### First Equimarginal Principle
+## First Equimarginal Principle
 
-*First Equimarginal Principle*
-
-  - Social net benefits are maximized when the social marginal benefits from an allocation equal the social marginal cost
+> **First Equimarginal Principle**
+> 
+> Social net benefits are maximized when the social marginal benefits from an allocation equal the social marginal cost
 
 Translation: When a decision can be described along a single axis (i.e. how many dollars should be spent), keep increasing until the next unit costs more than it creates in benefit
 
@@ -127,7 +145,7 @@ Same idea as in markets with externalities
 
 
 ---
-### First Equimarginal Principle
+## First Equimarginal Principle
 
 
 ```{r first-equimarginal-principal, echo=FALSE, out.width="75%", fig.align='center'}
@@ -137,7 +155,7 @@ knitr::include_graphics("graphics/First-Equimarginal-Principal.png")
 
 
 ---
-### CBA limitations
+## CBA limitations
 
 Study based on Army Corps of Engineers water projects
 
@@ -149,21 +167,30 @@ Who gets the benefits and who gets the costs?
 
   - CBA is solid if we only care about total amounts
 
+
+--
+
 "Social welfare functions" adjust for distribution of outcomes
 
-  - Basically, weight outcomes differently across different groups
+  - 1. weight outcomes differently across different groups of people
+  
+    - e.g. taking money from a low-income individual is worse than from a high-income individual
+  
+  - 2. weight each marginal dollar received differently
 
-  - 10 people get $1 vs. 1 person gets $10; need not be equally desirable outcomes
+    - e.g. 10 people get $1 vs. 1 person gets $10; need not be equally desirable outcomes
 
 
 ---
-### Cost-effectiveness analysis
+## Cost-effectiveness analysis
 
-The major alternative to CBA is cost-effectiveness analysis
+The major alternative to CBA is **cost-effectiveness analysis**
 
   - Pick a policy goal, find the least-cost method of getting there
 
   - Useful for when costs and benefits are harder to justify in direct comparison
+
+<br />
 
 Montreal Protocol is an example of this
 
@@ -175,32 +202,37 @@ Montreal Protocol is an example of this
 ---
 ## Second Equimarginal Principle
 
-*Second Equimarginal Principle*
-
-  - The least-cost way of meeting a goal will be when the marginal costs of all possible methods are equal
+> **Second Equimarginal Principle**
+>
+> The least-cost way of meeting a goal will be when the marginal costs of all possible methods are equal
 
 Translation: Don’t use expensive methods until we have exhausted all of the cheapest options
 
 Same idea as in cap and trade
+  
   - Remember, $MAC_1 = MAC_2$ is a condition for optimality
 
 
 
 ---
-### Static efficiency
+## Static efficiency
+
 This second area of normative analysis tries to identify the best policy among all possible versions
 
-  - Parallel in regular markets- the "best" Q is where supply = demand
+  - All other values of Q produce same outcome, but cost more
 
-  - All other values of Q produce lower surplus
+  - Parallel in regular markets - the "best" Q is where supply = demand
 
 An allocation of resources satisfies the "static efficiency" criterion if it maximizes total economic surplus for one point in time
 
   - Dynamic efficiency requires a sequence of allocations across users and time periods
+    
+    - Will discuss this in forestry and fishery models later
 
 
 ---
-### Conclusions
+## Conclusions
+
 What we have seen so far
 
   - Broad criteria for normative analysis and decision making
@@ -223,8 +255,6 @@ Next time
  
   - Chapter 4. Next couple of lectures comes from Chapter 4
 
-
-
 ---
 class: clear, middle
 # Lecture 28
@@ -234,7 +264,8 @@ class: clear, middle
   - Stated preference methods and biases
 
 ---
-### Recap
+## Recap
+
 Last time, we talked about the philosophy of valuation
 
   - How do we decide if this policy is worth it?
@@ -250,6 +281,7 @@ Environmental economics is used to support policy decisions
 
 ---
 ## Should humans place economic value on the environment?
+
 Philosopher Arne Naess made the argument that the environment has intrinsic value, unrelated to human interests [debate 4.1 in the book]
 
   - Why value the human economic perspective over any other?
@@ -258,37 +290,43 @@ Philosopher Arne Naess made the argument that the environment has intrinsic valu
 
 Economics is necessarily human-centric
 
-Best environmentalist argument in favor- if we don’t make environmental value tangible, it often defaults to a value of zero
+<br />
+Best environmentalist argument in favor of putting a value on environmental goods
+  - If we don’t make environmental value tangible, it often defaults to a value of zero
 
 
 ---
-### Types of value
+## Types of value
 
 1. Use value
 
-  - The main one- value we get by directly using resources 
+  - The main one - value we get by directly using resources 
 
   - Wood from the forest, air quality, scenic beauty
+
 2. Option value
 
   - Value from potential to use the resource in the future
 
   - You may never go to Yellowstone, but you might value the option to go
+
 3. Non-use value
 
   - Bequest value, cultural, religious, artistic, symbolic value
 
-
-> "There are many persons who obtain satisfaction from mere knowledge that part of wilderness North America remains, even though they would be appalled by the prospect of being exposed to it"
+> "There are many persons who obtain satisfaction from mere knowledge that part of wilderness North America remains, even though they would be appalled by the prospect of being exposed to it" (Rosenthal and Nelson, 1992)
 
 
 
 ---
 ## Preferences are secret
+
 The sum of use, option, and non-use value to everyone in society represents the "benefit" side of the equation
+
   - If you could read minds, this would not be a problem
 
 As I mentioned last time, benefits are usually harder to determine than costs
+
   - Costs are often just dollar projections of contract work
 
   - Benefits are internal, subjective, and complicated to describe
@@ -297,18 +335,22 @@ Many practical challenges in determining the true benefits of a policy
 
 
 ---
-### Methods for measuring value
+## Methods for measuring value
+
 1. Stated preference
+
   - Experimental and survey methods, usually hypothetical
 
   - Contingent valuation, choice experiments, ranking exercises
+
 2. Revealed preference
+
   - Methods that use data to infer things about people’s preferences
 
   - Market prices, hedonic models, expenditure-based models
 
 ---
-### Stated preference methods
+## Stated preference methods
 
 Contingent valuation surveys
 
@@ -326,7 +368,7 @@ Survey methods like this depend on if you can trick respondents in to telling th
 
 
 ---
-### Stated preference methods
+## Stated preference methods
 .subheader[Example: Northern Spotted Owl]
 
 Endangered species in the Pacific Northwest (Example 4.2 in the textbook)
@@ -337,49 +379,44 @@ Responses indicated that value placed on this one species justified the preserva
 
   - Benefit-cost ratio was somewhere from 3-1 to 43-1
 
-Valuation hinged on the "non-use" value of the species, but ultimately was a clear-cut decision
+Valuation hinged on the "non-use" value of the species
 
 ---
-### Biases
+## 1. Strategic bias
 
-#### 1. Strategic bias
-
-  - Survey answers can influence actual outcomes, so people exaggerate willingness to pay
+Survey answers can influence actual outcomes, so people exaggerate willingness to pay
 
   - "Sure, I would pay $10,000 to preserve that stretch of river, I go there all the time"
 
+
 ---
-### Biases
+## 2. Information bias
 
-
-#### 2. Information bias
-
-  - Respondents have highly variable responses when they don’t have much information about the question being asked
+Respondents have highly variable responses when they don’t have much information about the question being asked
 
   - Ex: Canadians apparently value polar bears at $6.3 billion per year based on survey responses (about $500 per household per year)
-https://www.nextnature.net/2013/11/how-much-is-a-polar-bear-worth/
 
+    - https://www.nextnature.net/2013/11/how-much-is-a-polar-bear-worth/
 
+    - From tourism and hunting, the use-value is about $9 million per year
 
 ---
-### Biases
+## 3. Starting point bias
 
-#### 3. Starting point bias
-
-  - The way the question is framed will influence what people see as a reasonable answer
+The way the question is framed will influence what people see as a reasonable answer
 
   - Survey designs sometimes often trade off this bias with information bias
 
-  - Is the height of the tallest redwood tree more or less than ___ feet? vs. What is your best guess as to the height of the tallest redwood tree?
 
-     - Responses to the second question were greatly impacted by the number given in the first
+<br />
+Is the height of the tallest redwood tree more or less than ___ feet? vs. What is your best guess as to the height of the tallest redwood tree?
+
+  - Responses to the second question were greatly impacted by the number given in the first
 
 ---
-### Biases
+## 4. Hypothetical bias
 
-#### 4. Hypothetical bias
-
-  - Respondents answer differently if they know they will not be held to their answer
+Respondents answer differently if they know they will not be held to their answer
 
   - Real economic decisions are made with scarce resources, surveys are not
 
@@ -390,30 +427,20 @@ https://www.nextnature.net/2013/11/how-much-is-a-polar-bear-worth/
 
 
 ---
-### Biases
+## 5. Difference between WTP and WTA (status quo bias)
 
-#### 5. Difference between WTP and WTA (status quo bias)
+WTP is a payment for improvement from the status quo
 
-  - WTP is a payment for improvement from the status quo
+WTA is the compensation you would demand for enduring the opposite
 
-  - WTA is the compensation you would demand for enduring the opposite
-
-Empirically, WTA tends to be much greater than WTP
+  - Empirically, WTA tends to be much greater than WTP
 
   - I would be willing to contribute 50 dollars towards a park near my house, but removing an existing park would feel more like 200 dollars of lost value to me
+
 
 A thorough survey would ask for both numbers
 
   - WTP is the lower bound, WTA is the upper bound
-
-
-
----
-## Reading for next time
-
-  - Chapter 4
-
-
 
 ---
 class: clear, middle
@@ -421,20 +448,19 @@ class: clear, middle
 
   - Revealed preference methods
 
-
-
 ---
-### Recap
-Valuation of environmental goods
+## Recap: valuation of environmental goods
 
-  - Challenge of properly allocating scarce resources without the use of market prices
+Challenge of properly allocating scarce resources without the use of market prices
 
+<br />
 Stated preference (SP) methods
 
   - Surveys and experiments try to simulate market prices for environmental goods
 
-  - Answers are systematically biased
+  - Answers can often be systematically biased
 
+<br />
 Revealed preference (RP) methods
 
   - Today!
@@ -455,48 +481,54 @@ SP methods can be used to estimate all three value categories
 
 
 ---
-### Travel cost method
+## Travel cost method
 
 Most useful for recreational resources, where travel cost is a large component of the decision making process
 
   - Fishing spots, national parks, beaches, hiking trails
 
-Travel costs- time, effort, gasoline, vehicle maintenance, plane tickets, etc.
+Travel costs: time, effort, gasoline, vehicle maintenance, plane tickets, etc.
 
-BP oil spill in 2010 (Deepwater Horizon)
+<br/> 
+.alice[Example:] BP oil spill in 2010 (Deepwater Horizon)
 
-  - Travel cost methods were used to estimate the value lost by tourists, part of the analysis that led to ~$60 billion in fines paid by BP
+Travel cost methods were used to estimate the value lost by tourists
+  - Part of the analysis that led to ~$60 billion in fines paid by BP
 
 ---
-#### Travel cost method- example
+## Travel cost method - example
 
 1. Ask visitors at Yellowstone where they traveled from
 
 2. Estimate the implied travel cost 
 
-  - Usually distance is the biggest variable, sometimes citizenship
+  - Usually distance is the biggest variable
 
-3. This number forms a lower bound for the willingness to pay (WTP) for the environmental good
+3. This number forms a lower bound for the willingness to pay (WTP) for the use value of the environmental good
 
-  - True WTP is higher- we know this because they decided to go
+  - True WTP is higher - we know this because they decided to go
 
   - Difference between WTP and costs is consumer surplus
 
 
 
 ---
-### Hedonic methods
+## Hedonic methods
 
 Break down a good into components, and use a large market dataset to estimate the effect each component has on the final price
 
   - Strategy used in lots of areas, especially labor and real estate
+  
+  - Home prices and wages are "prices" determined in the market
 
-Most useful when the market is multi-faceted and common
-
-Again, goal is not to pinpoint the exact value of an environmental good, but rather to get upper or lower bounds on the true number
+Most useful when the market good is multi-faceted and common. A lot of factors make for a good job or for a good house
+  
+  - Finding two jobs that are similar in all ways except 1 allows to see how much wage people would be willing to give up for that one feature
+  
+  - Finding two homes that are similar in all ways except 1 allows to see how much people value that one amenity
 
 ---
-#### Hedonic example- real estate
+## Hedonic example - real estate
 
 Three houses are identical except for the following two traits:
 
@@ -516,22 +548,23 @@ Base value of the house with neither amenity would be $370,000
 
 
 ---
-### Compensating differentials
+## Compensating differentials
 
-Components of a job that affect market wage are called compensating differentials- important part of hedonic wage models
+Components of a job that affect market wage are called **compensating differentials**
 
 The desirability of a job comes down to much more than just the hourly wage
 
   - Safety, flexibility, choice of hours, personal appeal
 
-School teachers are usually paid less than miners. Why?
 
-Wage differences can explain how people trade off income with other job components, including health impacts from environmental hazards
+Roof workers are usually paid more than landscapers. Why?
+
+  - Wage differences can explain how people trade off income with other job components, including health impacts from environmental hazards
 
 
 
 ---
-### Value of a statistical life
+## Value of a statistical life
 
 .pull-left[
 Is Life Priceless?
@@ -546,26 +579,38 @@ In other words, how much are we willing to accept for a small increase in risk o
 ![Wing Suit](graphics/wing-suit.jpg)
 ]
 
-
 ---
-### VSL example
+## VSL example
+
 Air pollution policy reduces probability of death from 1:100,000 to 1:150,000
 
   - Across a population of 1 million people, expected number of deaths fall from 10 to 6.67
 
 If the average WTP for this policy is $5 per person, then $5 million = 3.33 statistical lives
+  
   - VSL = $1.5 million
 
 Governments use VSL instead of asking millions of people strange questions
+  
   - Policy costs $2 million, expected to save 3.33 lives
 
   - If VSL = $1.5 million, policy is worth it
 
 ---
-### Value of a statistical life
+## VSL Real-life Example
+
+[Bishop, Kuminoff, Mathes, and Murphy](https://www.public.asu.edu/~amurph10/bkmm.pdf)
+
+> "The annual implicit cost of a 0.1 percentage-point reduction in mortality risk among older Americans and find that this figure is both relatively low and decreasing in age, from $1,346 for a 67 year old to $246 for an 87 year old."
+
+---
+## Value of a statistical life
+
 100% chance of killing one person vs 1% chance of killing each of 100 people?
 
-  - VSL works better when the marginal risks are very small and spread out- "statistical life" rather than "life"
+  - VSL works better when the marginal risks are very small and spread out 
+    
+    - "statistical life" rather than "life"
 
 Young vs old
 
@@ -577,12 +622,7 @@ Wealthier people end up having a higher VSL (yikes)
 
   - Sierra Leone: ~$577,000
 
----
-## Reading for next time
-
-  - Finish chapter 4
-
-
+  - e.g. higher-income countries have a higher WTP (ability to pay?) for environmental regulation
 
 ---
 class: clear, middle
@@ -592,7 +632,7 @@ class: clear, middle
 
 
 ---
-### Ecosystem services
+## Ecosystem services
 
 Ecosystem services are the benefits that humans gain from well-functioning ecosystems
 
@@ -606,17 +646,20 @@ Example: mangrove swamps
 
   - Provide a direct ecosystem service through cost reduction of coastal maintenance
 
+---
+## Mangrove swamp demonstration
 
+<br/>
+.center[
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/cNE56Wua7bA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+]
+
+.center[https://www.youtube.com/embed/cNE56Wua7bA]
 
 ---
-### Mangrove swamp demonstration
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cNE56Wua7bA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
----
-### Categories
+## Categories
 The UN Millennium Ecosystem Report defines four categories of value produced by ecosystems
+
 1. Supporting services
 
   - Nutrient cycling, pollination, habitat provision
@@ -634,7 +677,7 @@ The UN Millennium Ecosystem Report defines four categories of value produced by 
   - Recreation, education, spiritual/historical/cultural significance
 
 ---
-#### Case study #1: coral reefs
+## Case study #1: Coral Reefs
 
 .pull-left[
 Ecosystem services
@@ -645,7 +688,7 @@ Threats
 
   - Damage from overfishing, pollution
 
-  - Bleaching from higher water temperatures- more fragile, less able to combat disease
+  - Bleaching from higher water temperatures - more fragile, less able to combat disease
 
   - Ocean acidification from CO2 absorption
 ]
@@ -654,18 +697,22 @@ Threats
 ]
 
 ---
-class: center, middle
-#### Estimates
+## Estimates
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3kb0bz-3lWc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br />
+.center[
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/3kb0bz-3lWc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+]
 
+.center[https://www.youtube.com/embed/3kb0bz-3lWc]
 
 
 ---
-#### Sources of "Natural Capital"
+## Sources of "Natural Capital"
+
 Food and research value
 
-  - Directly measured from market data- same as with energy resources
+  - Directly measured from market data - same as with energy resources
 
 Tourism/aesthetic amenity
 
@@ -684,7 +731,7 @@ Maintenance of genetic diversity
 
 
 ---
-### Case study #2: Bees
+## Case study #2: Bees
 
 Domesticated beekeeping is a textbook example of a positive externality
 
@@ -692,10 +739,10 @@ Domesticated beekeeping is a textbook example of a positive externality
 
 Pollination services are also sold directly - revenue of ~$656 million per year
 
-https://www.vox.com/2015/7/6/8900605/bees-pollination-ecosystem-services
+  - https://www.vox.com/2015/7/6/8900605/bees-pollination-ecosystem-services
 
 ---
-#### Wild bees
+## Wild bees
 
 Direct value added from crop pollination is ~$15 billion per year in the US
 
@@ -711,11 +758,11 @@ Apparently only 12.6% of wild bees actively pollinate agricultural crops
 
 Valuation based only on marketable crops is easier, but ultimately an incomplete picture of the value
 
-https://obamawhitehouse.archives.gov/blog/2015/05/19/announcing-new-steps-promote-pollinator-health
+Source: https://obamawhitehouse.archives.gov/blog/2015/05/19/announcing-new-steps-promote-pollinator-health
 
 
 ---
-#### Wild bees
+## Wild bees
 Ecosystem services for non-market plants are harder to evaluate
 
 Option value
@@ -730,7 +777,7 @@ Non-use value
 
 
 ---
-#### Colony collapse disorder
+## Colony collapse disorder
 
 ~33% of colonies died in the winter of 2010
 
@@ -769,7 +816,7 @@ class: clear, middle
   - Static fisheries
 
 ---
-### Recap
+## Recap
 
 Early in this class we studied the two-period model of mineral extraction
 
@@ -786,7 +833,10 @@ Value of the conserved resource falls to zero in the long run
 
 ---
 ## Bioeconomic systems
-Value, quantity, and quality of the resource affects economic activity, and vice versa
+
+Bieconomic systems have a feeback between the environment and economic value:
+
+The value, quantity, and quality of the resource affects economic activity, and vice versa
 
   - Fisheries, livestock, forestry
 
@@ -796,7 +846,11 @@ Value, quantity, and quality of the resource affects economic activity, and vice
 
 Contrast with energy resources and non-renewable resources
 
+  - Gold doesn't grow more gold if you wait til next year to mine it
+
 Bioeconomic systems are more like a bank account
+  
+  - Depositing more money creates more interest payments in the future
 
 
 ---
@@ -815,7 +869,7 @@ Assumptions
   - Ignore interaction with other species, population age, other environmental effects
 
 ---
-### Biological model
+## Biological model of fish growth
 
 .pull-left[
 
@@ -839,7 +893,7 @@ knitr::include_graphics("graphics/book-fig-13-1.png")
 
 
 ---
-### Biological model
+## Biological model of fish growth
 
 $\underline{S}$ is not zero; it is the point at which the death rate > birth rate
 
@@ -853,23 +907,22 @@ knitr::include_graphics("graphics/book-fig-13-1.png")
   
 
 ---
-### Biological model
+## Sustainable yields
 
-$S^*$ is the "Maximum sustainable yield"
-  - Population level that enables the fastest growth rate
-  
-  - $G(S^*)$ is that rate
+In general at a level $S$, we can harvest $G(S)$ fish every year and the stock will remain at $S$ (sustainable yield)
 
-We can take $G(S^*)$ per period if the population is at $S^*$, and it will be sustainable
+$S^*$ is the stock with the "Maximum sustainable yield"
+
+  - Population level that enables the fastest growth rate, $G(S^*)$
 
 ```{r, echo=FALSE, out.width="80%", fig.align='center'}
 knitr::include_graphics("graphics/book-fig-13-1.png")
 ```
 
 
-
 ---
-### Bioeconomic model
+## Bioeconomic model
+
 Sustainable (in this context): we face an identical situation every period 
 
 The biological model is the basis for sustainability
@@ -878,55 +931,51 @@ The biological model is the basis for sustainability
 
   - Licenses in public fisheries are based on this principle
 
+
+<br />
+
 However, we need an economic model if we want efficiency also
 
 Efficient sustainable yield
 
   - Harvest maximizes (total revenue) – (total costs)
+  
+  - While only fishing $G(S^{\text{efficient}})$
 
 ---
-### Bioeconomic model
+## Bioeconomic model
 
 Gordon-Schaefer bioeconomic model of fisheries
 
-Choice variable is the level of "fishing effort"
+  - Choice variable is the level of "fishing effort"
 
-Assumptions
+**Assumptions**
 
   - Constant price of fish, constant marginal cost of effort
 
   - Quantity caught is proportional to stock
 
-  - Discount rate of r=0%
+  - Discount rate of $r = 0\%$
 
 Remember, maximum sustainable yield (MSY) gives us the maximum benefit, not the maximum NET benefit
 
 ---
-### Bioeconomic model
+## Bioeconomic model
 
-For now, this is the static model because r = 0%
+For now, this is the static model because $r = 0\%$
 
   - Only looking at sustainable outcomes
 
-  - Level of effort is constrained to be identical in every period
-
-Level of effort $\to$ fish stock $\to$ growth rate
+Level of effort fishing $\to$ fish stock $S$ $\to$ growth rate $G(S)$
 
   - Growth rate = number of fish we can take each period
 
-The dynamic model lets us change effort levels over time 
-
-  - According to a non-zero discount rate
-
-
 ---
-### Bioeconomic model
-
 Benefit curve is the mirror image of the growth curve from before
 
-  - Large effort $\to$ small population $\to$ low growth rate
+  - Large effort  $\to$ small  population $\to$ low growth rate
 
-  - Small effort $\to$ large population $\to$ low growth rate
+  - Small effort  $\to$ large  population $\to$ low growth rate
 
   - Medium effort $\to$ medium population $\to$ high growth rate
   
@@ -937,12 +986,11 @@ knitr::include_graphics("graphics/book-fig-13-2.png")
 
 
 ---
-### Bioeconomic model
 Total cost curve
 
   - Constant MC of effort $\to$ increasing total cost of effort
 
-  - Marginal cost = slope of the Total cost curve (think about it)
+  - Marginal cost = slope of the Total cost curve
 
 
 ```{r, echo=FALSE, out.width="60%", fig.align='center'}
@@ -951,8 +999,6 @@ knitr::include_graphics("graphics/book-fig-13-2.png")
 
 
 ---
-### Bioeconomic model
-
 At the effort level $E^C$, the total cost of effort is equal to the total benefit
 
   - Zero profit
@@ -968,14 +1014,13 @@ knitr::include_graphics("graphics/book-fig-13-2.png")
 
 
 ---
-### Bioeconomic model
-$E^E$ is the effort level corresponding to the "Efficient Sustainable Yield"
+## Bioeconomic model
+
+$E^E$ is the effort level corresponding to the "Efficient Sustainable Yield" (when $MC = MB$)
 
 $R(E^E)$ is the value of the ESY
 
 $C(E^E)$ is the cost of obtaining the ESY
-
-
 
 ```{r, echo=FALSE, out.width="60%", fig.align='center'}
 knitr::include_graphics("graphics/book-fig-13-2.png")
@@ -984,7 +1029,8 @@ knitr::include_graphics("graphics/book-fig-13-2.png")
 
 
 ---
-### Bioeconomic model
+## Bioeconomic model
+
 $R(E^E)$ - $C(E^E)$ is the profit we get when the fishing rate = the ESY
 
 Why is the maximum profit? Two ways to think about it:
@@ -993,32 +1039,34 @@ Why is the maximum profit? Two ways to think about it:
 
 2. Point at which MB = MC (slope of TB = slope of TC)
 
-
 ---
-## Reading for next time
-  
-- First half of chapter 13 (Until you get to the dynamic fisheries model)
+# Fundamental Tradeoff of Fisheries
 
+The fundamental tradeoff is:
+
+By fishing one more fish today, I can not fish 1 tomorrow **AND** I change tomorrow's growth rate
 
 ---
 class: clear, middle
 # Lecture 32
+
   - Dynamic fisheries
 
   - Open access fisheries
 
 ---
-### Conclusions/Recap
+## Conclusions/Recap
 
 Sustainable fishing $\to$ actions lead to constant population size at the end of each period
 
-Biological model gives us MSY, which maximizes benefits across all sustainable levels of fishing
+1. Biological model gives us Maximum Sustainable Yield, which maximizes benefits across all sustainable levels of fishing
 
-Bioeconomic model gives us ESY, which maximizes net benefits across all sustainable levels of fishing effort
-  - MSY is not efficient because it does not consider any costs
+2. Bioeconomic model gives us ESY, which maximizes net benefits across all sustainable levels of fishing effort
+  
+  - Maximum Sustainable Yield is not efficient because it does not consider any costs
 
 ---
-### Dynamic model
+## Dynamic model
 
 The dynamic model expands on the static model
 
@@ -1026,15 +1074,15 @@ The dynamic model expands on the static model
 
   - Discount rate of zero turns this back into the static model
 
-The dynamic fisheries model includes the other two
+<br /> 
 
-  - For this section, let’s focus on how model assumptions change the conclusions
-
-Disclaimer: the math in this section of the book uses differential equations, but it does not actually acknowledge this
+For this section, we will focus on intuition and not the math
+  
+  - The math in this section of the book uses differential equations (fancy calculus)
 
 
 ---
-### Open access fisheries
+## Open access fisheries
 
 Everything before now has been from the perspective of a single decision-maker who captures the benefit of conservation
 
@@ -1050,32 +1098,28 @@ When we treat fish as a rival but non-excludable good, there are two main source
 
 
 ---
-#### Static inefficiency
+## 1. Static inefficiency
 
 In the static ESY scenario, fish profitably in every period
 
-  - Under open access, profit opportunity brings additional entrants
+  - Under open access, profit opportunity brings additional fisherman
 
-More participants $\to$ higher total effort $\to$ smaller stock of fish
+More fisherman $\to$ higher total effort $\to$ smaller stock of fish
 
   - Even under sustainable fishing levels, this is inefficient
 
-Principles of micro- perfectly competitive markets
+  - In the long run, more competitors (fisherman) will enter until industry profit goes to zero
 
-  - In the long run, more competitors will enter until industry profit goes to zero
-
-  - We can apply this logic to open access fisheries
 
 
 ---
-#### Static inefficiency
+## 1. Static inefficiency
 
 Recall from before, $E^E$ is the level of effort corresponding to the ESY
 
 With open access, participants enter until there is no more profit opportunity, and total effort is at $E^C$
 
-  - In this picture, they have about the same sustainable catch, but costs are much higher under open access
-
+  - In this picture, they have about the same sustainable catch, but profits are zero now!
 
 ```{r, echo=FALSE, out.width="60%", fig.align='center'}
 knitr::include_graphics("graphics/book-fig-13-2.png")
@@ -1083,7 +1127,8 @@ knitr::include_graphics("graphics/book-fig-13-2.png")
 
 
 ---
-#### Dynamic inefficiency
+## 2. Dynamic inefficiency
+
 In open access fisheries, individual decision-makers do not benefit as much from leaving fish in the water
 
   - All of the incentives of the dynamic model plus a lower benefit in the future
@@ -1095,7 +1140,7 @@ This often leads to overfishing
 ---
 ## Reading for next time
 
-- Chapter 12, pages 293-299
+- Forestry Chapter 12, pages 293-299
 
 
 ---
@@ -1105,11 +1150,12 @@ class: clear, middle
   - Forestry
 
 ---
-### Forests
+## Forests
 
 Forests cover 33% of the land in the US, about 31% globally
 
 Bioeconomic system
+  
   - Value of the resource over time depends on economic interaction
 
 Forests are open-access, but usually not as open as fisheries
@@ -1118,36 +1164,35 @@ Forests are open-access, but usually not as open as fisheries
 
 Age
 
-  - Key feature for fisheries model- growth rate of the population
+  - Key feature for fisheries model - growth rate of the population
 
-  - Key feature for forest model- growth rate of individual trees
-
+  - Key feature for forest model - growth rate of individual trees
+  
+Recently, trees have become a key component in "net-zero emissions"
 
 ---
-### Deforestation
+## Deforestation
 
 Biggest cause of deforestation is land use conversion
 
   - Clearing forest land for agricultural and livestock land
 
-  - Subsistence farming is a big part of this- is afforestation/reforestation regressive?
+  - Subsistence farming is a big part of this - is afforestation/reforestation regressive?
 
 Aggravates the problem of climate change through lowered GHG sequestration capacity
 
-  - Afforestation/reforestation has a positive externality 🡪 under-produced common resource
+  - Afforestation/reforestation has a positive externality $\to$ under-produced common resource
 
 Loss of ecosystem services
 
   - Biodiversity, soil erosion and desertification 
 
-  - Coastal protection- mangrove swamps
-
-
+  - Coastal protection - mangrove swamps
 
 ---
-#### Deforestation/Afforestation
+## Deforestation/Afforestation
 
-.left-column[
+.pull-left[
 Green: forest cover
 
 Red: loss (2000-2016)
@@ -1155,16 +1200,15 @@ Red: loss (2000-2016)
 Blue: gain (2000-2012)
 
 Purple: gain and loss
-]
-.right-column[
-.center[
-
-```{r, echo=FALSE, out.width="60%", fig.align='center'}
-knitr::include_graphics("graphics/forest-change.png")
-```
 
 [Source](https://earthenginepartners.appspot.com/science-2013-global-forest)
 ]
+.pull-right[
+
+```{r, echo=FALSE, out.width="100%", fig.align='center'}
+knitr::include_graphics("graphics/forest-change.png")
+```
+
 ]
 
 ---
@@ -1183,44 +1227,48 @@ class: center, middle
 
 
 ---
-### Harvest of forests
+## Harvest of forests
 
-Macro perspective- land use management
-  - Different land uses have different value to society, optimal balance (next class)
+Macro perspective - land use management
 
+  - Different land uses have different value to society, optimal balance
+  
   - Problems related to open access and tragedy of the commons
 
-Micro perspective- optimal timing of harvest decision
+Micro perspective - optimal timing of harvest decision
+
   - Today: model of plantation forestry
 
   - Single owner, profit maximization problem
 
+
 Commercial uses of forest harvest
 
-  - Wood fuel, building material, paper products, etc.
+  - Wood fuel, building material, paper products, carbon credits, etc.
 
 
 
 ---
-### Comparison with fisheries
+## Comparison with fisheries
 
 Both resources: slower growth rate or higher discount rate incentivizes overuse
-  - When r > g, it may be efficient to deplete the resource
+  
 
 Compared to fisheries, forests:
+  
   - Grow more slowly but last longer
 
-  - Have more well-defined property rights
+  - Have more well-defined property rights (private good)
 
   - Are a crucial input into climate change models
 
-
 ---
-### Biological model of growth (Clawson, 1977)
+## Biological model of growth (Clawson, 1977)
 
 .pull-left[
 Growth is in volume of wood per acre, per year
-  - Average growth rate of all trees in the plantation
+  
+  - Average growth rate of all trees in the forest
 
 Trees do not affect growth rate of other trees
 
@@ -1235,12 +1283,14 @@ Number of trees does not change
 
 
 ---
-### Single-rotation harvest model
+## Single-rotation harvest model
 
 Single-rotation
+  
   - No re-planting decision; model ends at harvest
 
 Assumptions
+  
   - Fixed cost of planting one acre: $1,000
 
   - Marginal cost of harvesting: $0.30 per cubic foot
@@ -1251,56 +1301,92 @@ Maximize PV(NB)
 
   - PV(NB) = PV(revenue) – PV(extraction cost) – planting cost in period zero
 
+Optimal choice will depend on the discount rate
 
 ---
-### Economic Harvesting Decision
+## Main ideas
+
+Planting costs happen in current period, no discount
+
+  - Benefits and marginal cost of harvest occur in the future and they are discounted equally
+
+Higher discount rate $\to$ harvest sooner
+
+Cost and price do not affect optimal harvest date after the trees are planted
+  
+  - Cost and price affect overall profitability
+  
+  - "I wish I hadn’t made this investment, but I still benefit from harvesting it"
+
+---
+## Economic Harvesting Decision
 
 ![Economic Harvesting Decision](graphics/book-table-12-1.png)
 
 
 
----
-### Main ideas
-
-Planting costs happen in current period, no discount
-  - Benefits and marginal cost of harvest occur in the future and they are discounted equally
-
-Higher discount rate $\to$ harvest sooner
-
-Cost and price do not affect optimal harvest date
-  - Cost and price affect overall profitability
-  
-  - "I wish I hadn’t made this investment, but I still benefit from harvesting it"
-
-
 
 ---
-### Multiple-rotation harvest model
+## Multiple-rotation harvest model
+
 Multiple-rotation harvest creates interdependence
-  - Harvest early and invest the earnings vs harvest later and increase forest value
+
+  - Harvest early and start growing more trees vs harvest later and increase current trees' value
 
   - Invested earnings help pay for next cycle
 
 The punchline: later harvest dates have an additional opportunity cost compared to the single-harvest model
+  
   - Ability to re-plant results in shorter optimal harvest cycles
 
 
 ---
-#### Complicating the model
+## Complicating the model
 
 Relaxing assumptions
-  - Lumber prices tend to increase over time (graph)
   
+  - Lumber prices tend to increase over time
+    
   - Harvest technology improves over time, leading to lower MC
+  
+With a partner, how would this effect the optimal harvest timing?
 
+--
 These effects lengthen the optimal harvest cycle, as the net benefit per unit grows over time
+  
   - Counteracts the discount rate
+  
+---
+## Forestry and Carbon Credits
+
+For a lot of firms, they can "offset" their emissions by buying carbon credits; the major source being planting of new trees
+
+  - Relatively cheap to "abate" using trees at about $12 per metric ton of carbon ([source](https://www.eia.gov/todayinenergy/detail.php?id=50998))
+
+  - Buy credits if a firm's marginal abatement cost is more expensive than marginal cost 
+  
+
+
+<br />
+As the number of credits sold, will the cost increase?
+  
+  - Using cheapest sources first
+  
+---
+## Questions about quality of permits:
+
+- [The Guardian - Revealed: more than 90% of rainforest carbon offsets by biggest certifier are worthless, analysis shows](https://www.theguardian.com/environment/2023/jan/18/revealed-forest-carbon-offsets-biggest-provider-worthless-verra-aoe)
+
+- [Bloomberg - These Trees Are Not What They Seem](https://www.bloomberg.com/features/2020-nature-conservancy-carbon-offsets-trees)
+
+- [Bloomberg - Timber](https://archive.ph/frSOs#selection-4139.0-4148.0)
+
 
 
 ---
 ## Reading for next time
-Land use
-Chapter 10
+
+Land use; Chapter 10
 
 
 ---
@@ -1325,7 +1411,7 @@ Unrestricted markets tend to allocate land according to its highest value use
 
 
 ---
-### Urban planning model
+## Urban planning model
 
 .pull-left[
 Each line is called a "bid-rent" function
@@ -1340,7 +1426,7 @@ Everything from zero to A miles from the city center should be residential
 ]
 
 ---
-### Urban planning model
+## Urban planning model
 
 .pull-left[
 In practice, subsidies and development negotiations make it hard to define points A and B
@@ -1353,7 +1439,7 @@ Wilderness area is a public good (with positive externalities) so usually WTP < 
 ]
 
 ---
-### Land use conversion
+## Land use conversion
 
 Over time, these relationships can change with technology
   - 1870: 50% of US population worked in agriculture
@@ -1368,7 +1454,7 @@ In the US
   - Entire regions specialize in agriculture or in non-agriculture
 
 ---
-### Inefficient allocation of land
+## Inefficient allocation of land
 
 Urban sprawl/ leapfrogging
   - Inefficient spacing of land use
@@ -1387,7 +1473,7 @@ Market power
 
 
 ---
-#### Some solutions
+## Some solutions
 Zoning laws
   - Group compatible land uses together
 
@@ -1401,7 +1487,7 @@ Demand for residential development around valuable areas (Boulder) rises, and ca
 
 
 ---
-### Food insecurity
+## Food insecurity
 Most environmental issues are relatively new, but this one is old
 
 WHO/FAO pillars of food insecurity
@@ -1415,7 +1501,7 @@ This type of argument persists today, but we easily create enough food for every
 
 
 ---
-### Food production
+## Food production
 Modern food insecurity is more about costs and  distribution across people, not total production
   - Current food production capacity is essentially unlimited
 
@@ -1426,7 +1512,7 @@ Vertical Indoor Farming
 
 
 ---
-### Global food market
+## Global food market
 
 .pull-left[
 Supply curve for the global food market is still up for debate
@@ -1445,7 +1531,7 @@ $D_1 - D_6$
 
 
 ---
-### Global scarcity hypothesis
+## Global scarcity hypothesis
 
 .pull-left[
 Strong form: per capita food production is declining
@@ -1494,7 +1580,7 @@ Public supply
 ]
 
 ---
-### Water demand
+## Water demand
 Residential/commercial (~12% of total)
   - Water is a utility good much like electricity
   
@@ -1502,7 +1588,7 @@ Residential/commercial (~12% of total)
 
 
 ---
-### Residential water pricing
+## Residential water pricing
 .pull-left[
 Compared to electricity, water demand is more elastic
   - Easier on the margin to conserve water than electricity (when prices are high)
@@ -1520,13 +1606,13 @@ Ex. 9.5
 
 ---
 class: center, middle
-### Water demand
+## Water demand
 
 ![Withdrawls by State](graphics/us-total-withdrawls.png)
 
 
 ---
-### Water supply
+## Water supply
 Fresh water is plentiful overall, but it is scarce in some places
   - No universal rules for water management
 
@@ -1535,7 +1621,7 @@ Surface water: renewable
 Ground water in aquifers: semi-renewable
 
 ---
-#### Example: Ogallala Aquifer
+## Example: Ogallala Aquifer
 
 .pull-left[
 Huge aquifer in the middle of the US
@@ -1552,7 +1638,7 @@ Annual refill rate: 22mm per year; Extraction rate: 77mm per year
 
 
 ---
-### Water rights
+## Water rights
 Water rights are particularly challenging to assign
 
   - Water is used and then disperses; cannot own specific water molecules
@@ -1570,10 +1656,10 @@ Riparian rights
 
 
 ---
-### Water rights
+## Water rights
 Under the structure of riparian rights, there was no way to transfer ownership
 
-  - Transferability- one of the necessary components for complete property rights
+  - Transferability - one of the necessary components for complete property rights
 
   - It became necessary to revise the rules when water became important elsewhere
 
@@ -1588,7 +1674,7 @@ Prior appropriation doctrine
 
 
 ---
-### Water rights
+## Water rights
 
 Over time, perspectives evolved until water was seen as a public good
 
@@ -1603,7 +1689,7 @@ Instead of a right to ownership of water, people could have "usufructuary rights
 Expanded role of federal government in water allocation
 
 ---
-### Privatization of water
+## Privatization of water
 Facing declining infrastructure, government can turn over control to private companies
 
   - Hoping they can manage water more efficiently
@@ -1612,19 +1698,19 @@ Facing declining infrastructure, government can turn over control to private com
 
 Cochabamba, Bolivia
 
-  - Privatization can go very badly- violent protest and early contract termination
+  - Privatization can go very badly - violent protest and early contract termination
 
   - Monopoly control over an essential resource, price hikes
 
-  - Movie- Tambien la Lluvia (Even the Rain) 
+  - Movie - Tambien la Lluvia (Even the Rain) 
 
 
 ---
-### Surface water
+## Surface water
 Because surface water is renewable, allocation problem is across different uses within the same time period
 
 ---
-#### Texas rice belt
+## Texas rice belt
 Since around 1900, farmers in the lower floodplains of the Colorado River received water naturally
 
 Over time, population increased dramatically
@@ -1670,9 +1756,9 @@ Landfills produce about 1.8% of the greenhouse gases in the US
   - Mostly methane, which is a bad one
 
 Connection to resource taxonomy concept
-  - Resources exist in several forms- in the ground, in landfills, and in existing products distributed throughout the economy
+  - Resources exist in several forms - in the ground, in landfills, and in existing products distributed throughout the economy
 
-  - Each of these enter into the "potential reserves" function- they are profitable to extract under some set of circumstances [Is Recycling Worth It?](https://www.scientificamerican.com/article/is-recycling-worth-it/)
+  - Each of these enter into the "potential reserves" function - they are profitable to extract under some set of circumstances [Is Recycling Worth It?](https://www.scientificamerican.com/article/is-recycling-worth-it/)
 
 
 
@@ -1691,7 +1777,7 @@ Indirect: Net externality of recycling vs net externality of disposal
 
 
 ---
-### Cost of recycling
+## Cost of recycling
 Labor costs
   - Sorting, handling, resource marketing, certifications
 
@@ -1704,21 +1790,21 @@ Energy use
 
 
 ---
-### Disposal options
+## Disposal options
 Landfill/dump
   - Aesthetic externality if located near population; extra energy/transportation-related externalities if not
 
-  - Methane emissions from decomposition- potential for energy conversion?
+  - Methane emissions from decomposition - potential for energy conversion?
   - Potentially useful resources are harder to obtain in the future
 
 Incineration
   - Essentially recycling the energy potential, but usually with low efficiency
 
-  - Emissions are hazardous- fly ash and heavy metals
+  - Emissions are hazardous - fly ash and heavy metals
 
 
 ---
-### Consumer recycling decision
+## Consumer recycling decision
 
 The consumer’s choice between bins determines the recycling rate
   - On the other hand, the firm’s perspective takes recycling rate as a given
@@ -1736,7 +1822,7 @@ The "warm glow" effect and other social norms play a huge part in this decision
 
 
 ---
-### What should we recycle?
+## What should we recycle?
 Some materials are worth it
   - Aluminum - energy use 96% less than virgin aluminum
 
@@ -1751,17 +1837,17 @@ However, others are often not worth it
 
 
 ---
-#### Waste Reduction Model (WARM)
+## Waste Reduction Model (WARM)
 EPA created WARM to evaluate GHG reduction methods
 
 Biggest sources of GHG that could be reduced via better methods
 
 
 ---
-#### Policies
+## Policies
 
 Volume pricing of trash
-  - Parallel to "demand response" idea in electricity- incentives are better when there is a decision to be made on the margin
+  - Parallel to "demand response" idea in electricity - incentives are better when there is a decision to be made on the margin
 
 Influences two different decisions
 1. which bin to use?
@@ -1774,7 +1860,7 @@ Downsides
   - Regressive?
 
 ---
-#### Policies
+## Policies
 
 Refundable deposits for recyclable goods
   - E.g. bottles, cans, batteries, pesticide containers
@@ -1785,7 +1871,7 @@ Probably more progressive than regressive
 
 
 ---
-#### Policies
+## Policies
 
 Taxing the non-recyclable version of a good, i.e. plastic bag taxes
   - Probably motivated by littering, which is related
