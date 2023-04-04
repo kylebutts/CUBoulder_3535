@@ -1357,13 +1357,18 @@ These effects lengthen the optimal harvest cycle, as the net benefit per unit gr
   - Counteracts the discount rate
   
 ---
-## Forestry and Carbon Credits
+## Forestry and Carbon Offset Credits
 
 For a lot of firms, they can "offset" their emissions by buying carbon credits; the major source being planting of new trees
 
   - Relatively cheap to "abate" using trees at about $12 per metric ton of carbon ([source](https://www.eia.gov/todayinenergy/detail.php?id=50998))
-
+  
   - Buy credits if a firm's marginal abatement cost is more expensive than marginal cost 
+
+
+<br />
+UN has a program to mix development and carbon offsets (e.g. developing hydroplants in developing countries): https://offset.climateneutralnow.org/AllProjects
+
   
 
 
@@ -1404,9 +1409,11 @@ class: clear, middle
 Fixed location, multi-purpose resource
 
 Land is inherently scarce because we cannot make more of it
+  
   - Allocation problem is in choosing between competing uses of land
 
-Unrestricted markets tend to allocate land according to its highest value use
+**Unrestricted markets** tend to allocate land according to its highest value use
+  
   - Value determined by willingness to pay rather than net social benefits
 
 
@@ -1426,27 +1433,16 @@ Everything from zero to A miles from the city center should be residential
 ]
 
 ---
-## Urban planning model
-
-.pull-left[
-In practice, subsidies and development negotiations make it hard to define points A and B
-
-Wilderness area is a public good (with positive externalities) so usually WTP < social value
-  - $\to$ Deforestation
-]
-.pull-right[
-	![The Allocation of Land](graphics/book-fig-10-1.png)
-]
-
----
 ## Land use conversion
 
 Over time, these relationships can change with technology
+  
   - 1870: 50% of US population worked in agriculture
 
   - 2008: <2% of US population worked in agriculture
 
-In the US
+In the US,
+  
   - Industrialization shifted bid rent function upward for urban uses
 
   - Rising productivity of agricultural land, improved shipping infrastructure shifted bid rent function down for agriculture
@@ -1454,58 +1450,114 @@ In the US
   - Entire regions specialize in agriculture or in non-agriculture
 
 ---
-## Inefficient allocation of land
+## Advantages of Cities
 
-Urban sprawl/ leapfrogging
-  - Inefficient spacing of land use
+Cities are great places due to *agglomeration forces*
 
-  - Development expands too far outward, disconnecting vacant land from the wilderness outside of a city
-
-Incompatible land use
-  - Airports near neighborhoods, etc.
+  - Higher density of people make people more productive (e.g. Silicon Valley for innovation)
   
-  - Bilateral externality across nearby geographic regions
+    - Studies find that wages are higher for the same person when they move to a denser city
+  
+  - Better consumptive amenities (e.g. compare food in Denver to Boulder)
+  
+  - Allow for more upward mobility; more interactions with people
+  
+  - Much lower carbon footprint
+  
+Terrific book: [TRIUMPH OF THE CITY: How Our Greatest Invention Makes Us Richer, Smarter, Greener, Healthier, and Happier](https://www.penguinrandomhouse.com/books/303439/triumph-of-the-city-by-edward-glaeser/)
 
-Market power
-  - Land has no substitutes, can lead to price markups
+---
+## Zoning and Land-use Regulations
 
-  - Can increase the cost of preserving public land, or reallocating land more generally
+At the start of the 20th century, cities became nervous about the layout of cities
+
+  - Factories in residential neighborhoods, dilapidated apartments ("slums")
+  
+  - Power lines everywhere (remember!); too narrow roads
+
+They passed *zoning laws* to control what kind of buildings can be built where
+
+  - Commercial/business districts 
+  
+  - What kinds of residential housing: single family homes, duplex, triplex, apartments
+  
+These exploded around 1930 outside of the big cities
+
+  - Part of the story was about race; some explicit (racial restrictions) and some implicit (dense housing)
+  
+  
+  
+---
+Some zoning makes sense (e.g. keep pollutions out of city center), but towns really went hard...
+
+```{r boulder-zoning, echo=FALSE, out.width="65%", fig.align='center'}
+knitr::include_graphics("graphics/boulder-zoning.png")
+```
 
 
 ---
-## Some solutions
-Zoning laws
-  - Group compatible land uses together
+## Costs of Zoning
 
-  - Minimize/internalize the negative externalities
+Raising Home Prices
 
-Eminent domain
-  - Government seizes land and pays "just compensation"
+  - Limit the number of homes that can be built, raising the cost ([Source](https://law.yale.edu/sites/default/files/documents/pdf/hier1948.pdf))
+  
+  - NIMBYism: Local homeowners vote and they don't like to vote to build more buildings ([Source](https://www.thecgo.org/research/warding-off-development-local-control-housing-supply-and-nimbys/))
+  
+Increasing Economic Segregation
 
-Demand for residential development around valuable areas (Boulder) rises, and can sometimes overcome good judgment about land use
-  - Denser is usually better!
+  - Strict zoning keeps low-income people from moving to nice school districts and high-amenity areas ([Source](https://www.city-journal.org/free-to-build))
 
+  - Racial segregation too ([Source](https://www.whitehouse.gov/cea/written-materials/2021/06/17/exclusionary-zoning-its-effect-on-racial-discrimination-in-the-housing-market/))
+
+Limiting Economic Growth
+
+  - High home prices keep people from moving to high productivity places (like SF and NYC) lowering economic growth ([Source](https://www.aeaweb.org/articles?id=10.1257/mac.20170388))
+
+
+  
+---
+## Costs of Zoning
+
+Urban sprawl
+  
+  - Since zoning limits density, homes build outwards ([Source](https://www.motherjones.com/kevin-drum/2010/03/zoning-and-sprawl/))
+  
+  - Increases pollution from driving
+  
+Inequality
+
+  - Putting commercial districts in low-income and/or minority neighborhoods ([Source](https://www.nber.org/papers/w28351))
+  
+  - Highways put there too ([Source](https://www.npr.org/2021/04/07/984784455/a-brief-history-of-how-racism-shaped-interstate-highways))
+  
 
 ---
 ## Food insecurity
+
 Most environmental issues are relatively new, but this one is old
 
 WHO/FAO pillars of food insecurity
   - Availability, accessibility, utilization, stability
 
 Early economist Thomas Malthus (~1800)
+  
   - Argued there is an unsustainable relationship between growth of human population and growth of food production
 
 This type of argument persists today, but we easily create enough food for everyone
+  
   - Technology outpaces human population growth
 
 
 ---
 ## Food production
+
 Modern food insecurity is more about costs and  distribution across people, not total production
+
   - Current food production capacity is essentially unlimited
 
 Vertical Indoor Farming
+
   - Vertical farming can reduce carbon footprint by reducing need for transportation
   
   - Lower water use, much greater yield efficiency, conditions determined by machine learning algorithms
