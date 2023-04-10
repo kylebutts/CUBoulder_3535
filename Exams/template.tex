@@ -1,0 +1,83 @@
+\documentclass[11pt]{article}
+\title{NAME OF EXAM}
+\input{preamble.tex}
+
+\newtoggle{INCLUDEANSWERS}
+\toggletrue{INCLUDEANSWERS}
+% \togglefalse{INCLUDEANSWERS}
+
+\newcommand{\answer}[1]{\iftoggle{INCLUDEANSWERS}{{\color{violet!70!white}\textbf{Solution:} #1}}{}}
+
+\newtoggle{INCLUDEPOINTS}
+\toggletrue{INCLUDEPOINTS}
+\newcommand{\points}[1]{\iftoggle{INCLUDEPOINTS}{{\color{blue!70!white}(#1 pts.)}}{}}
+
+
+\begin{document}
+\emph{Good luck to you!}
+
+\vspace*{5mm}
+Multiple Choice
+
+\begin{enumerate}
+  \item \points{5} 1
+  \begin{enumerate}
+    \item a
+    \item b
+    \item c
+    \item d
+  \end{enumerate}
+
+  \answer{()}
+
+  \item \points{5} 2
+  \begin{enumerate}
+    \item a
+    \item b
+    \item c
+    \item d
+  \end{enumerate}
+    
+  \answer{()}
+
+  \item \points{5} 3
+  \begin{enumerate}
+    \item a
+    \item b
+    \item c
+    \item d
+  \end{enumerate}
+
+  \answer{()}
+  
+  \item \points{5} 4
+  \begin{enumerate}
+    \item a
+    \item b
+    \item c
+    \item d
+  \end{enumerate}
+
+  \answer{()}
+\end{enumerate}
+
+
+\vspace*{5mm}
+Free Response Questions
+
+\begin{enumerate}
+  \setcounter{enumi}{4}
+  \item a
+  
+  \item b
+  
+  \item c
+  
+  \item d
+  
+  \item e
+  
+  \item f
+
+\end{enumerate}
+\end{document}
