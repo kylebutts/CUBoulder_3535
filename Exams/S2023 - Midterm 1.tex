@@ -1,0 +1,194 @@
+\documentclass[11pt]{article}
+\title{Midterm 1}
+\input{preamble.tex}
+
+\newtoggle{INCLUDEANSWERS}
+\toggletrue{INCLUDEANSWERS}
+% \togglefalse{INCLUDEANSWERS}
+
+\newcommand{\answer}[1]{\iftoggle{INCLUDEANSWERS}{{\color{violet!70!white}\textbf{Solution:} #1}}{}}
+
+\newtoggle{INCLUDEPOINTS}
+\toggletrue{INCLUDEPOINTS}
+\newcommand{\points}[1]{\iftoggle{INCLUDEPOINTS}{{\color{blue!70!white}(#1 pts.)}}{}}
+
+
+\begin{document}
+\emph{Good luck to you!}
+
+\vspace*{5mm}
+Multiple Choice
+
+\begin{enumerate}
+  \item \points{5} Suppose Boulder is considering a policy where they spend \$2,000,000 this year to create a park and it generates \$1,100,000 this year and next year (they only consider this year and next). If they use an annual discount rate of 5\%, what is the present value of net benefits from this policy? Is it worth it for Boulder to create the park?
+  \begin{enumerate}
+    \item \$147,619; yes they should.
+    \item \$147,619; no they should not.
+    \item \$0; no they should not.
+    \item \$0; yes they should.
+    \item \$47,418.94; yes they should.
+  \end{enumerate}
+
+  \answer{$-2,000,000 + 1,100,000 + (1,100,000/(1.05)) = 147,619.04$. Since this is positive, they should implement the policy.}
+
+  \item \points{5} Which of the following is an example of property rights being ill-defined? (Circle all correct answers)
+  \begin{enumerate}
+    \item You can not go to the store and steal the cute shirt you want.
+    \item When the morning commute passes by your house, they release local air pollutants. 
+    \item The owner of a mine extracts $Q_1^*$ units this year and $Q_2^*$ units next year.  
+    \item When I listen to music in the library without headphones, everyone has to listen to Taylor Swift.
+  \end{enumerate}
+    
+  \answer{(a), (b), and (d)}
+
+  \item \points{5} In a cap-and-trade system, why might a government want to (i) sell permits in an auction instead of (ii) giving them out and allowing firms to buy and sell the permits between each other?
+  \begin{enumerate}
+    \item To ensure efficient allocation of permits.
+    \item In order to make permits cheaper for firms
+    \item To generate tax revenue from the policy
+    \item To discourage excessive pollution by making it expensive to obtain permits
+  \end{enumerate}
+
+  \answer{(c)}
+  
+  \item \points{5} Which of the following is an example of the tragedy of the commons? (Circle all correct answers)
+  \begin{enumerate}
+    \item Overfishing in a shared ocean
+    \item Planting trees in a public park
+    \item Building a private garden in your backyard
+    \item Painting a mural on the side of your house
+  \end{enumerate}
+
+  \answer{(a)}
+\end{enumerate}
+
+
+\vspace*{5mm}
+Free Response Questions
+
+\begin{enumerate}
+  \setcounter{enumi}{4}
+  \item Use 1 or 2 sentences for each question
+
+  \begin{enumerate}
+    \item \points{4} Why is the socially optimal amount of pollution greater than zero? 
+    
+    \answer{Because people like the things that pollution creates.}
+
+    \item \points{4} Why do governments find it so hard to agree on reductions in greenhouse gas emissions?
+    
+    \answer{Each individual country has incentive to increase greenhosue gas emissions in order to make more profits. In effect, we may see a Race to the Bottom in terms of GHG emission reductions.}
+
+    \item \points{8} Consider a very popular National Park (e.g. the Grand Canyon). 
+    
+    \begin{enumerate}
+      \item Describe why their may be a tragedy of the commons at the park if there was no entrance fee. Why does an entrance fee help?
+      \item Give an argument against having the entrance fee and instead raffling off tickets.
+    \end{enumerate}
+
+    \answer{
+      \begin{enumerate}
+        \item If there are a ton of people at the park, it makes each person's experience worse. In equilibrium, too many people show up than is socially optimal. Adding a entrance fee reduces the number of people who show up, improving people's experiences. 
+        \item This creates inequality since those who can afford the National Park ticket are the only ones who get to go.
+      \end{enumerate}
+    }
+
+    \item \points{4} Describe the fundamental trade-off in the mineral extraction model. 
+    
+    \answer{If I extract more gold today it will lower prices today and prevent me from extracting more gold tomorrow}
+
+  \end{enumerate}
+
+
+  \item Suppose there are two polluting firms, $X$ and $Y$. Assume that permits and abatement exist in continuous quantities (i.e. they don’t have to be whole numbers).
+
+  Firm $X$ has total abatement cost $TAC_x = 4a_x^2 + 4a_x$ and marginal abatement cost $MAC_x = 8a_x + 4$. 
+
+  Firm $Y$ has total abatement cost $TAC_y = 2a_y^2 + 4a_y$ and marginal abatement cost $MAC_y = 4a_y + 4$.
+  
+  Both firms initially produce 50 tons of pollution (100 total), and the government wants to reduce that to 70 tons of pollution total. 
+
+  \begin{enumerate}
+    \item \points{5} Under the uniform standard, what is the total cost of abatement?
+    \item \points{10} Under a cap-and-trade system with 70 permits distributed, what is the equilibrium allocation of abatement?
+    \item \points{5} What is the total cost associated with a tradable permit system that meets this goal?
+    \item \points{10} Describe why total abatement cost is higher under the uniform standard than it is under the cap and trade system.
+    \item \points{5} What is the market price for a permit?
+    \item \points{5} Suppose the government gives out all 70 permits to firm $y$ to compensate them for having to abate more. How many permits will they sell and how much money will that make them?
+  \end{enumerate}
+
+  \answer{
+    \begin{enumerate}
+      \item $a_x = a_y = 15$ under the uniform standard.
+      $$
+        TAC = TAC_x + TAC_y = (4 * 15^2 + 4 * 15) + (2 * 15^2 + 4 * 15) = 960 + 510 = 1,470
+      $$
+      
+      \item The optimality condition is $8a_x + 4 = 4a_y + 4$ which simplifies to $2a_x = a_y$. Plugging that into our constraint $a_x + a_y = 30$ yields:
+      $$
+        a_x + 2 a_x = 30 \implies a_x^* = 10
+      $$
+      and $a_y^* = 20$.
+
+      $a_x^* = 10$ and $a_y^* = 20$.
+
+      \item $TAC = TAC_x + TAC_y = (4 * 10^2 + 4 * 10) + (2 * 20^2 + 4 * 20) = 440 + 880 = 1,320$
+      
+      \item Total abatement cost is higher under the uniform standard because the high-abatament cost firm (firm $x$) is abating too much. Further, $MAC_x = 8 * 15 + 4 = 124$ which is much larger than $MAC_y = 64$. 
+      
+      \item The market price is $MAC_x^* = 8 * (10) + 4 = 84$.
+      
+      \item Firm $y$ needs to have $50 - a_y^* = 30$ permits. Since each permit sells for $\$84$, they will sell $70 - 30 = 40$ permits. This generates $40 * 84 = 3,360$ in revenue (more than offsetting their total abatement cost). 
+    \end{enumerate}
+  }
+
+  \item Consider a two-period model for the extraction of silver. Use the information below to answer the questions. If needed, you may round your answers to the tenths place (i.e. 10.6). Circle or box your final answers.
+
+  Demand in period 1: $P = 200 - 4Q_1$
+  
+  Demand in period 2: $P = 200 - 2Q_2$
+  
+  Marginal cost in both periods: $MC = 40$
+  
+  Resource endowment: $Q = Q_1 + Q_2 = 40$
+  
+  Discount rate: $r = 10\%$
+  
+  \begin{enumerate}
+    \item \points{10} Solve for the optimal allocation across both periods ($Q_1$ and $Q_2$).
+    \item \points{10} Under the following scenarios, describe what will happen to $Q_1^*$ and $Q_2^*$ relative to the solution in part (a) and why.
+    
+    \begin{enumerate}
+      \item After a hit show comes out where the main character wears a silver chain, demand for silver this year goes up.
+      
+      \item The country elects a new president who cares more about future profits (lower discount rate).
+    \end{enumerate}
+  \end{enumerate}
+
+  \answer{
+    \begin{enumerate}
+      \item $MNB_1 = 200 - 4Q_1 - 40 = 160 - 4Q_1$ and $PV(MNB_2) = \frac{200 - 2Q_2 - 40}{1.1} = \frac{160 - 2Q_2}{1.1}$
+      
+      Then, our optimality condition is $160 - 4Q_1 = \frac{160 - 2Q_2}{1.1}$ and the supply constraint is $Q_1 + Q_2 = 40$. Combining these yields
+      $$
+        160 - 4 (40 - Q_2) = \frac{160 - 2Q_2}{1.1} 
+      $$
+      Simplifying yields
+      $$
+        4Q_2 = \frac{160 - 2Q_2}{1.1} \implies 4.4 Q_2 = 160 - 2Q_2
+      $$
+      Solving, gives us
+      $$
+        Q_2^* = 25 \text{ and } Q_1^* = 15.
+      $$
+
+      \item Under the scenarios, the following will occur
+      \begin{enumerate}
+        \item The $MNB_1$ will rise, making extraction today relatively more attractive. This means $Q_1^*$ will go up and $Q_2^*$ will go down.
+        
+        \item The $PV(MNB_2)$ will rise, making extraction in the future relatively more attractive. This means $Q_1^*$ will go down and $Q_2^*$ will go up.
+      \end{enumerate}
+    \end{enumerate}
+  }
+\end{enumerate}
+\end{document}

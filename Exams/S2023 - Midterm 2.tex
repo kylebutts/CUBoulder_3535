@@ -1,0 +1,131 @@
+\documentclass[11pt]{article}
+\title{Midterm 2}
+\input{preamble.tex}
+
+\newtoggle{INCLUDEANSWERS}
+\togglefalse{INCLUDEANSWERS}
+
+\newcommand{\answer}[1]{\iftoggle{INCLUDEANSWERS}{{\color{violet!70!white}\textbf{Solution:} #1}}{}}
+
+\newtoggle{INCLUDEPOINTS}
+\toggletrue{INCLUDEPOINTS}
+\newcommand{\points}[1]{\iftoggle{INCLUDEPOINTS}{{\color{blue!70!white}(#1 pts.)}}{}}
+
+
+\begin{document}
+\emph{Good luck to you!}
+
+% \vspace*{5mm}
+\textbf{Multiple Choice}
+
+\begin{enumerate}
+  \item \points{5} Why are local pollutants much easier to regulate than global pollutants?
+
+  \begin{enumerate}
+    \item Global pollutants have no immediate impact on human health, while local pollutants do.
+    \item A locality faces all the benefits of reducing a local pollutant, but does not face all the benefits of reducing a global pollutant.
+    \item Local pollutants are produced in larger quantities and are more difficult to track.
+    \item Global pollutants are more visible and, therefore, receive more public attention and regulatory scrutiny.  
+  \end{enumerate}
+
+  \answer{(b)}
+
+  \item \points{5} Which of the following is an example of the rebound effect?
+  \begin{enumerate}
+    \item A company invests in energy-efficient lighting and reduces its overall electricity consumption by 20\%.
+    \item A homeowner installs solar panels and sells excess electricity back to the grid.
+    \item A city implements a congestion charge to reduce traffic, but drivers start taking longer trips to avoid the charge.
+    \item A restaurant switches to compostable packaging, which reduces waste and is better for the environment.
+  \end{enumerate}
+    
+  \answer{(c)}
+
+  \item \points{5} Why does a large amount of solar supply create the "Duck Curve" problem?
+
+  \begin{enumerate}
+    \item Solar energy is unreliable and cannot be stored efficiently, leading to fluctuations in energy supply and demand.
+    \item Solar energy is more expensive than traditional energy sources, leading to lower demand and higher prices.
+    \item Solar panels require a lot of space and can only be installed in certain areas, leading to limited energy production.
+    \item Solar energy production peaks during the day, when demand is relatively low, but drops off sharply in the evening when demand is high, creating a mismatch between supply and demand.
+  \end{enumerate}
+
+  \answer{(d)}
+\end{enumerate}
+
+\newpage
+\textbf{Free Response Questions}
+
+\begin{enumerate}  
+  \item \points{15} List a main advantage and disadvantage of each of these electricity sources, from the viewpoint of the grid regulator:
+  \begin{enumerate}
+    \item Natural Gas
+    \item Solar
+    \item Hydro
+  \end{enumerate}
+
+  \answer{
+    \begin{enumerate}
+      \item Natural gas is a very dispatchable resource which helps during periods of peak energy demand. Natural gas releases $CO_2$ into the air.
+      \item Solar is very clean and has a low marginal cost and has a low levelized cost of electricity (LCOE). On the other hand, solar is only good during the sun lit hours and can create the problem of the duck curve.
+      \item Hydro is very clean and has a low marginal cost and has a low levelized cost of electricity (LCOE). However, hydroelectric energy is geographically limited, preventing broad usage.
+    \end{enumerate}
+  }
+
+  \item \points{15} Describe why the Acid Rain Program in the US was so cost-effective of a policy? (\emph{Hint:} use the concept of efficiency)
+  
+  \answer{
+    The Acid Rain Program was a cap-and-trade program which encouraged companies that could abate their $SO_2$ polution the easiest to be the firms that abated. This policy is efficient since it achieved the goal while minimizing the cost of abatement. 
+  }
+  
+  \item \points{15} Why did stated emission goals of The Paris Climate Accord fall below the necessary amount to hit the goal of $2$ degrees?
+
+  \answer{
+    This is a classic example of a Prisoner's Dillema. Each individual country has incentive to lower their emission goal to save money. However, since all countries' would marginally lower their goal, this creates a `race to the bottom' where no one's goal is very ambitious.
+  }
+
+  \item \points{10} If an energy generator was able to invent low-cost energy storage, how would they be able to profit from it?
+  
+  \answer{
+    An energy generator could buy energy in periods of low-demand when the electricity price is low and then sell it back during peak-demand at a much higher price, pocketing the difference. 
+  }
+  
+  \item \points{10} France had an pollution tax, but set the tax amount too low to hit the goal. Why did emissions not fall by that much after the tax?
+  
+  \answer{
+    Firms decide whether to pollute and pay the tax or to abate and pay the marginal abatement cost for each unit of pollution. They choose whichever is cheaper. Since the tax was set too low, most firms decided to pollute and pay the tax instead of abating. 
+  }
+  
+  \begin{figure}[b!]
+    \caption{Merit Order Curve}\label{fig:merit_order}
+    
+    \input{../Resources/merit_order_curve.tex}
+  \end{figure}
+
+  \item \points{20} Consider the merit-order curve in Figure \ref{fig:merit_order}.
+  
+  \begin{enumerate}  
+    \item Why does the price of electricity vary throughout the day?
+    
+    \item If demand for electricity hits 1250 gWh, what will the market price be? 
+    
+    \item Using the concept of the `merit order effect', describe why increasing wind capacity could be so beneficial to consumers when demand is 1250 gWh.
+
+    \item What is the Levalized Cost of Electricity and how does it differ from the Marginal Cost of producing a gWh? When considering construction of new energy sources, which is typically used by energy companies?
+  \end{enumerate}
+
+  \answer{
+    \begin{enumerate}
+      \item The price of electricity varies along the merit order curve since the amount of electricity demand varies over the day.
+      
+      \item The market price will be $\$60$ since the marginal cost of producing the $1250^{th}$ gWh is $\$60$.
+      
+      \item Adding wind capacity shifts the more expensive energy sources further out along the merit order curve. Whereas previously, coal had to be used for the $1250^{th}$ gWh of electricity, adding enough wind would allow nuclear to provide it, lowering the price of electricity to \$10 instead of \$60!
+      
+      \item The levalized cost of electricity is the \emph{average} cost of producing electricity when including the fixed cost of creating the energy generator. The marginal cost only includes the cost of operating it in that moment in time. 
+      
+      In general, the LCOE is used since it determines overall profitability of new construction.
+    \end{enumerate}
+  }
+\end{enumerate}
+
+\end{document}
