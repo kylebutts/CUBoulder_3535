@@ -1,0 +1,135 @@
+\documentclass[11pt]{article}
+\title{Final Exam}
+\input{preamble.tex}
+
+\newtoggle{INCLUDEANSWERS}
+\toggletrue{INCLUDEANSWERS}
+\newcommand{\answer}[1]{\iftoggle{INCLUDEANSWERS}{{\color{violet!70!white}\textbf{Solution:} #1}}{} }
+
+\newtoggle{INCLUDEPOINTS}
+\toggletrue{INCLUDEPOINTS}
+\newcommand{\points}[1]{\iftoggle{INCLUDEPOINTS}{{\color{blue!70!white}(#1 pts.)}}{}}
+
+
+\begin{document}
+  
+\emph{Good luck y'all!}
+
+\vspace*{5mm}
+Multiple Choice
+
+\begin{enumerate}
+  \item \points{4} When making decisions about a potential action using a benefit-cost approach, which of following is the most correct?
+  \begin{enumerate}
+    \item If the cost is greater than the benefit (TB/TC<1), support the action.
+    \item If TB=TC and TB/TC=0, support the action.
+    \item If the benefit is greater than the cost (TB/TC>1), support the action.
+    \item If the cost is greater than the benefit, find an alternative way to evaluate the action.
+  \end{enumerate}
+
+  \answer{(c) If the benefit-cost ratio is greater than 1 (TB/TC>1), it means that the benefits of the action outweigh its costs, indicating that the action is likely to be profitable and should be supported.}
+
+  \item \points{4} Which of the following statements is true regarding the use of stated preference valuations method versus revealed preference methods?
+  \begin{enumerate}
+    \item Revealed preference is the only method to measure nonuse value.
+    \item Stated preference valuations is the only method to measure nonuse value.
+    \item Stated preferences are better at measuring the use value of a resource.
+    \item Stated preference valuations method is more reliable because you ask people directly what they are willing to pay.
+  \end{enumerate}
+
+  \answer{(b) Revealed preferences can not measure nonuse value. It can only measure how much people are willing to spend to use a resource or have the option to use a resource.}
+
+  \item \points{4} As a method for evaluating benefits and costs for multi-year projects, present value calculations \_\_\_\_.
+  \begin{enumerate}
+    \item alleviate the need to look at benefits across different time periods
+    \item determine the discount rate of future benefits
+    \item determine net benefits of a project over a short period of time
+    \item generate comparable estimates of net benefits that are received in different time periods
+  \end{enumerate}
+
+  \answer{(d)}
+
+  \item \points{4} Which of the following correctly identifies one of the main characteristics of an efficient property rights structure?
+  \begin{enumerate}
+    \item Enforceability means that all property rights should be transferable from one owner to another in a voluntary exchange.
+    \item Transferability means that property rights should be secure from involuntary seizure or encroachment by others.
+    \item Exclusivity means that all benefits and costs accrued as a result of owning and using the resources should accrue to the owner, and only to the owner, either directly or indirectly by sale to others.
+    \item Elasticity means that property rights should be easily manipulated and modified to adapt to changing market conditions and social needs.
+  \end{enumerate}
+
+  \answer{(c). Both a and b give wrong definitions of the terms. Elasticity is not a characteristic of property rights.}
+
+  \item \points{4} Which of the following is NOT true about biological populations?
+  \begin{enumerate}
+    \item The resource stock is partially determined by actions taken by society.
+    \item The size of the biological population postharvest determines the availability of resources for the future.
+    \item The present harvest does not have intertemporal effects.
+    \item Humanity's actions determine the flow of biological resources over time.
+  \end{enumerate}
+
+  \answer{(c)}
+\end{enumerate}
+
+
+\vspace*{5mm}
+Free Response Questions
+
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item \points{30}  Suppose there are two polluting firms, $X$ and $Y$. Assume that permits and abatement exist in continuous quantities (i.e. they don't have to be whole numbers).
+
+  Firm $X$: Total abatement cost: $TAC_x = 2a_x^2 + 8a_x$ and Marginal abatement cost: $MAC_x = 4a_x + 8$
+
+  Firm $Y$: Total abatement cost: $TAC_y = 4a_y^2$ and Marginal abatement cost: $MAC_y = 8a_y$
+  
+  Both firms initially produce 20 tons of pollution each (40 total), and the government wants to reduce that to 24 tons of pollution total (total abatement = 16).
+
+  \begin{enumerate}
+    \item \points{10} Say the government tries to implement a carbon tax to achive this goal. They set the tax at $\$40$ per ton of polltion. How much will each firm abate? Does the government hit the abatement goal?
+    
+    \item \points{10} Suppose the government adopts a cap-and-trade system where they give out permits to allow for 24 tons of pollution. What is the equilibrium allocation of abatement of each firm? 
+
+    \item \points{5} What is the market price for a permit? How many permits does each firm own after trading in equilibrium?
+
+    \item \points{5} Suppose the government gives all the permits to firm $X$. What is firm $X$'s total cost of abatement? How much money will they make from selling permits? Is firm $X$ better or worse off relative to before the policy?
+  \end{enumerate}
+ 
+  \answer{
+    \begin{enumerate}
+      \item Each firm will abate until $MAC_x(a_x^*) = \$36$ and $MAC_y(a_y^*) = \$36$. This gives $a_x^* = 8$ and $a_y^* = 5$. They do not hit the goal since they only abate 13 units of pollution total.
+      
+      \item $4a_x + 8 = 8a_y$ and $a_x + a_y = 16$ implies $a_x^* = 10$ and $a_y^* = 6$. 
+      
+      \item The permit price therefore will be $MAC_x(a_x^*) = 4 * 10 + 8 = 48 = MAC_y(a_y^*)$. Firm $X$ abates $10$ units and therefore needs to own $20 - 10 = 10$ permits. Firm $Y$ abates 6 units and therefore needs to own $20 - 14 = 6$ permits.
+      
+      \item $TAC_x(10) = 2*10^2 + 8 * 10 = 280$. If firm $x$ is given all 24 permits, they will sell $14$ permits at a price of $48$ each, giving them $\$672$. They are better off by $672 - 280 = \$392$. 
+    \end{enumerate}
+  }
+
+  \item \points{10} In the slides, I write that when valuing a public resource like a National Park, both revealed preference methods and stated preference methods should be used in combination. Describe what advantages and disadvantages each one brings. (1-2 sentences per method)
+  
+  \answer{Revealed preferences are able to give a more credible estimate for the use/option value of going to a National Park by observing what \emph{people actually do}. State preference methods are able to determine nonuse value which are not captured by revealed preference methods. However, they often suffer from hypothetical and other biases.}
+
+  \item \points{10} Explain how the discount rate, $\delta$, is used in government decision making. Why is it so important when thinking about investing today to prevent climate change damages in the future? (2-3 sentences)
+  
+  \answer{
+    The discount rate, $\delta$, is used in government decision making to determine the present value of future costs and benefits. A higher discount rate means that future costs and benefits are given less weight in present decision making. When thinking about investing today to prevent climate change damages in the future, a low discount rate is important because it reflects the high importance of future costs and benefits.
+  }
+  
+  \item \points{10} Explain the two dividends of the double-dividend hypothesis (2-3 sentences). 
+  
+  \answer{
+    The first dividend is that a tax on pollution will increase surplus by lowering polution, a negative externality. The tax also raises revenue for the government which can then be used to lower other distortionary taxes. 
+  }
+
+  \item \points{10} The government wants to impose a cap and trade system on car owners. Give two reasons why marginal abatement costs can differ across car owners (1 sentence per reason). 
+  
+  \answer{Open-ended question. Acceptable answers include: some people have older or bigger cars that pollute more while others have Teslas which pollute via the electrical grid. People differ in their opportunity cost of driving (e.g. someone who lives near a bus can more easily drive less).}
+  
+  \item \points{10} From the viewpoint of the social planner, why do parks tend to be too full during peak season? (1-2 sentences)
+  
+  \answer{This is a classic example of the tragedy of the commons. Each individual only cares about their benefit of going to the park and don't consider the negative externality they're imposing on the other park attendees.}
+  
+\end{enumerate}
+
+\end{document}
